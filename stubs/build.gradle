@@ -1,0 +1,46 @@
+apply plugin: 'java'
+
+repositories {
+    ivy {
+        url 'http://jaist.dl.sourceforge.net'
+        layout 'pattern', {
+            artifact '/project/[organisation]/[module]/[module]-[revision]/[module]-[revision].[ext]'
+        }
+    }
+}
+
+configurations {
+    tool
+}
+
+dependencies {
+    // download the jasmin assembler from sourceforge
+    tool 'jasmin:jasmin:2.4@zip'
+}
+
+task unpackAssembler(type: Copy) {
+    // unpack the jasmin assembler
+    from zipTree(configurations.tool.find {it.name.startsWith('jasmin')})
+    into "${buildDir}/jasmin"
+    includeEmptyDirs = false
+    include '**/jasmin.jar'
+}
+
+task assembleJasmin(type: JavaExec) {
+    // assemble the jasmin files
+    def classesDir = sourceSets.main.output.classesDir
+    def sourceDir = "$projectDir/src/main/jasmin"
+    def sourceSet = fileTree(dir: sourceDir, include: '**/*.j')
+    def sources = sourceSet.getFiles().collect {new File(sourceDir).toPath().relativize(it.toPath())}
+
+    main = 'jasmin.Main'
+    args = ['-d', classesDir] + sources
+    classpath fileTree(dir: "${buildDir}/jasmin", include: '**/*.jar')
+    workingDir sourceDir
+
+    outputs.dir classesDir
+    inputs.files sourceSet
+}
+
+assembleJasmin.dependsOn unpackAssembler
+classes.dependsOn assembleJasmin
