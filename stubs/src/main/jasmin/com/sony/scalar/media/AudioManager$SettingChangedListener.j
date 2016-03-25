@@ -3,6 +3,8 @@
 .super java/lang/Object
 .inner class public static interface abstract SettingChangedListener inner com/sony/scalar/media/AudioManager$SettingChangedListener outer com/sony/scalar/media/AudioManager
 
+.field public static final TYPE_MICROPHONE_ENABLE I = 2
+
 .field public static final TYPE_MICROPHONE_REFRENCE_LEVLEL I = 1
 
 .field public static final TYPE_MICROPHONE_WIND_NOISE_REDUCTION I

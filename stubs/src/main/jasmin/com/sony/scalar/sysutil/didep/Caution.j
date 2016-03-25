@@ -1748,6 +1748,8 @@
 
 .field public static final CAUTION_GRP_ID_PICTURE_EFFECT_INVALID_GUIDE I = 33570
 
+.field public static final CAUTION_GRP_ID_PICTURE_EFFECT_MINIATURE_AUTO_INVALID_GUIDE I = 34076
+
 .field public static final CAUTION_GRP_ID_PICTURE_EFFECT_MINIATURE_INVALID I = 33239
 
 .field public static final CAUTION_GRP_ID_PICTURE_EFFECT_MINIATURE_INVALID_GUIDE I = 33584
@@ -2067,6 +2069,10 @@
 .field public static final CAUTION_GRP_ID_STABI_MOV I = 33094
 
 .field public static final CAUTION_GRP_ID_STABI_STL I = 33095
+
+.field public static final CAUTION_GRP_ID_STEADY_SHOT_ADJUSTMENT_INVALID_GUIDE I = 34074
+
+.field public static final CAUTION_GRP_ID_STEADY_SHOT_FOCAL_LENGTH_INVALID_GUIDE I = 34075
 
 .field public static final CAUTION_GRP_ID_STEADY_SHOT_INVALID_GUIDE I = 33663
 
@@ -2979,6 +2985,10 @@
 .field public static final CAUTION_ID_CANNOT_ACCESS_MS_SLOT1 I = 2245
 
 .field public static final CAUTION_ID_CANNOT_ACCESS_MS_SLOT2 I = 2246
+
+.field public static final CAUTION_ID_CANNOT_COPY_XAVCS_TO_EXTMEDIA I = 3506
+
+.field public static final CAUTION_ID_CANNOT_COPY_XAVCS_TO_MEMCARD I = 3510
 
 .field public static final CAUTION_ID_CANNOT_PRINT I = 325
 
@@ -4787,6 +4797,16 @@
 .field public static final CAUTION_ID_EX_REASON_INTMIC_WINDNR_INVALID_STILLREC I = 2333
 
 .field public static final CAUTION_ID_EX_REASON_INTMIC_WINDNR_INVALID_USBHOST I = 2329
+
+.field public static final CAUTION_ID_EX_REASON_INVALID_24P_MODE I = 3507
+
+.field public static final CAUTION_ID_EX_REASON_INVALID_AIRPLANE_MODE I = 3515
+
+.field public static final CAUTION_ID_EX_REASON_INVALID_FRAMERATE_24P I = 3528
+
+.field public static final CAUTION_ID_EX_REASON_INVALID_PB I = 3513
+
+.field public static final CAUTION_ID_EX_REASON_INVALID_SHOOTING I = 3514
 
 .field public static final CAUTION_ID_EX_REASON_IRIS_INVALID_2D3D_3D I = 1254
 
@@ -6600,6 +6620,8 @@
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_SMART_TELE_CONVERTER_MODE_MSG I = 3274
 
+.field public static final CAUTION_ID_FACTOR_CAM_SET_STEADYSHOT_ADJUSTMENT_MANUAL_MSG I = 3512
+
 .field public static final CAUTION_ID_FACTOR_CAM_SET_STILL_ASP_16_9_MSG I = 3183
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_STILL_ASP_1_1_MSG I = 3184
@@ -7088,6 +7110,8 @@
 
 .field public static final CAUTION_ID_HEAT_SYSTEM I = 32
 
+.field public static final CAUTION_ID_HIGHLIGHT_POINT_FULL I = 3529
+
 .field public static final CAUTION_ID_HIGHLIGHT_POINT_SET_ERASE_INH I = 381
 
 .field public static final CAUTION_ID_HOUSING_MODE I = 558
@@ -7109,6 +7133,8 @@
 .field public static final CAUTION_ID_INSUFFICIENT_BATTERY_CLEANING_MODE I = 1717
 
 .field public static final CAUTION_ID_INTELLIGENT_AUTO_OFF I = 576
+
+.field public static final CAUTION_ID_INTMEM_SPACE_FULL_XAVC_INVALID I = 3511
 
 .field public static final CAUTION_ID_INVALID_4K_STILL_IMAGE_PB I = 2914
 
@@ -7340,6 +7366,8 @@
 
 .field public static final CAUTION_ID_INVALID_FUNCTION_FACTOR_MOVIE_SM I = 2835
 
+.field public static final CAUTION_ID_INVALID_FUNCTION_LIVE_STREAMING I = 3509
+
 .field public static final CAUTION_ID_INVALID_HDMI_SETTING I = 1464
 
 .field public static final CAUTION_ID_INVALID_IMAGE_MAGNIFY I = 1412
@@ -7383,6 +7411,8 @@
 .field public static final CAUTION_ID_INVALID_LENS_STATE_STL_PUSHAUTOFOCUS I = 2067
 
 .field public static final CAUTION_ID_INVALID_LENS_USING_AF I = 1473
+
+.field public static final CAUTION_ID_INVALID_LIVE_STREAMING_SETTING I = 3508
 
 .field public static final CAUTION_ID_INVALID_LOCAL_AREA_SETTING I = 2759
 
@@ -7457,6 +7487,8 @@
 .field public static final CAUTION_ID_INVALID_OPERATION_HOUSING I = 341
 
 .field public static final CAUTION_ID_INVALID_OPERATION_IN_REMOTE_PC I = 2229
+
+.field public static final CAUTION_ID_INVALID_OPERATION_MANUAL_RING I = 3533
 
 .field public static final CAUTION_ID_INVALID_OPERATION_MEMORY_CARD_ACCESS_FORBIDDEN I = 3424
 
@@ -7853,6 +7885,8 @@
 .field public static final CAUTION_ID_LOW_INK_PRINTING I = 301
 
 .field public static final CAUTION_ID_LOW_PERFORM_MS I = 246
+
+.field public static final CAUTION_ID_LOW_PERFORM_MS_4K_100MBPS I = 3532
 
 .field public static final CAUTION_ID_LOW_PERFORM_MS_FACTOR_MEDIA_SLOT1 I = 2705
 
@@ -8554,6 +8588,30 @@
 
 .field public static final CAUTION_ID_MS_COVER_OPEN I = 50
 
+.field public static final CAUTION_ID_MULTICAMERACTRL_DISCONNECTION I = 3523
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_GENERAL_ERROR I = 3525
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_HDMI_OUTPUT I = 3527
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_HIGH_TEMPRATURE I = 3524
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_INCOMPATIBLE_MEDIA_VSYS I = 3522
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_INCOMPATIBLE_MEDIA_XAVCS I = 3521
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_NO_RESPONSE I = 3517
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_REC_START_ERROR I = 3519
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_REC_STOP_ERROR I = 3520
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_SETTING_ERROR I = 3516
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_SHOOTING_ERROR I = 3518
+
+.field public static final CAUTION_ID_MULTICAMERACTRL_UNSUPPORTED_DEVICE I = 3526
+
 .field public static final CAUTION_ID_MY_PHOTO_STYLE_INVALID_3D I = 1838
 
 .field public static final CAUTION_ID_MY_PHOTO_STYLE_INVALID_3D_STILL I = 1837
@@ -8976,6 +9034,8 @@
 
 .field public static final CAUTION_ID_RECMODE_25P I = 274
 
+.field public static final CAUTION_ID_RECMODE_4K_100MBPS I = 3531
+
 .field public static final CAUTION_ID_RECMODE_50I_FX I = 277
 
 .field public static final CAUTION_ID_RECMODE_50P2 I = 279
@@ -9201,6 +9261,8 @@
 .field public static final CAUTION_ID_SOFTKEY_C_ASSIGN_IS_NONE I = 1474
 
 .field public static final CAUTION_ID_SQMOTION_NONSUPPORT_MS I = 247
+
+.field public static final CAUTION_ID_STEADYSHOT_CAMERA_MECHA_ERR I = 3530
 
 .field public static final CAUTION_ID_STEADYSHOT_ERR I = 43
 

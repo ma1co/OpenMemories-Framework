@@ -32,6 +32,10 @@
 .method public createWpsPin(Z)Ljava/lang/String;
 .end method
 
+; added in V8
+.method public isValidWpsPin(Ljava/lang/String;)Z
+.end method
+
 .method public startWpsPbc()Z
 .end method
 

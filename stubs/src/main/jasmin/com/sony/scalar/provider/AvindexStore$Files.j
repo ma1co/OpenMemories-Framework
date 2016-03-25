@@ -16,5 +16,9 @@
 .method public static loadMedia(Ljava/lang/String;[I)Z
 .end method
 
+; added in V8
+.method public static waitAndUpdateDatabase(Landroid/content/ContentResolver;Ljava/lang/String;)Z
+.end method
+
 .method public static waitLoadMediaComplete(Ljava/lang/String;[I)Z
 .end method

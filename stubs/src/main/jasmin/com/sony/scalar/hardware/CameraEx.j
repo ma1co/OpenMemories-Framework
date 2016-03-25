@@ -88,6 +88,8 @@
 
 .field public static final RECORDING_MODE_MULTI_MOVIE I = 1
 
+.field public static final RECORDING_MODE_MULTI_MOVIE_2 I = 2
+
 .field public static final RECORDING_MODE_STILL I = 0
 
 .field public static final ZOOM_DIRECTION_TELE I = 0
@@ -318,6 +320,10 @@
 
 ; added in V7
 .method public final setIntervalRecListener(Lcom/sony/scalar/hardware/CameraEx$IntervalRecListener;)V
+.end method
+
+; added in V8
+.method public setIntervalRecMode(Z)V
 .end method
 
 .method public setJpegListener(Lcom/sony/scalar/hardware/CameraEx$JpegListener;)V

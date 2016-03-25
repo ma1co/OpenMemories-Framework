@@ -44,7 +44,15 @@
 
 .field public static final INTVAL_IRREMOTE_CATEGORY_NONE I = 0
 
+.field public static final INTVAL_LIVE_STREAMING_SUPPORTED I = 1
+
+.field public static final INTVAL_LIVE_STREAMING_UNSUPPORTED I = 0
+
 .field public static final INTVAL_MECHANICAL_SHUTTER I = 0
+
+.field public static final INTVAL_MEMPLUG_DYNAMIC_ALLOCATE_DISABLE I = 0
+
+.field public static final INTVAL_MEMPLUG_DYNAMIC_ALLOCATE_ENABLE I = 1
 
 .field public static final INTVAL_MODE_SW_TYPE_DIAL I = 1
 
@@ -280,6 +288,12 @@
 
 .field public static final INTVAL_VALID I = 1
 
+.field public static final NET_SERVICE_DEVICE_NAME Ljava/lang/String; = "net.service.device.name"
+
+.field public static final NET_SERVICE_DEVICE_NAME_VALID Ljava/lang/String; = "net.service.device.name.valid"
+
+.field public static final NET_SERVICE_FIXED_WPS_PIN Ljava/lang/String; = "net.service.fixed.wps.pin"
+
 .field public static final PROP_AUDIO_INOUT_CONCURRENCY_CONTROL Ljava/lang/String; = "audio.inout.concurrency.control"
 
 .field public static final PROP_DEVICE_DIGITAL_LEVEL Ljava/lang/String; = "device.digital.level"
@@ -352,6 +366,8 @@
 
 .field public static final PROP_LIVE_STREAMING_SUPPORTED Ljava/lang/String; = "live.streaming.supported"
 
+.field public static final PROP_MEMPLUG_DYNAMIC_ALLOCATE Ljava/lang/String; = "memplug.dynamic.allocate"
+
 .field public static final PROP_MEM_DYNAMICAREA_SIZE_IN_RAWIMAGE_NUM Ljava/lang/String; = "mem.dynamicarea.size.in.rawimage.num"
 
 .field public static final PROP_MEM_RAWIMAGE_SIZE_IN_MEGA_PIXEL Ljava/lang/String; = "mem.rawimage.size.in.mega.pixel"
@@ -409,6 +425,8 @@
 .field public static final WIFI_GP_OWNER_OPE_CH Ljava/lang/String; = "wifi.gp.owner.ope.ch"
 
 .field public static final WIFI_GP_OWNER_WPS_PIN Ljava/lang/String; = "wifi.gp.owner.wps.pin"
+
+.field public static final WIFI_REMOTE_DEVICE_DESC_XML_SHORTENED_URI Ljava/lang/String; = "wifi.remote.dd.shortened.uri"
 
 .field public static final WIFI_SET Ljava/lang/String; = "wifi.setting"
 

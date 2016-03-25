@@ -98,24 +98,30 @@
 .method public <init>(Landroid/net/wifi/IWifiManager;Landroid/os/Handler;)V
 .end method
 
+; removed in V8
 .method public addServDiscReq(Lcom/sony/wifi/direct/ServiceDiscoveryInfo;)Z
 .end method
 
+; removed in V8
 .method public addServDiscResp(Lcom/sony/wifi/direct/ServiceDiscoveryInfo;)Z
 .end method
 
+; removed in V8
 .method public addToAcl(Ljava/lang/String;Ljava/lang/String;)Z
 .end method
 
 .method public cancel()Z
 .end method
 
+; removed in V8
 .method public clearAcl()Z
 .end method
 
+; removed in V8
 .method public clearServDiscReq()Z
 .end method
 
+; removed in V8
 .method public clearServDiscResp()Z
 .end method
 
@@ -134,6 +140,7 @@
 .method public find(I)Z
 .end method
 
+; removed in V8
 .method public getAcl()Ljava/util/Map;
 .end method
 
@@ -161,9 +168,11 @@
 .method public getMyDevice()Lcom/sony/wifi/direct/DirectDevice;
 .end method
 
+; removed in V8
 .method public getRssiThreshold()I
 .end method
 
+; removed in V8
 .method public getServDiscReq()Ljava/util/List;
 .end method
 
@@ -173,9 +182,11 @@
 .method public invite(Ljava/lang/String;)Z
 .end method
 
+; removed in V8
 .method public isAclEnabled()Z
 .end method
 
+; removed in V8
 .method public isAutoAcceptEnabled(I)Z
 .end method
 
@@ -188,6 +199,7 @@
 .method public listen()Z
 .end method
 
+; removed in V8
 .method public removeFromAcl(Ljava/lang/String;)Z
 .end method
 
@@ -197,18 +209,22 @@
 .method public removeNetwork(I)Z
 .end method
 
+; removed in V8
 .method public removeServDiscReq(Lcom/sony/wifi/direct/ServiceDiscoveryInfo;)Z
 .end method
 
+; removed in V8
 .method public removeServDiscResp(Lcom/sony/wifi/direct/ServiceDiscoveryInfo;)Z
 .end method
 
 .method public saveConfiguration()Z
 .end method
 
+; removed in V8
 .method public setAclEnabled(Z)Z
 .end method
 
+; removed in V8
 .method public setAutoAcceptEnabled(IZ)Z
 .end method
 
@@ -218,12 +234,14 @@
 .method public setDirectEnabled(Z)Z
 .end method
 
+; removed in V8
 .method public setInternalSettings(Ljava/lang/String;I)Z
 .end method
 
 .method public setModelName(Ljava/lang/String;)Z
 .end method
 
+; removed in V8
 .method public setRssiThreshold(I)Z
 .end method
 

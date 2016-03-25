@@ -94,6 +94,12 @@
 
 .field public static final TCUB_GRAPHIC_OUTPUT_ALL I = 7
 
+.field public static final TCUB_GRAPHIC_OUTPUT_EVF I = 2
+
+.field public static final TCUB_GRAPHIC_OUTPUT_LINEOUT I = 4
+
+.field public static final TCUB_GRAPHIC_OUTPUT_PANEL I = 1
+
 .field public static final VIEW_PATTERN_180 I = 2
 
 .field public static final VIEW_PATTERN_INVALID I = -1
