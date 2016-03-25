@@ -2,12 +2,34 @@
 .class public com/sony/scalar/media/MediaRecorder$Parameters
 .super java/lang/Object
 .inner class public static Parameters inner com/sony/scalar/media/MediaRecorder$Parameters outer com/sony/scalar/media/MediaRecorder
+.inner class public static TcFrameRateRangeInfo inner com/sony/scalar/media/MediaRecorder$Parameters$TcFrameRateRangeInfo outer com/sony/scalar/media/MediaRecorder$Parameters
+.inner class public static TimeCodeInfo inner com/sony/scalar/media/MediaRecorder$Parameters$TimeCodeInfo outer com/sony/scalar/media/MediaRecorder$Parameters
 
 .field public static final OUTPUT_FORMAT_AVCHD Ljava/lang/String; = "AVCHD"
 
 .field public static final OUTPUT_FORMAT_MPEG_4 Ljava/lang/String; = "MPEG4"
 
 .field public static final OUTPUT_FORMAT_XAVC_S Ljava/lang/String; = "XAVCS"
+
+.field public static final RESET_TC Lcom/sony/scalar/media/MediaRecorder$Parameters$TimeCodeInfo;
+
+.field public static final RESET_UB J
+
+.field public static final TC_FORMAT_DROP_FRAME I = 0
+
+.field public static final TC_FORMAT_NON_DROP_FRAME I = 1
+
+.field public static final TC_MAKE_PRESET I = 0
+
+.field public static final TC_MAKE_REGENERATE I = 1
+
+.field public static final TC_RUN_FREE_RUN I = 1
+
+.field public static final TC_RUN_REC_RUN I = 0
+
+.field public static final UB_TIME_REC_OFF I = 0
+
+.field public static final UB_TIME_REC_ON I = 1
 
 .field public static final VIDEO_ASPECT_RATIO_16_9 Ljava/lang/String; = "16_9"
 
@@ -72,6 +94,58 @@
 .method public getSupportedCamcoderProfiles()Ljava/util/List;
 .end method
 
+; added in V6
+.method public getSupportedTcFrameRateRange()Ljava/util/List;
+.end method
+
+; added in V6
+.method public getSupportedTimeCodeFormat()Ljava/util/List;
+.end method
+
+; added in V6
+.method public getSupportedTimeCodeMake()Ljava/util/List;
+.end method
+
+; added in V6
+.method public getSupportedTimeCodeRun()Ljava/util/List;
+.end method
+
+; added in V6
+.method public getSupportedUserBitMax()J
+.end method
+
+; added in V6
+.method public getSupportedUserBitMin()J
+.end method
+
+; added in V6
+.method public getSupportedUserBitTimeRec()Ljava/util/List;
+.end method
+
+; added in V6
+.method public getTimeCode()Lcom/sony/scalar/media/MediaRecorder$Parameters$TimeCodeInfo;
+.end method
+
+; added in V6
+.method public getTimeCodeFormat()I
+.end method
+
+; added in V6
+.method public getTimeCodeMake()I
+.end method
+
+; added in V6
+.method public getTimeCodeRun()I
+.end method
+
+; added in V6
+.method public getUserBit()J
+.end method
+
+; added in V6
+.method public getUserBitTimeRec()I
+.end method
+
 .method public getVideoAspectRatio()Ljava/lang/String;
 .end method
 
@@ -88,6 +162,30 @@
 .end method
 
 .method public setOutputFormat(Ljava/lang/String;)V
+.end method
+
+; added in V6
+.method public setTimeCode(Lcom/sony/scalar/media/MediaRecorder$Parameters$TimeCodeInfo;)V
+.end method
+
+; added in V6
+.method public setTimeCodeFormat(I)V
+.end method
+
+; added in V6
+.method public setTimeCodeMake(I)V
+.end method
+
+; added in V6
+.method public setTimeCodeRun(I)V
+.end method
+
+; added in V6
+.method public setUserBit(J)V
+.end method
+
+; added in V6
+.method public setUserBitTimeRec(I)V
 .end method
 
 .method public setVideoAspectRatio(Ljava/lang/String;)V

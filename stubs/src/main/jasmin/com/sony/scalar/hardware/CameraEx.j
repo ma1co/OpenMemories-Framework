@@ -1,5 +1,16 @@
 .class public com/sony/scalar/hardware/CameraEx
 .super java/lang/Object
+.inner class public static interface abstract SceneRecognitionJudgeListener inner com/sony/scalar/hardware/CameraEx$SceneRecognitionJudgeListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract MotionRecognitionListener inner com/sony/scalar/hardware/CameraEx$MotionRecognitionListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract SteadyRecognitionListener inner com/sony/scalar/hardware/CameraEx$SteadyRecognitionListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract AdditionalDataSizeSetCallback inner com/sony/scalar/hardware/CameraEx$AdditionalDataSizeSetCallback outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract TrackingFocusListener inner com/sony/scalar/hardware/CameraEx$TrackingFocusListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static TrackingFocusInfo inner com/sony/scalar/hardware/CameraEx$TrackingFocusInfo outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract StoreImageCompleteListener inner com/sony/scalar/hardware/CameraEx$StoreImageCompleteListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static StoreImageInfo inner com/sony/scalar/hardware/CameraEx$StoreImageInfo outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract ExposureCompleteListener inner com/sony/scalar/hardware/CameraEx$ExposureCompleteListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static ExposureInfo inner com/sony/scalar/hardware/CameraEx$ExposureInfo outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract OnCaptureStatusListener inner com/sony/scalar/hardware/CameraEx$OnCaptureStatusListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract FocusDriveListener inner com/sony/scalar/hardware/CameraEx$FocusDriveListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static FocusPosition inner com/sony/scalar/hardware/CameraEx$FocusPosition outer com/sony/scalar/hardware/CameraEx
 .inner class public static GammaTable inner com/sony/scalar/hardware/CameraEx$GammaTable outer com/sony/scalar/hardware/CameraEx
@@ -209,6 +220,10 @@
 .method public saveCustomWhiteBalance(I)V
 .end method
 
+; added in V6
+.method public final setAdditionalDataSize(IIZLcom/sony/scalar/hardware/CameraEx$AdditionalDataSizeSetCallback;)V
+.end method
+
 .method public final setApertureChangeListener(Lcom/sony/scalar/hardware/CameraEx$ApertureChangeListener;)V
 .end method
 
@@ -239,6 +254,10 @@
 .method public final setAutoSceneModeListener(Lcom/sony/scalar/hardware/CameraEx$AutoSceneModeListener;)V
 .end method
 
+; added in V6
+.method public setCaptureStatusListener(Lcom/sony/scalar/hardware/CameraEx$OnCaptureStatusListener;)V
+.end method
+
 .method public setColorSelectToChannel(ILcom/sony/scalar/hardware/CameraEx$SelectedColor;)V
 .end method
 
@@ -250,6 +269,10 @@
 .end method
 
 .method public final setErrorCallback(Lcom/sony/scalar/hardware/CameraEx$ErrorCallback;)V
+.end method
+
+; added in V6
+.method public final setExposureCompleteListener(Lcom/sony/scalar/hardware/CameraEx$ExposureCompleteListener;)V
 .end method
 
 ; added in V3
@@ -290,6 +313,10 @@
 .method public setJpegListener(Lcom/sony/scalar/hardware/CameraEx$JpegListener;)V
 .end method
 
+; added in V6
+.method public final setMotionRecognitionListener(Lcom/sony/scalar/hardware/CameraEx$MotionRecognitionListener;)V
+.end method
+
 ; added in V5
 .method public final setNDFilterListener(Lcom/sony/scalar/hardware/CameraEx$NDFilterStatusListener;)V
 .end method
@@ -327,6 +354,10 @@
 .method public setRecordingMedia(Ljava/lang/String;Lcom/sony/scalar/hardware/CameraEx$RecordingMediaChangeCallback;)V
 .end method
 
+; added in V6
+.method public setSceneRecognitionJudgeListener(Lcom/sony/scalar/hardware/CameraEx$SceneRecognitionJudgeListener;)V
+.end method
+
 .method public setSettingChangedListener(Lcom/sony/scalar/hardware/CameraEx$SettingChangedListener;)V
 .end method
 
@@ -336,7 +367,19 @@
 .method public final setShutterSpeedChangeListener(Lcom/sony/scalar/hardware/CameraEx$ShutterSpeedChangeListener;)V
 .end method
 
+; added in V6
+.method public final setSteadyRecognitionListener(Lcom/sony/scalar/hardware/CameraEx$SteadyRecognitionListener;)V
+.end method
+
+; added in V6
+.method public final setStoreImageCompleteListener(Lcom/sony/scalar/hardware/CameraEx$StoreImageCompleteListener;)V
+.end method
+
 .method public setToggleFocusMode(Z)V
+.end method
+
+; added in V6
+.method public final setTrackingFocusListener(Lcom/sony/scalar/hardware/CameraEx$TrackingFocusListener;)V
 .end method
 
 ; added in V1
@@ -366,6 +409,10 @@
 .method public startSelfTimerShutter()V
 .end method
 
+; added in V6
+.method public startTrackingFocus(II)V
+.end method
+
 ; added in V1
 .method public startZoom(II)V
 .end method
@@ -385,6 +432,10 @@
 
 ; added in V1
 .method public stopPreviewMagnification()V
+.end method
+
+; added in V6
+.method public stopTrackingFocus()V
 .end method
 
 ; added in V1

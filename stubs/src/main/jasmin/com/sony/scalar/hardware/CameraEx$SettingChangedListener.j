@@ -12,6 +12,8 @@
 
 .field public static final TYPE_CINEMA_TONE I = 20
 
+.field public static final TYPE_COLOR_MODE I = 24
+
 .field public static final TYPE_COLOR_SPACE I = 17
 
 .field public static final TYPE_DRIVE_MODE I = 12
@@ -40,6 +42,8 @@
 
 .field public static final TYPE_ND_FILTER I = 23
 
+.field public static final TYPE_PRO_COLOR_MODE I = 25
+
 .field public static final TYPE_RED_EYE_REDUCTION_MODE I = 14
 
 .field public static final TYPE_REMOTE_CONTROL_MODE I = 13
@@ -48,7 +52,11 @@
 
 .field public static final TYPE_SELF_TIMER I = 11
 
+.field public static final TYPE_SILENT_SHUTTER_MODE I = 38
+
 .field public static final TYPE_SOFT_SKIN_EFFECT I = 16
+
+.field public static final TYPE_TRACKING_FOCUS I = 26
 
 .method public abstract onChanged([ILandroid/hardware/Camera$Parameters;Lcom/sony/scalar/hardware/CameraEx;)V
 .end method

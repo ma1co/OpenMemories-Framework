@@ -1,6 +1,7 @@
 ; added in V3
 .class public com/sony/scalar/media/AudioManager
 .super java/lang/Object
+.inner class public static interface abstract OnMicrophoneChangedListener inner com/sony/scalar/media/AudioManager$OnMicrophoneChangedListener outer com/sony/scalar/media/AudioManager
 .inner class public static interface abstract SettingChangedListener inner com/sony/scalar/media/AudioManager$SettingChangedListener outer com/sony/scalar/media/AudioManager
 .inner class public static Parameters inner com/sony/scalar/media/AudioManager$Parameters outer com/sony/scalar/media/AudioManager
 
@@ -20,6 +21,10 @@
 .end method
 
 .method public release()V
+.end method
+
+; added in V6
+.method public final setMicrophoneChangedListener(Lcom/sony/scalar/media/AudioManager$OnMicrophoneChangedListener;)V
 .end method
 
 .method public setParameters(Lcom/sony/scalar/media/AudioManager$Parameters;)V

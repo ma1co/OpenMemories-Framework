@@ -2,6 +2,7 @@
 .super java/lang/Object
 .inner class public static VideoRect inner com/sony/scalar/hardware/avio/DisplayManager$VideoRect outer com/sony/scalar/hardware/avio/DisplayManager
 .inner class public DeviceInfo inner com/sony/scalar/hardware/avio/DisplayManager$DeviceInfo outer com/sony/scalar/hardware/avio/DisplayManager
+.inner class public static interface abstract OrientationRollListener inner com/sony/scalar/hardware/avio/DisplayManager$OrientationRollListener outer com/sony/scalar/hardware/avio/DisplayManager
 .inner class public static interface abstract OnScreenDisplayListener inner com/sony/scalar/hardware/avio/DisplayManager$OnScreenDisplayListener outer com/sony/scalar/hardware/avio/DisplayManager
 .inner class public static interface abstract VideoLayoutStatusListener inner com/sony/scalar/hardware/avio/DisplayManager$VideoLayoutStatusListener outer com/sony/scalar/hardware/avio/DisplayManager
 .inner class public static interface abstract DisplayEventListener inner com/sony/scalar/hardware/avio/DisplayManager$DisplayEventListener outer com/sony/scalar/hardware/avio/DisplayManager
@@ -31,6 +32,8 @@
 
 .field public static final DEVICE_ID_PANEL Ljava/lang/String; = "DEVICE_ID_PANEL"
 
+.field public static final DEVICE_ID_SETTING_RELEASE Ljava/lang/String; = "DEVICE_ID_SETTING_RELEASE"
+
 .field public static final EVENT_ATTACH_DEVICE I = 8192
 
 .field public static final EVENT_CHANGE_VIEW_PATTERN I = 16384
@@ -38,6 +41,10 @@
 .field public static final EVENT_DETACH_DEVICE I = 8448
 
 .field public static final EVENT_HDMI_FORMAT I = 12288
+
+.field public static final EVENT_START_QFHD_FORMAT_OUTPUT I = 24576
+
+.field public static final EVENT_STOP_QFHD_FORMAT_OUTPUT I = 24832
 
 .field public static final EVENT_SWITCH_DEVICE I = 4096
 
@@ -74,6 +81,14 @@
 .field public static final SIGNAL_NTSC I = 0
 
 .field public static final SIGNAL_PAL I = 1
+
+.field public static final TCUB_GRAPHIC_OUTPUT_0 I = 1
+
+.field public static final TCUB_GRAPHIC_OUTPUT_1 I = 2
+
+.field public static final TCUB_GRAPHIC_OUTPUT_2 I = 4
+
+.field public static final TCUB_GRAPHIC_OUTPUT_ALL I = 7
 
 .field public static final VIEW_PATTERN_180 I = 2
 
@@ -128,6 +143,18 @@
 .method public getSupportedScreenGainControlTypes()Ljava/util/List;
 .end method
 
+; added in V6
+.method public getSupportedTcUbOutput()Ljava/util/List;
+.end method
+
+; added in V6
+.method public getTcUbOutput()I
+.end method
+
+; added in V6
+.method public invisibleTcUb()V
+.end method
+
 .method public releaseDisplayStatusListener()V
 .end method
 
@@ -135,6 +162,10 @@
 .end method
 
 .method public releaseOnScreenDisplayListener()V
+.end method
+
+; added in V6
+.method public releaseOrientationRollListener()V
 .end method
 
 .method public setDisplayStatusListener(Lcom/sony/scalar/hardware/avio/DisplayManager$DisplayEventListener;)V
@@ -150,12 +181,20 @@
 .method public setOnScreenDisplayListener(Lcom/sony/scalar/hardware/avio/DisplayManager$OnScreenDisplayListener;)V
 .end method
 
+; added in V6
+.method public setOrientationRollListener(Lcom/sony/scalar/hardware/avio/DisplayManager$OrientationRollListener;)V
+.end method
+
 ; added in V3
 .method public setSavingBatteryMode(Ljava/lang/String;)V
 .end method
 
 ; added in V3
 .method public setScreenGainControlType(Ljava/lang/String;)V
+.end method
+
+; added in V6
+.method public setTcUbOutput(I)V
 .end method
 
 ; added in V5
@@ -167,4 +206,8 @@
 .end method
 
 .method public switchDisplayOutputTo(Ljava/lang/String;)V
+.end method
+
+; added in V6
+.method public visibleTcUb(Landroid/graphics/Point;)V
 .end method

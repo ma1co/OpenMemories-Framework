@@ -166,6 +166,8 @@
 
 .field public static final ISV_KEY_IR_STASTOP I = 643
 
+.field public static final ISV_KEY_IR_TC_RESET I = 656
+
 .field public static final ISV_KEY_IR_UP I = 584
 
 .field public static final ISV_KEY_IR_ZOOM_TELE I = 579
@@ -181,6 +183,12 @@
 .field public static final ISV_KEY_LEFT_UP I = 593
 
 .field public static final ISV_KEY_LENS_ATTACH I = 530
+
+.field public static final ISV_KEY_LENS_FOCUS_HOLD I = 653
+
+.field public static final ISV_KEY_LENS_PARTS_OPERATION I = 655
+
+.field public static final ISV_KEY_LENS_PARTS_STATE I = 654
 
 .field public static final ISV_KEY_MENU I = 514
 
@@ -232,6 +240,8 @@
 
 .field public static final ISV_KEY_PROJECTOR I = 626
 
+.field public static final ISV_KEY_RESET I = 658
+
 .field public static final ISV_KEY_RIGHT I = 106
 
 .field public static final ISV_KEY_RIGHT_DOWN I = 592
@@ -277,6 +287,8 @@
 .field public static final ISV_KEY_WATER_HOUSING I = 640
 
 .field public static final ISV_KEY_WB I = 604
+
+.field public static final ISV_KEY_WIFI I = 657
 
 .field public static final ISV_KEY_ZEBRA I = 627
 

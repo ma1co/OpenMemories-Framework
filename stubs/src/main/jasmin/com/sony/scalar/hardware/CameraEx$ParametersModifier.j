@@ -334,6 +334,10 @@
 
 .field public static final PREVIEW_MAGNIFICATION_ON Ljava/lang/String; = "on"
 
+.field public static final PRO_COLOR_MODE_NEUTRAL Ljava/lang/String; = "pro-neutral"
+
+.field public static final PRO_COLOR_MODE_VIVID Ljava/lang/String; = "pro-vivid"
+
 .field public static final QUICK_AF_C_WO_AEL Ljava/lang/String; = "afc_woaf"
 
 .field public static final QUICK_AF_WI_AEL Ljava/lang/String; = "af_wiae"
@@ -351,6 +355,8 @@
 .field public static final SCENE_MODE_ANTI_MOTION_BLUR Ljava/lang/String; = "anti-motion-blur"
 
 .field public static final SCENE_MODE_APERTURE_PRIORITY Ljava/lang/String; = "aperture-priority"
+
+.field public static final SCENE_MODE_AUTO_WO_SR Ljava/lang/String; = "auto-wo-sr"
 
 .field public static final SCENE_MODE_BACKGROUND_DEFOCUS Ljava/lang/String; = "background-defocus"
 
@@ -396,6 +402,8 @@
 
 .field public static final SCENE_MODE_SUNRISE_SUNSET Ljava/lang/String; = "sunrise-sunset"
 
+.field public static final SCENE_MODE_SUPERIOR_AUTO Ljava/lang/String; = "superior_auto"
+
 .field public static final SCENE_MODE_ULTRA_SENSITIVITY Ljava/lang/String; = "ultra-sensitivity"
 
 .field public static final SCENE_MODE_UNDERWATER Ljava/lang/String; = "underwater"
@@ -415,6 +423,10 @@
 .field public static final SOFT_SKIN_EFFECT_MIDDLE Ljava/lang/String; = "middle"
 
 .field public static final SOFT_SKIN_EFFECT_OFF Ljava/lang/String; = "off"
+
+.field public static final TRACKING_FOCUS_OFF Ljava/lang/String; = "off"
+
+.field public static final TRACKING_FOCUS_ON Ljava/lang/String; = "on"
 
 .field public static final WHITE_BALANCE_COLOR_TEMP Ljava/lang/String; = "color-temp"
 
@@ -822,6 +834,10 @@
 .method public getPreviewMagnificationTimeOnManualFocus()I
 .end method
 
+; added in V6
+.method public getProColorMode()Ljava/lang/String;
+.end method
+
 ; added in V3
 .method public getRGBMatrix()[I
 .end method
@@ -1009,6 +1025,10 @@
 .method public getSupportedPreviewMagnification()Ljava/util/List;
 .end method
 
+; added in V6
+.method public getSupportedProColorModes()Ljava/util/List;
+.end method
+
 .method public getSupportedQuickAutoFocus()Ljava/util/List;
 .end method
 
@@ -1025,11 +1045,19 @@
 .method public getSupportedSoftSkinEffects()Ljava/util/List;
 .end method
 
+; added in V6
+.method public getSupportedTrackingFocusModes()Ljava/util/List;
+.end method
+
 ; added in V1
 .method public getSupportedZoomDriveTypes()Ljava/util/List;
 .end method
 
 .method public getToyCameraTuning()I
+.end method
+
+; added in V6
+.method public getTrackingFocus()Ljava/lang/String;
 .end method
 
 ; added in V3
@@ -1331,6 +1359,10 @@
 .method public setPictureStorageFormat(Ljava/lang/String;)V
 .end method
 
+; added in V6
+.method public setProColorMode(Ljava/lang/String;)V
+.end method
+
 ; added in V3
 .method public setRGBMatrix([I)V
 .end method
@@ -1366,6 +1398,10 @@
 .end method
 
 .method public setToyCameraTuning(I)V
+.end method
+
+; added in V6
+.method public setTrackingFocus(Ljava/lang/String;)V
 .end method
 
 ; added in V3

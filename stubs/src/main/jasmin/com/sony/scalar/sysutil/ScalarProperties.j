@@ -26,7 +26,15 @@
 
 .field public static final INTVAL_DEST_INFO_COMMON I = 1
 
+.field public static final INTVAL_GROUP_PRO_CAMERA I = 2
+
+.field public static final INTVAL_GROUP_REMOTE_CAMERA I = 1
+
+.field public static final INTVAL_GROUP_STANDARD_CAMERA I = 0
+
 .field public static final INTVAL_IMAGER_TYPE_NORMAL I = 0
+
+.field public static final INTVAL_INVALID I = 0
 
 .field public static final INTVAL_IRREMOTE_CATEGORY_CAM I = 2
 
@@ -42,6 +50,10 @@
 
 .field public static final INTVAL_NOT_SUPPORTED I = 0
 
+.field public static final INTVAL_NR_OFF I = 0
+
+.field public static final INTVAL_NR_ON I = 1
+
 .field public static final INTVAL_SIGNAL_FREQUENCY_NTSC I = 1
 
 .field public static final INTVAL_SIGNAL_FREQUENCY_PAL I = 0
@@ -51,6 +63,8 @@
 .field public static final INTVAL_SUBLCD_TYPE_NON I = 0
 
 .field public static final INTVAL_SUPPORTED I = 1
+
+.field public static final INTVAL_SUPPORTED_WIRELESS I = 2
 
 .field public static final INTVAL_TP_TYPE_CAPACITIVE I = 2
 
@@ -101,6 +115,8 @@
 .field public static final INTVAL_UI_SCENE_MODE_APERTURE_PRIORITY I = 2051
 
 .field public static final INTVAL_UI_SCENE_MODE_AUTO I = 2049
+
+.field public static final INTVAL_UI_SCENE_MODE_AUTO_WO_SR I = 2117
 
 .field public static final INTVAL_UI_SCENE_MODE_BACKGROUND_DEFOCUS I = 2072
 
@@ -228,6 +244,8 @@
 
 .field public static final INTVAL_UI_SCENE_MODE_SUNSET I = 2059
 
+.field public static final INTVAL_UI_SCENE_MODE_SUPERIOR_AUTO I = 2116
+
 .field public static final INTVAL_UI_SCENE_MODE_ULTRA_SENSITIVITY I = 2076
 
 .field public static final INTVAL_UI_SCENE_MODE_UNDERWATER I = 2073
@@ -245,6 +263,8 @@
 .field public static final INTVAL_UI_UNKNOWN I = -1
 
 .field public static final INTVAL_UI_WO_DIGITAL_LEVEL I = 0
+
+.field public static final INTVAL_VALID I = 1
 
 .field public static final PROP_DEVICE_DIGITAL_LEVEL Ljava/lang/String; = "device.digital.level"
 
@@ -270,6 +290,8 @@
 
 .field public static final PROP_DEVICE_GPS_SUPPORTED Ljava/lang/String; = "device.gps.supported"
 
+.field public static final PROP_DEVICE_GROUND_NOISE_REDUCTION Ljava/lang/String; = "device.ground.noise.reduction"
+
 .field public static final PROP_DEVICE_IMAGER_ASPECT Ljava/lang/String; = "device.imager.aspect"
 
 .field public static final PROP_DEVICE_IMAGER_TYPE Ljava/lang/String; = "device.imager.type"
@@ -277,6 +299,8 @@
 .field public static final PROP_DEVICE_IRREMOTE_CATEGORY Ljava/lang/String; = "device.irremote.category"
 
 .field public static final PROP_DEVICE_MEMORY Ljava/lang/String; = "device.memory"
+
+.field public static final PROP_DEVICE_NFC_SUPPORTED Ljava/lang/String; = "device.nfc.supported"
 
 .field public static final PROP_DEVICE_PANEL_ASPECT Ljava/lang/String; = "device.panel.aspect"
 
@@ -287,6 +311,8 @@
 .field public static final PROP_DEVICE_PANEL_RES_H Ljava/lang/String; = "device.panel.res.h"
 
 .field public static final PROP_DEVICE_PANEL_RES_W Ljava/lang/String; = "device.panel.res.w"
+
+.field public static final PROP_DEVICE_RTC_SUPPORTED Ljava/lang/String; = "device.rtc.supported"
 
 .field public static final PROP_DEVICE_WIFI_SUPPORTED Ljava/lang/String; = "device.wifi.supported"
 
@@ -314,6 +340,8 @@
 
 .field public static final PROP_MODEL_CODE Ljava/lang/String; = "model.code"
 
+.field public static final PROP_MODEL_GROUP Ljava/lang/String; = "model.group"
+
 .field public static final PROP_MODEL_NAME Ljava/lang/String; = "model.name"
 
 .field public static final PROP_MODEL_SERIAL_CODE Ljava/lang/String; = "model.serial.code"
@@ -326,17 +354,25 @@
 
 .field public static final PROP_UI_DOWN_KEY_ASSIGN_IN_PLAYBACK Ljava/lang/String; = "ui.down.key.assign.in.playback"
 
+.field public static final PROP_UI_FAST_SUSPEND_SUPPORTED Ljava/lang/String; = "ui.fast.suspend.supported"
+
 .field public static final PROP_UI_MAIN_FEATURE Ljava/lang/String; = "ui.main.feature"
 
 .field public static final PROP_UI_MF_OPERATION Ljava/lang/String; = "ui.mf.operation"
 
 .field public static final PROP_UI_MODIFICATION_PATCH_BITS0 Ljava/lang/String; = "ui.modification.patch.bits0"
 
+.field public static final PROP_UI_MOVIE_REC_QUICK_RESTART_SUPPORTED Ljava/lang/String; = "ui.movie.rec.quick.restart.supported"
+
+.field public static final PROP_UI_NEED_SET_TIME Ljava/lang/String; = "ui.need.set.time"
+
 .field public static final PROP_UI_PLAYBACK_TYPE Ljava/lang/String; = "ui.playback.type"
 
 .field public static final PROP_UI_PLAYBACK_ZOOM_TYPE Ljava/lang/String; = "ui.playback.zoom.type"
 
 .field public static final PROP_UI_PREVIEW_MAGNIFICATION Ljava/lang/String; = "ui.preview.magnification"
+
+.field public static final PROP_UI_REMOTE_LIVE_VIEW_ROTATION Ljava/lang/String; = "ui.remote.live.view.rotation"
 
 .field public static final PROP_UI_SCENE_MODE_LIST Ljava/lang/String; = "ui.scene.mode.list"
 

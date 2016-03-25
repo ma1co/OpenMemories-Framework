@@ -47,6 +47,10 @@
 
 .field public static final LID_WIFI_STATE Ljava/lang/String; = "LID_SUBLCD_WIFI_STATE"
 
+.field public static final LID_WIFI_STATE_LIVE_STREAM Ljava/lang/String; = "LID_SUBLCD_WIFI_STATE_LIVE_STREAM"
+
+.field public static final LID_WIFI_STATE_MULTI Ljava/lang/String; = "LID_SUBLCD_WIFI_STATE_MULTI"
+
 .field public static final LKID_AIRPLANE Ljava/lang/String; = "LKID_SUBLCD_AIRPLANE"
 
 .field public static final LKID_BATTERY_STATE_LV0 Ljava/lang/String; = "LKID_SUBLCD_BATTERY_STATE_LV0"
@@ -94,6 +98,10 @@
 .field public static final LKID_STEADY_SHOT Ljava/lang/String; = "LKID_SUBLCD_STEADY_SHOT"
 
 .field public static final LKID_WIFI_STATE Ljava/lang/String; = "LKID_SUBLCD_WIFI_STATE"
+
+.field public static final LKID_WIFI_STATE_LIVE_STREAM Ljava/lang/String; = "LKID_SUBLCD_WIFI_STATE_LIVE_STREAM"
+
+.field public static final LKID_WIFI_STATE_MULTI Ljava/lang/String; = "LKID_SUBLCD_WIFI_STATE_MULTI"
 
 .method public <init>(Lcom/sony/scalar/hardware/indicator/SubLCD;)V
 .end method

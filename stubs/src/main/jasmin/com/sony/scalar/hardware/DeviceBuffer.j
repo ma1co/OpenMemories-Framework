@@ -18,6 +18,10 @@
 .method public read(Ljava/nio/ByteBuffer;II)I
 .end method
 
+; added in V6
+.method public read(Ljava/nio/ByteBuffer;III)I
+.end method
+
 .method public read([B)I
 .end method
 

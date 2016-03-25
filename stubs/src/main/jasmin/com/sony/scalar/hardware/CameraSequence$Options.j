@@ -32,6 +32,8 @@
 
 .field public static final MEMORY_MAP_FILE Ljava/lang/String; = "MEMORY_MAP_FILE"
 
+.field public static final PARSE_RAW_INFO Ljava/lang/String; = "PARSE_RAW_INFO"
+
 .field public static final PREVIEW_DEBUG_NOTIFY_ENABLED Ljava/lang/String; = "PREVIEW_DEBUG_NOTIFY_ENABLED"
 
 .field public static final PREVIEW_FRAME_FORMAT Ljava/lang/String; = "PREVIEW_FRAME_FORMAT"
@@ -53,6 +55,10 @@
 .field public static final PREVIEW_PLUGIN_RECORD_ENABLED Ljava/lang/String; = "PREVIEW_PLUGIN_RECORD_ENABLED"
 
 .field public static final RECORD_COUNT Ljava/lang/String; = "RECORD_COUNT"
+
+.field public static final SPLIT_EXPOSURE_COUNT_LIMIT Ljava/lang/String; = "SPLIT_EXPOSURE_COUNT_LIMIT"
+
+.field public static final SPLIT_EXPOSURE_INTERVAL Ljava/lang/String; = "SPLIT_EXPOSURE_INTERVAL"
 
 .method public <init>()V
 .end method
