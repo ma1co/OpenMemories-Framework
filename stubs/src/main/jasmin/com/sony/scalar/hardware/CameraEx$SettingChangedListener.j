@@ -38,6 +38,8 @@
 
 .field public static final TYPE_MOVIE_ANTI_HAND_BLUR_MODE I = 19
 
+.field public static final TYPE_ND_FILTER I = 23
+
 .field public static final TYPE_RED_EYE_REDUCTION_MODE I = 14
 
 .field public static final TYPE_REMOTE_CONTROL_MODE I = 13

@@ -117,3 +117,7 @@
 
 .method public static updateGps(Landroid/content/ContentResolver;Landroid/net/Uri;JLandroid/content/ContentValues;)I
 .end method
+
+; added in V5
+.method public static updateMultiAttribute(Landroid/content/ContentResolver;Landroid/net/Uri;[JLcom/sony/scalar/provider/AvindexUpdateObserver;)I
+.end method

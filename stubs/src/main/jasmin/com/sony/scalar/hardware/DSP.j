@@ -18,6 +18,10 @@
 .method public createImage(II)Lcom/sony/scalar/hardware/DeviceMemory;
 .end method
 
+; added in V5
+.method public directCreateBuffer(I)Lcom/sony/scalar/hardware/DeviceBuffer;
+.end method
+
 .method public execute()Z
 .end method
 

@@ -13,6 +13,7 @@
 .inner class public static interface abstract FlashEmittingListener inner com/sony/scalar/hardware/CameraEx$FlashEmittingListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract ProgramLineRangeOverListener inner com/sony/scalar/hardware/CameraEx$ProgramLineRangeOverListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract SettingChangedListener inner com/sony/scalar/hardware/CameraEx$SettingChangedListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract NDFilterStatusListener inner com/sony/scalar/hardware/CameraEx$NDFilterStatusListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract FocusLightStateListener inner com/sony/scalar/hardware/CameraEx$FocusLightStateListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract FlashChargingStateListener inner com/sony/scalar/hardware/CameraEx$FlashChargingStateListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static ExternalFlashInfo inner com/sony/scalar/hardware/CameraEx$ExternalFlashInfo outer com/sony/scalar/hardware/CameraEx
@@ -60,6 +61,10 @@
 
 .field public static final FOCUS_DRIVE_DIRECTION_NEAR I = 0
 
+.field public static final MOVIE_MODE_MULTI_STREAMING I = 1
+
+.field public static final MOVIE_MODE_SINGLE I = 0
+
 .field public static final PREVIEW_ASPECT_TYPE_16_9 I = 1
 
 .field public static final PREVIEW_ASPECT_TYPE_3_2 I = 0
@@ -67,6 +72,8 @@
 .field public static final PROGRAM_LINE_RESET I = 0
 
 .field public static final RECORDING_MODE_MOVIE I = 1
+
+.field public static final RECORDING_MODE_MULTI_MOVIE I = 1
 
 .field public static final RECORDING_MODE_STILL I = 0
 
@@ -281,6 +288,10 @@
 .end method
 
 .method public setJpegListener(Lcom/sony/scalar/hardware/CameraEx$JpegListener;)V
+.end method
+
+; added in V5
+.method public final setNDFilterListener(Lcom/sony/scalar/hardware/CameraEx$NDFilterStatusListener;)V
 .end method
 
 .method public final setPowerZoomListener(Lcom/sony/scalar/hardware/CameraEx$PowerZoomListener;)V

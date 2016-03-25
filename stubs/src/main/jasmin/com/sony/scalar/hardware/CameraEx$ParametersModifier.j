@@ -160,6 +160,10 @@
 
 .field public static final FLEXIBLE_SPOT_SIZE_S Ljava/lang/String; = "small"
 
+.field public static final FLIP_IMAGE_LEFT_RIGHT Ljava/lang/String; = "flip-left-right"
+
+.field public static final FLIP_IMAGE_UP_DOWN Ljava/lang/String; = "flip-up-down"
+
 .field public static final FOCUS_AREA_MODE_CENTER Ljava/lang/String; = "center"
 
 .field public static final FOCUS_AREA_MODE_CENTER_SPOT Ljava/lang/String; = "center-spot"
@@ -243,6 +247,12 @@
 .field public static final MOVIE_ANTI_HAND_BLUR_MODE_OFF Ljava/lang/String; = "off"
 
 .field public static final MOVIE_ANTI_HAND_BLUR_MODE_STANDARD Ljava/lang/String; = "standard"
+
+.field public static final ND_FILTER_AUTO Ljava/lang/String; = "auto"
+
+.field public static final ND_FILTER_OFF Ljava/lang/String; = "off"
+
+.field public static final ND_FILTER_ON Ljava/lang/String; = "on"
 
 .field public static final PICTURE_EFFECT_HDR_ART Ljava/lang/String; = "hdr-art"
 
@@ -744,6 +754,10 @@
 .method public getMultiShootNRMode()Z
 .end method
 
+; added in V5
+.method public getNDFilter()Ljava/lang/String;
+.end method
+
 .method public getNumOfBracketPicture()I
 .end method
 
@@ -917,6 +931,10 @@
 .method public getSupportedFlashTypes()Ljava/util/List;
 .end method
 
+; added in V5
+.method public getSupportedFlipModes()Ljava/util/List;
+.end method
+
 ; added in V3
 .method public getSupportedFocusAreaFlexibleSpotSizes()Ljava/util/List;
 .end method
@@ -953,6 +971,10 @@
 
 ; added in V3
 .method public getSupportedMovieAntiHandBlurModes()Ljava/util/List;
+.end method
+
+; added in V5
+.method public getSupportedNDFilters()Ljava/util/List;
 .end method
 
 .method public getSupportedNumsOfBracketPicture()Ljava/util/List;
@@ -1038,6 +1060,10 @@
 
 ; added in V3
 .method public isExtendedGammaTableSupported()Z
+.end method
+
+; added in V5
+.method public isFlip(Ljava/lang/String;)Z
 .end method
 
 ; added in V3
@@ -1191,6 +1217,10 @@
 .method public setFlashType(Ljava/lang/String;)V
 .end method
 
+; added in V5
+.method public setFlip(Ljava/lang/String;Z)V
+.end method
+
 ; added in V3
 .method public setFocusAreaFlexibleSpotSize(Ljava/lang/String;)V
 .end method
@@ -1242,6 +1272,10 @@
 .end method
 
 .method public setMultiShootNRMode(Z)V
+.end method
+
+; added in V5
+.method public setNDFilter(Ljava/lang/String;)V
 .end method
 
 .method public setNumOfBracketPicture(I)V

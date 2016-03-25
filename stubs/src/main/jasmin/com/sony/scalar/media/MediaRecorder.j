@@ -1,6 +1,7 @@
 ; added in V3
 .class public com/sony/scalar/media/MediaRecorder
 .super java/lang/Object
+.inner class public static StreamBuffer inner com/sony/scalar/media/MediaRecorder$StreamBuffer outer com/sony/scalar/media/MediaRecorder
 .inner class public static Parameters inner com/sony/scalar/media/MediaRecorder$Parameters outer com/sony/scalar/media/MediaRecorder
 .inner class public static CamcorderProfile inner com/sony/scalar/media/MediaRecorder$CamcorderProfile outer com/sony/scalar/media/MediaRecorder
 .inner class public static interface abstract OnRecRemainListener inner com/sony/scalar/media/MediaRecorder$OnRecRemainListener outer com/sony/scalar/media/MediaRecorder
@@ -16,6 +17,10 @@
 .field public static final MEDIA_RECORDER_ERROR_SERVER_DIED I = 100
 
 .field public static final MEDIA_RECORDER_ERROR_UNKNOWN I = 1
+
+.field public static final PRIORITY_MAIN I = 0
+
+.field public static final PRIORITY_SUB I = 1
 
 .method public <init>()V
 .end method
@@ -66,6 +71,14 @@
 .end method
 
 .method public setParameters(Lcom/sony/scalar/media/MediaRecorder$Parameters;)V
+.end method
+
+; added in V5
+.method public setPriority(I)V
+.end method
+
+; added in V5
+.method public setStreamBuffer(Lcom/sony/scalar/media/MediaRecorder$StreamBuffer;)V
 .end method
 
 .method public setVideoSource(I)V

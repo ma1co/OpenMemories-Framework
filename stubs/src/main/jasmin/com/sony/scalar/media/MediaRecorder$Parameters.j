@@ -7,9 +7,13 @@
 
 .field public static final OUTPUT_FORMAT_MPEG_4 Ljava/lang/String; = "MPEG4"
 
+.field public static final OUTPUT_FORMAT_XAVC_S Ljava/lang/String; = "XAVCS"
+
 .field public static final VIDEO_ASPECT_RATIO_16_9 Ljava/lang/String; = "16_9"
 
 .field public static final VIDEO_ASPECT_RATIO_4_3 Ljava/lang/String; = "4_3"
+
+.field public static final VIDEO_ENCODING_BIT_RATE_50M Ljava/lang/String; = "50M"
 
 .field public static final VIDEO_ENCODING_BIT_RATE_FH Ljava/lang/String; = "FH"
 
@@ -24,6 +28,10 @@
 .field public static final VIDEO_ENCODING_BIT_RATE_PS Ljava/lang/String; = "PS"
 
 .field public static final VIDEO_ENCODING_BIT_RATE_SP Ljava/lang/String; = "SP"
+
+.field public static final VIDEO_FRAME_RATE_100P Ljava/lang/String; = "100p"
+
+.field public static final VIDEO_FRAME_RATE_120P Ljava/lang/String; = "120p"
 
 .field public static final VIDEO_FRAME_RATE_24P Ljava/lang/String; = "24p"
 
@@ -42,6 +50,8 @@
 .field public static final VIDEO_SIZE_HD_1080 Ljava/lang/String; = "HD_1080"
 
 .field public static final VIDEO_SIZE_HD_720 Ljava/lang/String; = "HD_720"
+
+.field public static final VIDEO_SIZE_HVGAW Ljava/lang/String; = "HVGAW"
 
 .field public static final VIDEO_SIZE_SD Ljava/lang/String; = "SD"
 

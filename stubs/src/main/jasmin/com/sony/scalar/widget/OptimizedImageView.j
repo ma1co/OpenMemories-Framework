@@ -10,6 +10,7 @@
 .inner class public static RotationAngle inner com/sony/scalar/widget/OptimizedImageView$RotationAngle outer com/sony/scalar/widget/OptimizedImageView
 .inner class public static LayoutInfo inner com/sony/scalar/widget/OptimizedImageView$LayoutInfo outer com/sony/scalar/widget/OptimizedImageView
 .inner class public static Translatability inner com/sony/scalar/widget/OptimizedImageView$Translatability outer com/sony/scalar/widget/OptimizedImageView
+.inner class public static final enum RedrawMode inner com/sony/scalar/widget/OptimizedImageView$RedrawMode outer com/sony/scalar/widget/OptimizedImageView
 .inner class public static interface abstract OnLayoutChangeListener inner com/sony/scalar/widget/OptimizedImageView$OnLayoutChangeListener outer com/sony/scalar/widget/OptimizedImageView
 
 .method public <init>(Landroid/content/Context;)V
@@ -31,6 +32,10 @@
 .end method
 
 .method public getPivot()Landroid/graphics/Point;
+.end method
+
+; added in V5
+.method public getRedrawMode()Lcom/sony/scalar/widget/OptimizedImageView$RedrawMode;
 .end method
 
 .method public getRotationAngle()I
@@ -85,6 +90,10 @@
 .end method
 
 .method public setPivot(Landroid/graphics/Point;)V
+.end method
+
+; added in V5
+.method public setRedrawMode(Lcom/sony/scalar/widget/OptimizedImageView$RedrawMode;)V
 .end method
 
 .method public setRotationAngle(I)V

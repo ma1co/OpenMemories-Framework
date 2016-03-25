@@ -1,6 +1,14 @@
 .class public com/sony/scalar/hardware/DeviceBuffer
 .super com/sony/scalar/hardware/DeviceMemory
 
+; added in V5
+.method public copy(III)I
+.end method
+
+; added in V5
+.method public copy(Lcom/sony/scalar/hardware/DeviceBuffer;III)I
+.end method
+
 .method public getSize()I
 .end method
 
@@ -14,6 +22,10 @@
 .end method
 
 .method public read([BIII)I
+.end method
+
+; added in V5
+.method public release()V
 .end method
 
 ; added in V3

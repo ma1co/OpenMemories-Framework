@@ -53,6 +53,8 @@
 
 .field public static final HDMI_FMT_INVALID I = 0
 
+.field public static final HDMI_FMT_QFHD I = 6
+
 .field public static final OSD_OUTPUT_OFF Ljava/lang/String; = "OSD_OUTPUT_OFF"
 
 .field public static final OSD_OUTPUT_ON Ljava/lang/String; = "OSD_OUTPUT_ON"
@@ -154,6 +156,14 @@
 
 ; added in V3
 .method public setScreenGainControlType(Ljava/lang/String;)V
+.end method
+
+; added in V5
+.method public startQfhdFormatOutput()V
+.end method
+
+; added in V5
+.method public stopQfhdFormatOutput()V
 .end method
 
 .method public switchDisplayOutputTo(Ljava/lang/String;)V

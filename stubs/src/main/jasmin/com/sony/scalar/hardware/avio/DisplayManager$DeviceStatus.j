@@ -14,4 +14,7 @@
 
 .field public ntpal I
 
+; added in V5
+.field public qfhdFormatSupported Z
+
 .field public viewPattern I

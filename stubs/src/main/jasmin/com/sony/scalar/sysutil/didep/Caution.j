@@ -9914,11 +9914,17 @@
 
 .field public static final MODE_ID_MAX I = 17
 
+.field public static final MODE_ID_MAX_2 I = 19
+
 .field public static final MODE_ID_MENU I = 14
+
+.field public static final MODE_ID_MOVIE_REC I = 17
 
 .field public static final MODE_ID_MOVIE_REC_AVCHD I = 6
 
 .field public static final MODE_ID_MOVIE_REC_BGM I = 8
+
+.field public static final MODE_ID_MOVIE_REC_CAPTURING I = 18
 
 .field public static final MODE_ID_MOVIE_REC_DVD I = 4
 

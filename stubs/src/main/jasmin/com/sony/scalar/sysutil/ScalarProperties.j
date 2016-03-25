@@ -46,6 +46,10 @@
 
 .field public static final INTVAL_SIGNAL_FREQUENCY_PAL I = 0
 
+.field public static final INTVAL_SUBLCD_TYPE_1 I = 1
+
+.field public static final INTVAL_SUBLCD_TYPE_NON I = 0
+
 .field public static final INTVAL_SUPPORTED I = 1
 
 .field public static final INTVAL_TP_TYPE_CAPACITIVE I = 2
@@ -230,6 +234,10 @@
 
 .field public static final INTVAL_UI_SCENE_MODE_UP_LAYER I = 2303
 
+.field public static final INTVAL_UI_SHORTCUT_KEY_FOR_4K_OUTPUT_AVAILABLE I = 1
+
+.field public static final INTVAL_UI_SHORTCUT_KEY_FOR_4K_OUTPUT_UNAVAILABLE I = 0
+
 .field public static final INTVAL_UI_STEADY_SHOT_COMMON I = 0
 
 .field public static final INTVAL_UI_STEADY_SHOT_DIVISION I = 1
@@ -284,6 +292,10 @@
 
 .field public static final PROP_DEVICE_ZOOM_LEVER Ljava/lang/String; = "device.zoom.lever"
 
+.field public static final PROP_DSP_ZOOM_NR_SUPPORTED Ljava/lang/String; = "dsp.zoomnr.supported"
+
+.field public static final PROP_DVICE_SUBLCD_TYPE Ljava/lang/String; = "device.sublcd.type"
+
 .field public static final PROP_INPUT_EV_DIAL_POSITION_LIST Ljava/lang/String; = "input.ev.dial.position.list"
 
 .field public static final PROP_INPUT_MODE_SW_MODE_LIST Ljava/lang/String; = "input.mode.sw.mode.list"
@@ -327,6 +339,8 @@
 .field public static final PROP_UI_PREVIEW_MAGNIFICATION Ljava/lang/String; = "ui.preview.magnification"
 
 .field public static final PROP_UI_SCENE_MODE_LIST Ljava/lang/String; = "ui.scene.mode.list"
+
+.field public static final PROP_UI_SHORTCUT_KEY_FOR_4K_OUTPUT Ljava/lang/String; = "ui.shortcut.key.for.4k.output"
 
 .field public static final PROP_UI_STEADY_SHOT Ljava/lang/String; = "ui.steady.shot"
 
