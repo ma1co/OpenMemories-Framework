@@ -60,6 +60,8 @@
 
 .field public static final INTVAL_UI_DIGITAL_LEVEL_ROLL_AND_PITCH I = 1
 
+.field public static final INTVAL_UI_INDEX_TRANSITION I = 0
+
 .field public static final INTVAL_UI_MAIN_FEATURE_MOVIE I = 1
 
 .field public static final INTVAL_UI_MAIN_FEATURE_STILL I = 0
@@ -71,6 +73,8 @@
 .field public static final INTVAL_UI_MODE_DIAL_LEFT I = 2
 
 .field public static final INTVAL_UI_MODE_DIAL_RIGHT I = 1
+
+.field public static final INTVAL_UI_NORMAL_DOWN_KEY I = 1
 
 .field public static final INTVAL_UI_NO_DIAL I = 0
 
@@ -236,6 +240,12 @@
 
 .field public static final PROP_DEVICE_DIGITAL_LEVEL Ljava/lang/String; = "device.digital.level"
 
+.field public static final PROP_DEVICE_EVF_EXTERNAL_ASPECT Ljava/lang/String; = "device.evf.external.aspect"
+
+.field public static final PROP_DEVICE_EVF_EXTERNAL_RES_H Ljava/lang/String; = "device.evf.external.res.h"
+
+.field public static final PROP_DEVICE_EVF_EXTERNAL_RES_W Ljava/lang/String; = "device.evf.external.res.w"
+
 .field public static final PROP_DEVICE_EVF_EXTERNAL_SUPPORTED Ljava/lang/String; = "device.evf.external.supported"
 
 .field public static final PROP_DEVICE_EVF_INTERNAL_ASPECT Ljava/lang/String; = "device.evf.internal.aspect"
@@ -301,6 +311,8 @@
 .field public static final PROP_UI_BATTERY_THRESHOLD_LIST Ljava/lang/String; = "ui.battery.threshold.list"
 
 .field public static final PROP_UI_DIGITAL_LEVEL_TYPE Ljava/lang/String; = "ui.digital.level.type"
+
+.field public static final PROP_UI_DOWN_KEY_ASSIGN_IN_PLAYBACK Ljava/lang/String; = "ui.down.key.assign.in.playback"
 
 .field public static final PROP_UI_MAIN_FEATURE Ljava/lang/String; = "ui.main.feature"
 
