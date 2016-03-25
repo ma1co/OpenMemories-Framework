@@ -28,9 +28,19 @@
 
 .field public static final INTVAL_CUSTOM_WHITE_BALANCE_SET I = 0
 
+.field public static final INTVAL_DEV_LOG_LEVEL_DEVELOPMENT I = 2
+
+.field public static final INTVAL_DEV_LOG_LEVEL_OFF I = 0
+
+.field public static final INTVAL_DEV_LOG_LEVEL_PERFORMANCE I = 1
+
 .field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_CONFIG I = 7
 
 .field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_DEFAULT I = 0
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_DEFAULT_MOVIE I = 10
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_DEFAULT_PHOTO I = 11
 
 .field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_INTERVALREC I = 4
 
@@ -44,6 +54,12 @@
 
 .field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_PLAY I = 6
 
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_SETUP I = 8
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_SSBI_BOOT I = 12
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_WB_CSET I = 9
+
 .field public static final INTVAL_GROUP_PRO_CAMERA I = 2
 
 .field public static final INTVAL_GROUP_REMOTE_CAMERA I = 1
@@ -53,6 +69,12 @@
 .field public static final INTVAL_IMAGER_TYPE_NORMAL I = 0
 
 .field public static final INTVAL_INVALID I = 0
+
+.field public static final INTVAL_IRIS_RING_TYPE_1 I = 1
+
+.field public static final INTVAL_IRIS_RING_TYPE_2 I = 2
+
+.field public static final INTVAL_IRIS_RING_TYPE_NONE I = 0
 
 .field public static final INTVAL_IRREMOTE_CATEGORY_CAM I = 2
 
@@ -106,6 +128,10 @@
 
 .field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_SCALAR I = 6
 
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_SETUP I = 8
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_SSBI_BOOT I = 9
+
 .field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_USB I = 5
 
 .field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_WIFI_KEY I = 2
@@ -118,6 +144,10 @@
 
 .field public static final INTVAL_SUBLCD_TYPE_1 I = 1
 
+.field public static final INTVAL_SUBLCD_TYPE_2 I = 2
+
+.field public static final INTVAL_SUBLCD_TYPE_3 I = 3
+
 .field public static final INTVAL_SUBLCD_TYPE_NON I = 0
 
 .field public static final INTVAL_SUPPORTED I = 1
@@ -127,6 +157,10 @@
 .field public static final INTVAL_SYS_DEST_CHINA I = 2
 
 .field public static final INTVAL_SYS_DEST_COMMON I = 1
+
+.field public static final INTVAL_TC_FMT_DF I = 0
+
+.field public static final INTVAL_TC_FMT_NDF I = 1
 
 .field public static final INTVAL_TP_TYPE_CAPACITIVE I = 2
 
@@ -314,6 +348,10 @@
 
 .field public static final INTVAL_UI_SCENE_MODE_UP_LAYER I = 2303
 
+.field public static final INTVAL_UI_SETTING_INHERITANCE_TYPE_0 I = 0
+
+.field public static final INTVAL_UI_SETTING_INHERITANCE_TYPE_1 I = 1
+
 .field public static final INTVAL_UI_SHORTCUT_KEY_FOR_4K_OUTPUT_AVAILABLE I = 1
 
 .field public static final INTVAL_UI_SHORTCUT_KEY_FOR_4K_OUTPUT_UNAVAILABLE I = 0
@@ -327,6 +365,12 @@
 .field public static final INTVAL_UI_WO_DIGITAL_LEVEL I = 0
 
 .field public static final INTVAL_VALID I = 1
+
+.field public static final MODIFICATION_PATCH_BIT1 I = 1
+
+.field public static final MODIFICATION_PATCH_BIT2 I = 2
+
+.field public static final MODIFICATION_PATCH_BIT3 I = 4
 
 .field public static final NET_DEVICE_INFO_WPS_UUID_BSS Ljava/lang/String; = "net.device.info.wps.uuid.bss"
 
@@ -368,6 +412,8 @@
 
 .field public static final PROP_DEVICE_IMAGER_TYPE Ljava/lang/String; = "device.imager.type"
 
+.field public static final PROP_DEVICE_IRIS_RING_TYPE Ljava/lang/String; = "device.iris.ring.type"
+
 .field public static final PROP_DEVICE_IRREMOTE_CATEGORY Ljava/lang/String; = "device.irremote.category"
 
 .field public static final PROP_DEVICE_MECHANICAL_SHUTTER Ljava/lang/String; = "device.mechanical.shutter"
@@ -391,6 +437,8 @@
 .field public static final PROP_DEVICE_WIFI_SUPPORTED Ljava/lang/String; = "device.wifi.supported"
 
 .field public static final PROP_DEVICE_ZOOM_LEVER Ljava/lang/String; = "device.zoom.lever"
+
+.field public static final PROP_DEV_LOG_LEVEL Ljava/lang/String; = "dev.log.level"
 
 .field public static final PROP_DIADEM_2_SCALAR_TRANSITION_MODE Ljava/lang/String; = "diadem.2.scalar.transition.mode"
 
@@ -432,7 +480,11 @@
 
 .field public static final PROP_SYS_DEST Ljava/lang/String; = "sys.dest"
 
+.field public static final PROP_TC_FORMAT_MODE_5060P Ljava/lang/String; = "tc.format.mode.5060p"
+
 .field public static final PROP_UI_BATTERY_THRESHOLD_LIST Ljava/lang/String; = "ui.battery.threshold.list"
+
+.field public static final PROP_UI_BULB_SUPPORTED Ljava/lang/String; = "ui.bulb.supported"
 
 .field public static final PROP_UI_CUSTOM_WHITE_BALANCE_TYPE Ljava/lang/String; = "ui.custom.wb.type"
 
@@ -452,6 +504,8 @@
 
 .field public static final PROP_UI_MF_OPERATION Ljava/lang/String; = "ui.mf.operation"
 
+.field public static final PROP_UI_MODEL_NAME Ljava/lang/String; = "ui.model.mame"
+
 .field public static final PROP_UI_MODIFICATION_PATCH_BITS0 Ljava/lang/String; = "ui.modification.patch.bits0"
 
 .field public static final PROP_UI_MOVIE_REC_QUICK_RESTART_SUPPORTED Ljava/lang/String; = "ui.movie.rec.quick.restart.supported"
@@ -467,6 +521,8 @@
 .field public static final PROP_UI_REMOTE_LIVE_VIEW_ROTATION Ljava/lang/String; = "ui.remote.live.view.rotation"
 
 .field public static final PROP_UI_SCENE_MODE_LIST Ljava/lang/String; = "ui.scene.mode.list"
+
+.field public static final PROP_UI_SETTING_INHERITANCE_TYPE Ljava/lang/String; = "ui.setting.inheritance.type"
 
 .field public static final PROP_UI_SHORTCUT_KEY_FOR_4K_OUTPUT Ljava/lang/String; = "ui.shortcut.key.for.4k.output"
 

@@ -19,6 +19,9 @@
 
 .field public FocalLength Lcom/sony/scalar/hardware/CameraEx$WideTele;
 
+; added in V14
+.field public LensId J
+
 .field public LensName Ljava/lang/String;
 
 .field public LensType Ljava/lang/String;

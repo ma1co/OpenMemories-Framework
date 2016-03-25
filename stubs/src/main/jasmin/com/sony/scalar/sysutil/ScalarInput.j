@@ -88,11 +88,15 @@
 
 .field public static final ISV_KEY_BODY_AFMF I = 590
 
+.field public static final ISV_KEY_CAMCTRL I = 677
+
 .field public static final ISV_KEY_CUSTOM I = 588
 
 .field public static final ISV_KEY_CUSTOM1 I = 622
 
 .field public static final ISV_KEY_CUSTOM2 I = 623
+
+.field public static final ISV_KEY_CUSTOM3 I = 659
 
 .field public static final ISV_KEY_DELETE I = 595
 
@@ -144,6 +148,8 @@
 
 .field public static final ISV_KEY_IR_ENTER I = 583
 
+.field public static final ISV_KEY_IR_FRAME_LOCK I = 679
+
 .field public static final ISV_KEY_IR_HISTOGRAM I = 574
 
 .field public static final ISV_KEY_IR_INDEX I = 575
@@ -151,6 +157,8 @@
 .field public static final ISV_KEY_IR_LEFT I = 587
 
 .field public static final ISV_KEY_IR_MENU I = 581
+
+.field public static final ISV_KEY_IR_MODE I = 678
 
 .field public static final ISV_KEY_IR_PLAY I = 577
 
@@ -175,6 +183,30 @@
 .field public static final ISV_KEY_IR_ZOOM_WIDE I = 580
 
 .field public static final ISV_KEY_ISO I = 603
+
+.field public static final ISV_KEY_LANC_CONNECT_PHOTOREC I = 672
+
+.field public static final ISV_KEY_LANC_CONNECT_SS I = 671
+
+.field public static final ISV_KEY_LANC_DISP I = 666
+
+.field public static final ISV_KEY_LANC_DOWN I = 670
+
+.field public static final ISV_KEY_LANC_ENTER I = 665
+
+.field public static final ISV_KEY_LANC_LEFT I = 669
+
+.field public static final ISV_KEY_LANC_PHOTOREC I = 674
+
+.field public static final ISV_KEY_LANC_POWER_MODE I = 673
+
+.field public static final ISV_KEY_LANC_RECSTOP I = 664
+
+.field public static final ISV_KEY_LANC_RIGHT I = 668
+
+.field public static final ISV_KEY_LANC_STASTOP I = 663
+
+.field public static final ISV_KEY_LANC_UP I = 667
 
 .field public static final ISV_KEY_LEFT I = 105
 
@@ -216,6 +248,8 @@
 
 .field public static final ISV_KEY_MODE_FLASH_OFF I = 548
 
+.field public static final ISV_KEY_MODE_HFR I = 680
+
 .field public static final ISV_KEY_MODE_HQAUTO I = 536
 
 .field public static final ISV_KEY_MODE_INVALID I = 534
@@ -231,6 +265,10 @@
 .field public static final ISV_KEY_MODE_PROGRAM I = 537
 
 .field public static final ISV_KEY_MODE_SCN I = 545
+
+.field public static final ISV_KEY_MYVOICE_CANCEL I = 675
+
+.field public static final ISV_KEY_NIGHTSHOT I = 676
 
 .field public static final ISV_KEY_PEAKING I = 625
 
@@ -283,6 +321,12 @@
 .field public static final ISV_KEY_UNKNOWN I = 767
 
 .field public static final ISV_KEY_UP I = 103
+
+.field public static final ISV_KEY_VGRIP_CUSTOM1 I = 660
+
+.field public static final ISV_KEY_VGRIP_CUSTOM2 I = 661
+
+.field public static final ISV_KEY_VGRIP_CUSTOM3 I = 662
 
 .field public static final ISV_KEY_WATER_HOUSING I = 640
 

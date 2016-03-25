@@ -12,6 +12,12 @@
 
 .field public static final ANGLE_170 Ljava/lang/String; = "angle_170"
 
+.field public static final ANGLE_MIDDLE Ljava/lang/String; = "angle_middle"
+
+.field public static final ANGLE_NARROW Ljava/lang/String; = "angle_narrow"
+
+.field public static final ANGLE_WIDE Ljava/lang/String; = "angle_wide"
+
 .field public static final ANTI_HAND_BLUR_INFO_FROM_LENS Ljava/lang/String; = "from-lens"
 
 .field public static final ANTI_HAND_BLUR_INFO_MANUAL Ljava/lang/String; = "manual"
@@ -21,6 +27,18 @@
 .field public static final ANTI_HAND_BLUR_MODE_OFF Ljava/lang/String; = "off"
 
 .field public static final ANTI_HAND_BLUR_MODE_SHOOT Ljava/lang/String; = "onetime"
+
+.field public static final APERTURE_STF_LEVEL_HI Ljava/lang/String; = "hi"
+
+.field public static final APERTURE_STF_LEVEL_LOW Ljava/lang/String; = "low"
+
+.field public static final APERTURE_STF_LEVEL_MID Ljava/lang/String; = "mid"
+
+.field public static final APERTURE_STF_LEVEL_OFF Ljava/lang/String; = "off"
+
+.field public static final APERTURE_STF_MODE_OFF Ljava/lang/String; = "off"
+
+.field public static final APERTURE_STF_MODE_ON Ljava/lang/String; = "on"
 
 .field public static final APSC_MODE_AUTO Ljava/lang/String; = "auto"
 
@@ -223,6 +241,18 @@
 .field public static final IMAGE_SIZE_S Ljava/lang/String; = "small"
 
 .field public static final IMAGE_SIZE_VGA Ljava/lang/String; = "vga"
+
+.field public static final ISO_AUTO_MIN_SHUT_SPEED_MODE_AUTO Ljava/lang/String; = "auto"
+
+.field public static final ISO_AUTO_MIN_SHUT_SPEED_MODE_FAST1 Ljava/lang/String; = "fast1"
+
+.field public static final ISO_AUTO_MIN_SHUT_SPEED_MODE_FAST2 Ljava/lang/String; = "fast2"
+
+.field public static final ISO_AUTO_MIN_SHUT_SPEED_MODE_MANUAL Ljava/lang/String; = "manual"
+
+.field public static final ISO_AUTO_MIN_SHUT_SPEED_MODE_SLOW1 Ljava/lang/String; = "slow1"
+
+.field public static final ISO_AUTO_MIN_SHUT_SPEED_MODE_SLOW2 Ljava/lang/String; = "slow2"
 
 .field public static final LENS_CORRECTION_CHROMA_BLUE Ljava/lang/String; = "chroma-b"
 
@@ -430,6 +460,10 @@
 
 .field public static final SHOOTING_PREVIEW_MODE_OFF Ljava/lang/String; = "off"
 
+.field public static final SLOW_SHUTTER_LIVEVIEW_MODE_OFF Ljava/lang/String; = "off"
+
+.field public static final SLOW_SHUTTER_LIVEVIEW_MODE_ON Ljava/lang/String; = "on"
+
 .field public static final SOFT_SKIN_EFFECT_HIGH Ljava/lang/String; = "high"
 
 .field public static final SOFT_SKIN_EFFECT_LOW Ljava/lang/String; = "low"
@@ -482,6 +516,14 @@
 .end method
 
 .method public getAperture()I
+.end method
+
+; added in V14
+.method public getApertureStfLevel()Ljava/lang/String;
+.end method
+
+; added in V14
+.method public getApertureStfMode()Ljava/lang/String;
 .end method
 
 ; added in V1
@@ -602,6 +644,14 @@
 .method public getHDRMode()Ljava/lang/String;
 .end method
 
+; added in V14
+.method public getISOAutoMax()I
+.end method
+
+; added in V14
+.method public getISOAutoMin()I
+.end method
+
 .method public getISOSensitivity()I
 .end method
 
@@ -619,6 +669,14 @@
 
 ; added in V7
 .method public getIntervalRecTime()I
+.end method
+
+; added in V14
+.method public getIsoAutoMinShutterSpeedMode()Ljava/lang/String;
+.end method
+
+; added in V14
+.method public getIsoAutoMinShutterSpeedValue()Landroid/util/Pair;
 .end method
 
 .method public getLensCorrection()Z
@@ -913,6 +971,10 @@
 .method public getShutterSpeed()Landroid/util/Pair;
 .end method
 
+; added in V14
+.method public getSlowShutterLiveviewMode()Ljava/lang/String;
+.end method
+
 ; added in V3
 .method public getSoftSkinEffect()Ljava/lang/String;
 .end method
@@ -926,6 +988,14 @@
 .end method
 
 .method public getSupportedAntiHandBlurModes()Ljava/util/List;
+.end method
+
+; added in V14
+.method public getSupportedApertureStfLevel()Ljava/util/List;
+.end method
+
+; added in V14
+.method public getSupportedApertureStfMode()Ljava/util/List;
 .end method
 
 .method public getSupportedAutoExposureLocks()Ljava/util/List;
@@ -1011,6 +1081,10 @@
 .method public getSupportedHDRModes()Ljava/util/List;
 .end method
 
+; added in V14
+.method public getSupportedISOAutoMaxMin()Ljava/util/List;
+.end method
+
 .method public getSupportedISOSensitivities()Ljava/util/List;
 .end method
 
@@ -1027,6 +1101,14 @@
 
 ; added in V7
 .method public getSupportedIntervalRecTime()Ljava/util/List;
+.end method
+
+; added in V14
+.method public getSupportedIsoAutoMinShutterSpeedModes()Ljava/util/List;
+.end method
+
+; added in V14
+.method public getSupportedIsoAutoMinShutterSpeedValues()Ljava/util/List;
 .end method
 
 ; added in V3
@@ -1141,6 +1223,10 @@
 .method public isAutoWhiteBalanceLockSupported()Z
 .end method
 
+; added in V14
+.method public isCustomWhiteBalanceInRange()Z
+.end method
+
 .method public isDirectShutterSupported()Z
 .end method
 
@@ -1166,6 +1252,10 @@
 
 ; added in V3
 .method public isSharpnessGainModeSupported()Z
+.end method
+
+; added in V14
+.method public isSilentShutterMode()Z
 .end method
 
 .method public isSupportedAutoShutterSpeedLowLimit()Z
@@ -1209,6 +1299,14 @@
 .method public isSupportedRemoteControlMode()Z
 .end method
 
+; added in V14
+.method public isSupportedSilentShutterMode()Z
+.end method
+
+; added in V14
+.method public isSupportedSlowShutterLiveviewMode()Z
+.end method
+
 .method public isSupportedToggleFocusMode()Z
 .end method
 
@@ -1229,6 +1327,14 @@
 .end method
 
 .method public setAntiHandBlurMode(Ljava/lang/String;)V
+.end method
+
+; added in V14
+.method public setApertureStfLevel(Ljava/lang/String;)V
+.end method
+
+; added in V14
+.method public setApertureStfMode(Ljava/lang/String;)V
 .end method
 
 ; added in V1
@@ -1350,6 +1456,14 @@
 .method public setHDRMode(Ljava/lang/String;)V
 .end method
 
+; added in V14
+.method public setISOAutoMax(I)V
+.end method
+
+; added in V14
+.method public setISOAutoMin(I)V
+.end method
+
 .method public setISOSensitivity(I)V
 .end method
 
@@ -1363,6 +1477,14 @@
 
 ; added in V7
 .method public setIntervalRecTime(I)V
+.end method
+
+; added in V14
+.method public setIsoAutoMinShutterSpeedMode(Ljava/lang/String;)V
+.end method
+
+; added in V14
+.method public setIsoAutoMinShutterSpeedValue(Landroid/util/Pair;)V
 .end method
 
 .method public setLensCorrection(Z)V
@@ -1489,6 +1611,14 @@
 .end method
 
 .method public setShootingPreviewMode(Ljava/lang/String;)V
+.end method
+
+; added in V14
+.method public setSilentShutterMode(Z)V
+.end method
+
+; added in V14
+.method public setSlowShutterLiveviewMode(Ljava/lang/String;)V
 .end method
 
 ; added in V3

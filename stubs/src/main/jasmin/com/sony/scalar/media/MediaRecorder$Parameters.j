@@ -11,6 +11,8 @@
 
 .field public static final OUTPUT_FORMAT_XAVC_S Ljava/lang/String; = "XAVCS"
 
+.field public static final OUTPUT_FORMAT_XAVC_S_4K Ljava/lang/String; = "XAVCS_4K"
+
 .field public static final RESET_TC Lcom/sony/scalar/media/MediaRecorder$Parameters$TimeCodeInfo;
 
 .field public static final RESET_UB J

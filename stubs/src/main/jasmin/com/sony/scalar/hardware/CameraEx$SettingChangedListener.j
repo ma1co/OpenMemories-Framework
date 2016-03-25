@@ -10,6 +10,10 @@
 
 .field public static final TYPE_ANTI_HAND_BLUR_MODE I = 22
 
+.field public static final TYPE_APERTURE_STF_LEVEL I = 32
+
+.field public static final TYPE_APERTURE_STF_MODE I = 31
+
 .field public static final TYPE_AUTO_FOCUS_MODE I = 8
 
 .field public static final TYPE_CAMERA_GAIN I = 18
@@ -33,6 +37,14 @@
 .field public static final TYPE_FOCUS_MODE I = 2
 
 .field public static final TYPE_FOCUS_POINT I = 0
+
+.field public static final TYPE_ISO_AUTO_MAX I = 36
+
+.field public static final TYPE_ISO_AUTO_MIN I = 37
+
+.field public static final TYPE_ISO_AUTO_MIN_SHUT_SPEED_MODE I = 34
+
+.field public static final TYPE_ISO_AUTO_MIN_SHUT_SPEED_VALUE I = 35
 
 .field public static final TYPE_ISO_SENSITIVITY I = 6
 
@@ -63,6 +75,8 @@
 .field public static final TYPE_SELF_TIMER I = 11
 
 .field public static final TYPE_SILENT_SHUTTER_MODE I = 38
+
+.field public static final TYPE_SLOW_SHUTTER_LIVEVIEW_MODE I = 33
 
 .field public static final TYPE_SOFT_SKIN_EFFECT I = 16
 

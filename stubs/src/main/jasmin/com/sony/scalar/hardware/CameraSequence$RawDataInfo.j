@@ -75,6 +75,9 @@
 
 .field public th3 I
 
+; added in V14
+.field public unitDataOffset J
+
 .field public validOffsetX I
 
 .field public validOffsetY I

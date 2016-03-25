@@ -1,6 +1,8 @@
 ; added in V5
 .class public com/sony/scalar/hardware/indicator/SubLCD
 .super java/lang/Object
+.inner class public static TextParameter inner com/sony/scalar/hardware/indicator/SubLCD$TextParameter outer com/sony/scalar/hardware/indicator/SubLCD
+.inner class public static IconParameter inner com/sony/scalar/hardware/indicator/SubLCD$IconParameter outer com/sony/scalar/hardware/indicator/SubLCD
 .inner class public TopSurface inner com/sony/scalar/hardware/indicator/SubLCD$TopSurface outer com/sony/scalar/hardware/indicator/SubLCD
 .inner class public Sub inner com/sony/scalar/hardware/indicator/SubLCD$Sub outer com/sony/scalar/hardware/indicator/SubLCD
 
@@ -29,6 +31,14 @@
 .method public static getStringLength(Ljava/lang/String;)I
 .end method
 
+; added in V14
+.method public static native initialize()V
+.end method
+
+; added in V14
+.method public static native release()V
+.end method
+
 .method public static setAllSegmentState(Z)V
 .end method
 
@@ -36,6 +46,10 @@
 .end method
 
 .method public static setState(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
+.end method
+
+; added in V14
+.method public static setState(Ljava/util/List;)V
 .end method
 
 .method public static setString(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V

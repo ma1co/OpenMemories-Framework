@@ -1,6 +1,7 @@
 .class public com/sony/scalar/hardware/CameraEx
 .super java/lang/Object
 .inner class public static ExifInfo inner com/sony/scalar/hardware/CameraEx$ExifInfo outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract ApertureStfFNumberListener inner com/sony/scalar/hardware/CameraEx$ApertureStfFNumberListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract IntervalRecListener inner com/sony/scalar/hardware/CameraEx$IntervalRecListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract MotionShotResultListener inner com/sony/scalar/hardware/CameraEx$MotionShotResultListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract SceneRecognitionJudgeListener inner com/sony/scalar/hardware/CameraEx$SceneRecognitionJudgeListener outer com/sony/scalar/hardware/CameraEx
@@ -149,7 +150,15 @@
 .method public decrementShutterSpeed()V
 .end method
 
+; added in V14
+.method public disableIrisRing()V
+.end method
+
 .method public disableSettingChangedTypes([I)V
+.end method
+
+; added in V14
+.method public enableIrisRing()V
 .end method
 
 .method public enableSettingChangedTypes([I)V
@@ -238,6 +247,10 @@
 .end method
 
 .method public final setApertureChangeListener(Lcom/sony/scalar/hardware/CameraEx$ApertureChangeListener;)V
+.end method
+
+; added in V14
+.method public final setApertureStfFNumberListener(Lcom/sony/scalar/hardware/CameraEx$ApertureStfFNumberListener;)V
 .end method
 
 ; added in V1
