@@ -3,6 +3,7 @@
 .inner class public static interface abstract onHistogramEventListener inner com/sony/scalar/widget/OptimizedImageView$onHistogramEventListener outer com/sony/scalar/widget/OptimizedImageView
 .inner class public static interface abstract onDisplayEventListener inner com/sony/scalar/widget/OptimizedImageView$onDisplayEventListener outer com/sony/scalar/widget/OptimizedImageView
 .inner class public static ErrCd inner com/sony/scalar/widget/OptimizedImageView$ErrCd outer com/sony/scalar/widget/OptimizedImageView
+.inner class public static PixelFormatHW inner com/sony/scalar/widget/OptimizedImageView$PixelFormatHW outer com/sony/scalar/widget/OptimizedImageView
 .inner class public static final enum DisplayType inner com/sony/scalar/widget/OptimizedImageView$DisplayType outer com/sony/scalar/widget/OptimizedImageView
 .inner class public static final enum TranslationType inner com/sony/scalar/widget/OptimizedImageView$TranslationType outer com/sony/scalar/widget/OptimizedImageView
 .inner class public static final enum BoundType inner com/sony/scalar/widget/OptimizedImageView$BoundType outer com/sony/scalar/widget/OptimizedImageView

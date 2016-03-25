@@ -5,6 +5,10 @@
 .method public <init>()V
 .end method
 
+; added in V7
+.method public final release()V
+.end method
+
 .method public setGpsInfo(Ljava/nio/ByteBuffer;)V
 .end method
 

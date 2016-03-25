@@ -3006,6 +3006,12 @@
 
 .field public static final CAUTION_ID_CAPACITY_MS I = 1405
 
+.field public static final CAUTION_ID_CAPTURE_IMPOSSIBLE_MEDIA_FULL_TO_REMOTE I = 3481
+
+.field public static final CAUTION_ID_CAPTURE_IMPOSSIBLE_NUMBER_POSSIBLE_SHOTS_OVER_TO_REMOTE I = 3480
+
+.field public static final CAUTION_ID_CAPTURE_IMPOSSIBLE_TO_REMOTE I = 3479
+
 .field public static final CAUTION_ID_CHAPTER_FULL_DISC I = 136
 
 .field public static final CAUTION_ID_CHARGE_STROBE I = 332
@@ -6328,6 +6334,8 @@
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO2_MODE_BODY_FOCAL_PLANE_PHASE_SHIFT_AF I = 3473
 
+.field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO2_MODE_BODY_FOCAL_PLANE_PHASE_SHIFT_AF_2 I = 3482
+
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO2_MODE_BODY_PHASE_SHIFT_AF_MSG I = 3018
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO2_MODE_FOCUS_DIAL_MSG I = 3017
@@ -6336,6 +6344,8 @@
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO3_MODE_BODY_FOCAL_PLANE_PHASE_SHIFT_AF_MSG I = 3474
 
+.field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO3_MODE_BODY_FOCAL_PLANE_PHASE_SHIFT_AF_MSG_2 I = 3483
+
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO3_MODE_BODY_PHASE_SHIFT_AF_MSG I = 3021
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO3_MODE_FOCUS_DIAL_MSG I = 3020
@@ -6343,6 +6353,8 @@
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO3_MODE_MSG I = 3019
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO4_MODE_BODY_FOCAL_PLANE_PHASE_SHIFT_AF_MSG I = 3475
+
+.field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO4_MODE_BODY_FOCAL_PLANE_PHASE_SHIFT_AF_MSG_2 I = 3484
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_EXC_STILL_AUTO4_MODE_BODY_PHASE_SHIFT_AF_MSG I = 3024
 
@@ -6774,6 +6786,12 @@
 
 .field public static final CAUTION_ID_FILE_READ_ONLY I = 1616
 
+.field public static final CAUTION_ID_FILE_SYSTEM_INVALID_XAVC_MCA I = 3504
+
+.field public static final CAUTION_ID_FILE_SYSTEM_INVALID_XAVC_MCAB I = 3503
+
+.field public static final CAUTION_ID_FILE_SYSTEM_INVALID_XAVC_MCB I = 3505
+
 .field public static final CAUTION_ID_FILE_WRITING I = 1410
 
 .field public static final CAUTION_ID_FINALIZED I = 80
@@ -6951,6 +6969,12 @@
 .field public static final CAUTION_ID_FOLDER_FULL_STILL_MS I = 196
 
 .field public static final CAUTION_ID_FOLDER_FULL_STILL_MS_DUAL I = 206
+
+.field public static final CAUTION_ID_FOLDER_FULL_XAVC_MCA I = 3495
+
+.field public static final CAUTION_ID_FOLDER_FULL_XAVC_MCAB I = 3494
+
+.field public static final CAUTION_ID_FOLDER_FULL_XAVC_MCB I = 3496
 
 .field public static final CAUTION_ID_FOLDER_MAX I = 190
 
@@ -8072,6 +8096,14 @@
 
 .field public static final CAUTION_ID_MEDIA_FULL_STILL_MS_DUAL I = 208
 
+.field public static final CAUTION_ID_MEDIA_FULL_XAVC_MCA I = 3489
+
+.field public static final CAUTION_ID_MEDIA_FULL_XAVC_MCAB I = 3488
+
+.field public static final CAUTION_ID_MEDIA_FULL_XAVC_MCB I = 3490
+
+.field public static final CAUTION_ID_MEDIA_TROUBLE_TO_REMOTE I = 3477
+
 .field public static final CAUTION_ID_MEMORY_SPACE_FULL_XAVC_INVALID I = 3329
 
 .field public static final CAUTION_ID_METERING_INVALID I = 518
@@ -8202,6 +8234,12 @@
 
 .field public static final CAUTION_ID_MOVIE_FILE_FULL_SD_MS I = 156
 
+.field public static final CAUTION_ID_MOVIE_FILE_FULL_XAVC_MCA I = 3492
+
+.field public static final CAUTION_ID_MOVIE_FILE_FULL_XAVC_MCAB I = 3491
+
+.field public static final CAUTION_ID_MOVIE_FILE_FULL_XAVC_MCB I = 3493
+
 .field public static final CAUTION_ID_MOVIE_FILE_PLAYING_ERROR I = 1415
 
 .field public static final CAUTION_ID_MOVIE_FOLDER_FULL I = 134
@@ -8306,6 +8344,12 @@
 
 .field public static final CAUTION_ID_MOVIE_PRE_END_SD_MS I = 596
 
+.field public static final CAUTION_ID_MOVIE_PRE_END_XAVC_MCA I = 3486
+
+.field public static final CAUTION_ID_MOVIE_PRE_END_XAVC_MCAB I = 3485
+
+.field public static final CAUTION_ID_MOVIE_PRE_END_XAVC_MCB I = 3487
+
 .field public static final CAUTION_ID_MOVIE_QUALITY_FX I = 1281
 
 .field public static final CAUTION_ID_MOVIE_QUALITY_PS_NTSC I = 1279
@@ -8371,6 +8415,12 @@
 .field public static final CAUTION_ID_MOVIE_REC_DIS_SD_INTMEM I = 230
 
 .field public static final CAUTION_ID_MOVIE_REC_DIS_SD_MS I = 228
+
+.field public static final CAUTION_ID_MOVIE_REC_DIS_XAVC_MCA I = 3501
+
+.field public static final CAUTION_ID_MOVIE_REC_DIS_XAVC_MCAB I = 3500
+
+.field public static final CAUTION_ID_MOVIE_REC_DIS_XAVC_MCB I = 3502
 
 .field public static final CAUTION_ID_MOVIE_REC_WITH_BANDWIDTH_CONSTRAINT I = 2207
 
@@ -8734,6 +8784,8 @@
 
 .field public static final CAUTION_ID_NO_MEDIA I = 585
 
+.field public static final CAUTION_ID_NO_MEDIA_TO_REMOTE I = 3478
+
 .field public static final CAUTION_ID_NO_MORE_ADD I = 328
 
 .field public static final CAUTION_ID_NO_MS I = 586
@@ -8805,6 +8857,8 @@
 .field public static final CAUTION_ID_PNTL_PANORAMA_ERR_FAST I = 1384
 
 .field public static final CAUTION_ID_PNTL_PANORAMA_ERR_SLOW I = 1385
+
+.field public static final CAUTION_ID_PP_ONEPUSH_FAILED I = 3474
 
 .field public static final CAUTION_ID_PREVIOUS_MS_ERR I = 55
 
@@ -8911,6 +8965,10 @@
 .field public static final CAUTION_ID_REASON_4K_OUTPUT_30P I = 3435
 
 .field public static final CAUTION_ID_RECINVALID_HEATUP I = 387
+
+.field public static final CAUTION_ID_RECLAMP_OFF I = 3476
+
+.field public static final CAUTION_ID_RECLAMP_ON I = 3475
 
 .field public static final CAUTION_ID_RECLAMP_REAR_OFF I = 456
 
@@ -9284,6 +9342,12 @@
 
 .field public static final CAUTION_ID_UNSUPPORTED_MEDIA_XAVC_REC_INVALID I = 3326
 
+.field public static final CAUTION_ID_UNSUPPORTED_XAVC_REC_INVALID_MCA I = 3498
+
+.field public static final CAUTION_ID_UNSUPPORTED_XAVC_REC_INVALID_MCAB I = 3497
+
+.field public static final CAUTION_ID_UNSUPPORTED_XAVC_REC_INVALID_MCB I = 3499
+
 .field public static final CAUTION_ID_UNSUPPORT_FEL_EXT_FLASH I = 2448
 
 .field public static final CAUTION_ID_UNUSABLE_MS I = 1573
@@ -9443,6 +9507,8 @@
 .field public static final CAUTION_ID_VALID_SELECTED_MEDIA I = 379
 
 .field public static final CAUTION_ID_VALID_TELE_ZOOM_CONT_PRIORITY_AE I = 2622
+
+.field public static final CAUTION_ID_VIDEOLIGHT_BATT_PRE_END I = 3473
 
 .field public static final CAUTION_ID_VIDEOLIGHT_HEAT I = 436
 
@@ -10184,6 +10250,8 @@
 
 .field public static final FACTOR_ID_USB_PWR_SUPPLIED I = 168
 
+.field public static final FACTOR_ID_VIDEOLIGHT_BATT_PRE_END I = 297
+
 .field public static final FACTOR_ID_WATERPROOF_BATT I = 29
 
 .field public static final FACTOR_ID_WATERPROOF_MSG_COLDBOOT I = 240
@@ -10242,6 +10310,8 @@
 
 .field public static final MODE_ID_APPDOWNLOAD I = 15
 
+.field public static final MODE_ID_DB_REPAIR I = 20
+
 .field public static final MODE_ID_EDIT I = 12
 
 .field public static final MODE_ID_EDIT_APPEND I = 13
@@ -10251,6 +10321,10 @@
 .field public static final MODE_ID_MAX I = 17
 
 .field public static final MODE_ID_MAX_2 I = 19
+
+.field public static final MODE_ID_FORMAT I = 19
+
+.field public static final MODE_ID_MAX_3 I = 21
 
 .field public static final MODE_ID_MENU I = 14
 

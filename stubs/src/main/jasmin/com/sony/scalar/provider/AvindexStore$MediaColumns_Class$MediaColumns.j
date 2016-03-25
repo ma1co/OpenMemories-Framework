@@ -1,7 +1,8 @@
-.class public interface abstract com/sony/scalar/provider/AvindexStore$Images$ImageColumns
+; added in V7
+.class public interface abstract com/sony/scalar/provider/AvindexStore$MediaColumns_Class$MediaColumns
 .super java/lang/Object
-.implements com/sony/scalar/provider/AvindexStore$MediaColumns_Class$MediaColumns
-.inner class public static interface abstract ImageColumns inner com/sony/scalar/provider/AvindexStore$Images$ImageColumns outer com/sony/scalar/provider/AvindexStore$Images
+.implements android/provider/BaseColumns
+.inner class public static interface abstract MediaColumns inner com/sony/scalar/provider/AvindexStore$MediaColumns_Class$MediaColumns outer com/sony/scalar/provider/AvindexStore$MediaColumns_Class
 
 .field public static final CONTENT_CREATED_LOCAL_DATE Ljava/lang/String; = "content_created_local_date"
 
@@ -24,6 +25,8 @@
 .field public static final CONT_TYPE_MP4_MPEG4 I = 2
 
 .field public static final CONT_TYPE_UNKNOWN I = 0
+
+.field public static final CONT_TYPE_XAVC I = 256
 
 .field public static final DATA Ljava/lang/String; = "_data"
 
@@ -52,3 +55,7 @@
 .field public static final REC_ORDER Ljava/lang/String; = "rec_order"
 
 .field public static final TIME_ZONE Ljava/lang/String; = "time_zone"
+
+.field public static final WAV Ljava/lang/String; = "wav"
+
+.field public static final XAVC Ljava/lang/String; = "xavc"

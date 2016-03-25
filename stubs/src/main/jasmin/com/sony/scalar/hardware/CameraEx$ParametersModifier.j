@@ -404,6 +404,8 @@
 
 .field public static final SCENE_MODE_SUPERIOR_AUTO Ljava/lang/String; = "superior_auto"
 
+.field public static final SCENE_MODE_SUPERIOR_AUTO_2 Ljava/lang/String; = "superior-auto"
+
 .field public static final SCENE_MODE_ULTRA_SENSITIVITY Ljava/lang/String; = "ultra-sensitivity"
 
 .field public static final SCENE_MODE_UNDERWATER Ljava/lang/String; = "underwater"
@@ -591,6 +593,10 @@
 .method public getImageSize()Ljava/lang/String;
 .end method
 
+; added in V7
+.method public getIntervalRecTime()I
+.end method
+
 .method public getLensCorrection()Z
 .end method
 
@@ -757,6 +763,10 @@
 
 ; added in V3
 .method public getMinWhiteBalanceShiftLB()I
+.end method
+
+; added in V7
+.method public getMotionShotMode()Z
 .end method
 
 ; added in V3
@@ -975,6 +985,10 @@
 .method public getSupportedImageSizes()Ljava/util/List;
 .end method
 
+; added in V7
+.method public getSupportedIntervalRecTime()Ljava/util/List;
+.end method
+
 ; added in V3
 .method public getSupportedJpegQualities()Ljava/util/List;
 .end method
@@ -1116,6 +1130,10 @@
 .method public isSupportedFocalLengthNotify()Z
 .end method
 
+; added in V7
+.method public isSupportedFocusHold()Z
+.end method
+
 .method public isSupportedFocusShift()Z
 .end method
 
@@ -1128,6 +1146,10 @@
 
 ; added in V3
 .method public isSupportedLongExposureNR()Z
+.end method
+
+; added in V7
+.method public isSupportedMotionShotMode()Z
 .end method
 
 .method public isSupportedOVFPreviewMode()Z
@@ -1279,6 +1301,10 @@
 .method public setImageSize(Ljava/lang/String;)V
 .end method
 
+; added in V7
+.method public setIntervalRecTime(I)V
+.end method
+
 .method public setLensCorrection(Z)V
 .end method
 
@@ -1293,6 +1319,10 @@
 .end method
 
 .method public setMeteringMode(Ljava/lang/String;)V
+.end method
+
+; added in V7
+.method public setMotionShotMode(Z)V
 .end method
 
 ; added in V3

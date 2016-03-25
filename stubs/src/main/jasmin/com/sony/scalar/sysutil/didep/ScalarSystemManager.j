@@ -84,6 +84,10 @@
 .method public static final native isSystemReady()Z
 .end method
 
+; added in V7
+.method public static keepSettingValue()V
+.end method
+
 ; added in V6
 .method public static requestPowerOff(III)Z
 .end method
@@ -94,6 +98,10 @@
 
 ; added in V6
 .method public static resetSettingValue(Landroid/content/Context;Ljava/util/List;)Z
+.end method
+
+; added in V7
+.method public static revertSettingValue()V
 .end method
 
 .method public registerSystemReadyObserver(Lcom/sony/scalar/sysutil/didep/ScalarSystemManager$SystemReadyEventListener;)V

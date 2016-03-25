@@ -38,6 +38,8 @@
 
 .field public static final TYPE_METERING_MODE I = 5
 
+.field public static final TYPE_MOTION_SHOT_MODE I = 27
+
 .field public static final TYPE_MOVIE_ANTI_HAND_BLUR_MODE I = 19
 
 .field public static final TYPE_ND_FILTER I = 23

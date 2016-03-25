@@ -16,6 +16,10 @@
 .inner class public LayoutWideImage inner com/sony/scalar/sysutil/didep/Settings$LayoutWideImage outer com/sony/scalar/sysutil/didep/Settings
 .inner class public AutoRotate inner com/sony/scalar/sysutil/didep/Settings$AutoRotate outer com/sony/scalar/sysutil/didep/Settings
 
+; added in V7
+.method public static final native getAutoPowerOffTime()I
+.end method
+
 .method public static final native getAutoRotate()I
 .end method
 
@@ -60,10 +64,18 @@
 .method public static final native getMovieButtonMode()I
 .end method
 
+; added in V7
+.method public static final getSupportedAutoPowerOffTimes()Ljava/util/List;
+.end method
+
 .method public static final native getTouchPanelEnabled()I
 .end method
 
 .method public static final native getWideImageLayout()I
+.end method
+
+; added in V7
+.method public static final native setAutoPowerOffTime(I)V
 .end method
 
 .method public static final native setKeyLock(I)Z

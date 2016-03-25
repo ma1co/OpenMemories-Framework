@@ -45,11 +45,19 @@
 
 .field public static final VIDEO_ENCODING_BIT_RATE_HQ Ljava/lang/String; = "HQ"
 
+.field public static final VIDEO_ENCODING_BIT_RATE_HS100 Ljava/lang/String; = "HS100"
+
 .field public static final VIDEO_ENCODING_BIT_RATE_LP Ljava/lang/String; = "LP"
 
 .field public static final VIDEO_ENCODING_BIT_RATE_PS Ljava/lang/String; = "PS"
 
+.field public static final VIDEO_ENCODING_BIT_RATE_SLOW Ljava/lang/String; = "SLOW"
+
 .field public static final VIDEO_ENCODING_BIT_RATE_SP Ljava/lang/String; = "SP"
+
+.field public static final VIDEO_ENCODING_BIT_RATE_SSLOW Ljava/lang/String; = "SSLOW"
+
+.field public static final VIDEO_ENCODING_BIT_RATE_STD Ljava/lang/String; = "STD"
 
 .field public static final VIDEO_FRAME_RATE_100P Ljava/lang/String; = "100p"
 
@@ -68,6 +76,8 @@
 .field public static final VIDEO_FRAME_RATE_60I Ljava/lang/String; = "60i"
 
 .field public static final VIDEO_FRAME_RATE_60P Ljava/lang/String; = "60p"
+
+.field public static final VIDEO_SIZE_FHD_1080 Ljava/lang/String; = "FHD_1080"
 
 .field public static final VIDEO_SIZE_HD_1080 Ljava/lang/String; = "HD_1080"
 

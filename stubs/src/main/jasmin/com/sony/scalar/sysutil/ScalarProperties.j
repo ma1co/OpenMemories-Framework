@@ -44,19 +44,33 @@
 
 .field public static final INTVAL_IRREMOTE_CATEGORY_NONE I = 0
 
+.field public static final INTVAL_MECHANICAL_SHUTTER I = 0
+
 .field public static final INTVAL_MODE_SW_TYPE_DIAL I = 1
 
 .field public static final INTVAL_MODE_SW_TYPE_NONE I = 0
 
 .field public static final INTVAL_NOT_SUPPORTED I = 0
 
+.field public static final INTVAL_NO_MECHANICAL_SHUTTER I = 1
+
 .field public static final INTVAL_NR_OFF I = 0
 
 .field public static final INTVAL_NR_ON I = 1
 
+.field public static final INTVAL_PARAM_REMOCON_LIVE I = 3
+
+.field public static final INTVAL_PARAM_REMOCON_MULTI I = 2
+
+.field public static final INTVAL_PARAM_REMOCON_OFF I = 0
+
+.field public static final INTVAL_PARAM_REMOCON_SINGLE I = 1
+
 .field public static final INTVAL_SIGNAL_FREQUENCY_NTSC I = 1
 
 .field public static final INTVAL_SIGNAL_FREQUENCY_PAL I = 0
+
+.field public static final INTVAL_SMALL_SOUND_MECHANICAL_SHUTTER I = 2
 
 .field public static final INTVAL_SUBLCD_TYPE_1 I = 1
 
@@ -266,6 +280,8 @@
 
 .field public static final INTVAL_VALID I = 1
 
+.field public static final PROP_AUDIO_INOUT_CONCURRENCY_CONTROL Ljava/lang/String; = "audio.inout.concurrency.control"
+
 .field public static final PROP_DEVICE_DIGITAL_LEVEL Ljava/lang/String; = "device.digital.level"
 
 .field public static final PROP_DEVICE_EVF_EXTERNAL_ASPECT Ljava/lang/String; = "device.evf.external.aspect"
@@ -297,6 +313,8 @@
 .field public static final PROP_DEVICE_IMAGER_TYPE Ljava/lang/String; = "device.imager.type"
 
 .field public static final PROP_DEVICE_IRREMOTE_CATEGORY Ljava/lang/String; = "device.irremote.category"
+
+.field public static final PROP_DEVICE_MECHANICAL_SHUTTER Ljava/lang/String; = "device.mechanical.shutter"
 
 .field public static final PROP_DEVICE_MEMORY Ljava/lang/String; = "device.memory"
 
@@ -332,6 +350,8 @@
 
 .field public static final PROP_INPUT_TP_TYPE Ljava/lang/String; = "input.tp.type"
 
+.field public static final PROP_LIVE_STREAMING_SUPPORTED Ljava/lang/String; = "live.streaming.supported"
+
 .field public static final PROP_MEM_DYNAMICAREA_SIZE_IN_RAWIMAGE_NUM Ljava/lang/String; = "mem.dynamicarea.size.in.rawimage.num"
 
 .field public static final PROP_MEM_RAWIMAGE_SIZE_IN_MEGA_PIXEL Ljava/lang/String; = "mem.rawimage.size.in.mega.pixel"
@@ -355,6 +375,10 @@
 .field public static final PROP_UI_DOWN_KEY_ASSIGN_IN_PLAYBACK Ljava/lang/String; = "ui.down.key.assign.in.playback"
 
 .field public static final PROP_UI_FAST_SUSPEND_SUPPORTED Ljava/lang/String; = "ui.fast.suspend.supported"
+
+.field public static final PROP_UI_FORMAT_FUNC_SUPPORTED Ljava/lang/String; = "ui.format.func.supported"
+
+.field public static final PROP_UI_INTERVALREC_SUPPORTED Ljava/lang/String; = "ui.intervalrec.supported"
 
 .field public static final PROP_UI_MAIN_FEATURE Ljava/lang/String; = "ui.main.feature"
 
@@ -382,6 +406,16 @@
 
 .field public static final PROP_VERSION_PLATFORM Ljava/lang/String; = "version.platform"
 
+.field public static final WIFI_GP_OWNER_OPE_CH Ljava/lang/String; = "wifi.gp.owner.ope.ch"
+
+.field public static final WIFI_GP_OWNER_WPS_PIN Ljava/lang/String; = "wifi.gp.owner.wps.pin"
+
+.field public static final WIFI_SET Ljava/lang/String; = "wifi.setting"
+
+; added in V7
+.method public static getByteArray(Ljava/lang/String;)[B
+.end method
+
 .method public static getFirmwareVersion()Ljava/lang/String;
 .end method
 
@@ -401,4 +435,16 @@
 .end method
 
 .method public static getSupportedPictureSizes()Ljava/util/List;
+.end method
+
+; added in V7
+.method public static setByteArray(Ljava/lang/String;[B)Z
+.end method
+
+; added in V7
+.method public static setInt(Ljava/lang/String;I)Z
+.end method
+
+; added in V7
+.method public static setTimeTag(Ljava/lang/String;)V
 .end method

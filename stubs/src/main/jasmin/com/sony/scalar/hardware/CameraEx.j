@@ -1,5 +1,7 @@
 .class public com/sony/scalar/hardware/CameraEx
 .super java/lang/Object
+.inner class public static interface abstract IntervalRecListener inner com/sony/scalar/hardware/CameraEx$IntervalRecListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract MotionShotResultListener inner com/sony/scalar/hardware/CameraEx$MotionShotResultListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract SceneRecognitionJudgeListener inner com/sony/scalar/hardware/CameraEx$SceneRecognitionJudgeListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract MotionRecognitionListener inner com/sony/scalar/hardware/CameraEx$MotionRecognitionListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract SteadyRecognitionListener inner com/sony/scalar/hardware/CameraEx$SteadyRecognitionListener outer com/sony/scalar/hardware/CameraEx
@@ -105,6 +107,10 @@
 .end method
 
 .method public burstableTakePicture()V
+.end method
+
+; added in V7
+.method public cancelExposure()V
 .end method
 
 .method public cancelSelfTimerShutter()Z
@@ -310,11 +316,19 @@
 .method public setForceExposureLevel(I)V
 .end method
 
+; added in V7
+.method public final setIntervalRecListener(Lcom/sony/scalar/hardware/CameraEx$IntervalRecListener;)V
+.end method
+
 .method public setJpegListener(Lcom/sony/scalar/hardware/CameraEx$JpegListener;)V
 .end method
 
 ; added in V6
 .method public final setMotionRecognitionListener(Lcom/sony/scalar/hardware/CameraEx$MotionRecognitionListener;)V
+.end method
+
+; added in V7
+.method public final setMotionShotResultListener(Lcom/sony/scalar/hardware/CameraEx$MotionShotResultListener;)V
 .end method
 
 ; added in V5
@@ -402,6 +416,14 @@
 .method public startFaceDetection(I)V
 .end method
 
+; added in V7
+.method public startFocusHold()V
+.end method
+
+; added in V7
+.method public startIntervalRec()V
+.end method
+
 ; added in V3
 .method public startOneShotFocusDrive(II)V
 .end method
@@ -428,6 +450,14 @@
 .end method
 
 .method public stopFaceDetection()V
+.end method
+
+; added in V7
+.method public stopFocusHold()V
+.end method
+
+; added in V7
+.method public stopIntervalRec()V
 .end method
 
 ; added in V1

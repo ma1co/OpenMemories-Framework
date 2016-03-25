@@ -59,6 +59,7 @@
 .method public getChannel()I
 .end method
 
+; removed in V7
 .method public getFrameSize()I
 .end method
 
@@ -69,6 +70,10 @@
 .end method
 
 .method public getReadMarkerPosition()J
+.end method
+
+; added in V7
+.method public getSamplePerFrame()I
 .end method
 
 .method public getSampleRate()I

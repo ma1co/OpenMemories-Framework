@@ -82,6 +82,10 @@
 
 .field public static final SIGNAL_PAL I = 1
 
+.field public static final TCUB_DISPLAY_SELECT_TC I = 0
+
+.field public static final TCUB_DISPLAY_SELECT_UB I = 1
+
 .field public static final TCUB_GRAPHIC_OUTPUT_0 I = 1
 
 .field public static final TCUB_GRAPHIC_OUTPUT_1 I = 2
@@ -209,5 +213,10 @@
 .end method
 
 ; added in V6
+; removed in V7
 .method public visibleTcUb(Landroid/graphics/Point;)V
+.end method
+
+; added in V7
+.method public visibleTcUb(Landroid/graphics/Point;I)V
 .end method

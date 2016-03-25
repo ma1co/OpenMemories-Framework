@@ -14,6 +14,9 @@
 
 .field public static final PHASE_SHIFT_SENSOR_UNKNOWN Ljava/lang/String; = "Unknown"
 
+; added in V7
+.field public FixedAperture Z
+
 .field public FocalLength Lcom/sony/scalar/hardware/CameraEx$WideTele;
 
 .field public LensName Ljava/lang/String;

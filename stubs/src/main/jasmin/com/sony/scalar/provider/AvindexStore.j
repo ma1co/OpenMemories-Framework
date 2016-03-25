@@ -1,6 +1,9 @@
 .class public final com/sony/scalar/provider/AvindexStore
 .super java/lang/Object
 .inner class public static final Images inner com/sony/scalar/provider/AvindexStore$Images outer com/sony/scalar/provider/AvindexStore
+.inner class public static final Video inner com/sony/scalar/provider/AvindexStore$Video outer com/sony/scalar/provider/AvindexStore
+.inner class public static final Files inner com/sony/scalar/provider/AvindexStore$Files outer com/sony/scalar/provider/AvindexStore
+.inner class public static MediaColumns_Class inner com/sony/scalar/provider/AvindexStore$MediaColumns_Class outer com/sony/scalar/provider/AvindexStore
 
 .field public static final ACTION_AVINDEX_DATABASE_UPDATED Ljava/lang/String; = "com.sony.scalar.database.avindex.action.AVINDEX_DATABASE_UPDATED"
 
@@ -18,13 +21,21 @@
 
 .field public static final CONTENT_TYPE_LOAD_AVCHD I = 4
 
+.field public static final CONTENT_TYPE_LOAD_DV I = 6
+
 .field public static final CONTENT_TYPE_LOAD_DVD_MOVIE I = 2
 
 .field public static final CONTENT_TYPE_LOAD_M2PS I = 3
 
 .field public static final CONTENT_TYPE_LOAD_MP4 I = 5
 
+.field public static final CONTENT_TYPE_LOAD_MXF I = 9
+
 .field public static final CONTENT_TYPE_LOAD_STILL I = 1
+
+.field public static final CONTENT_TYPE_LOAD_WAV I = 8
+
+.field public static final CONTENT_TYPE_LOAD_XAVC I = 7
 
 .field public static final EXTRA_AVINDEX_DATABASE_UPDATED_MEDIAID Ljava/lang/String; = "com.sony.scalar.database.avindex.extra.mediaid"
 
@@ -42,6 +53,7 @@
 .method public static cancelWaitLoadMediaComplete(Ljava/lang/String;)Z
 .end method
 
+; removed in V7
 .method public static getAvailableSize(Ljava/lang/String;)J
 .end method
 
