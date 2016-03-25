@@ -8,6 +8,7 @@
 .inner class public static RawRawAdditionNRDevelopFilter inner com/sony/scalar/hardware/CameraSequence$RawRawAdditionNRDevelopFilter outer com/sony/scalar/hardware/CameraSequence
 .inner class public static abstract BaseDevelopFilter inner com/sony/scalar/hardware/CameraSequence$BaseDevelopFilter outer com/sony/scalar/hardware/CameraSequence
 .inner class public static interface abstract ShutterSequenceCallback inner com/sony/scalar/hardware/CameraSequence$ShutterSequenceCallback outer com/sony/scalar/hardware/CameraSequence
+.inner class public static RawDataInfo inner com/sony/scalar/hardware/CameraSequence$RawDataInfo outer com/sony/scalar/hardware/CameraSequence
 .inner class public static RawData inner com/sony/scalar/hardware/CameraSequence$RawData outer com/sony/scalar/hardware/CameraSequence
 .inner class public static final Options inner com/sony/scalar/hardware/CameraSequence$Options outer com/sony/scalar/hardware/CameraSequence
 .inner class public static interface abstract DebugCallback inner com/sony/scalar/hardware/CameraSequence$DebugCallback outer com/sony/scalar/hardware/CameraSequence
@@ -60,7 +61,15 @@
 .method public final storeImage(Lcom/sony/scalar/graphics/OptimizedImage;Z)V
 .end method
 
+; added in V3
+.method public final storeImage(Lcom/sony/scalar/graphics/OptimizedImage;ZZ)V
+.end method
+
 .method public final storeImage(Lcom/sony/scalar/hardware/CameraSequence$RawData;Z)V
+.end method
+
+; added in V3
+.method public final storeImage(Lcom/sony/scalar/hardware/CameraSequence$RawData;ZZ)V
 .end method
 
 .method public final testCommand(IIILjava/lang/Object;)Ljava/lang/Object;

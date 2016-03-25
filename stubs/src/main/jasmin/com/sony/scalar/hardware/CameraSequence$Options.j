@@ -4,6 +4,8 @@
 
 .field public static final AUTO_RELEASE_LOCK_ENABLED Ljava/lang/String; = "AUTO_RELEASE_LOCK_ENABLED"
 
+.field public static final DETECTION_OFF Ljava/lang/String; = "DETECTION_OFF"
+
 .field public static final EXPOSURE_COUNT Ljava/lang/String; = "EXPOSURE_COUNT"
 
 .field public static final INTERIM_PRE_REVIEW_ENABLED Ljava/lang/String; = "INTERIM_PRE_REVIEW_ENABLED"
@@ -47,6 +49,8 @@
 .field public static final PREVIEW_PLUGIN_NOTIFY_MASK Ljava/lang/String; = "PREVIEW_PLUGIN_NOTIFY_MASK"
 
 .field public static final PREVIEW_PLUGIN_OUTPUT_ENABLED Ljava/lang/String; = "PREVIEW_PLUGIN_OUTPUT_ENABLED"
+
+.field public static final PREVIEW_PLUGIN_RECORD_ENABLED Ljava/lang/String; = "PREVIEW_PLUGIN_RECORD_ENABLED"
 
 .field public static final RECORD_COUNT Ljava/lang/String; = "RECORD_COUNT"
 

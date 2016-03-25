@@ -56,6 +56,10 @@
 .method public static getContentFocusPoint(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/database/Cursor;
 .end method
 
+; added in V3
+.method public static getContentFocusPoint(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;)Landroid/database/Cursor;
+.end method
+
 .method public static getContentUri(Ljava/lang/String;)Landroid/net/Uri;
 .end method
 
@@ -102,6 +106,10 @@
 .end method
 
 .method public static setContentFocusPoint(Landroid/content/ContentResolver;Landroid/net/Uri;J)Z
+.end method
+
+; added in V3
+.method public static setContentFocusPoint(Landroid/content/ContentResolver;Landroid/net/Uri;JLjava/lang/String;)Z
 .end method
 
 .method public static setContentFocusPoint(Ljava/lang/String;)Z

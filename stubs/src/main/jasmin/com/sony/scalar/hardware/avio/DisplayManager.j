@@ -53,6 +53,20 @@
 
 .field public static final HDMI_FMT_INVALID I = 0
 
+.field public static final OSD_OUTPUT_OFF Ljava/lang/String; = "OSD_OUTPUT_OFF"
+
+.field public static final OSD_OUTPUT_ON Ljava/lang/String; = "OSD_OUTPUT_ON"
+
+.field public static final SAVING_BATTERY_OFF Ljava/lang/String; = "SAVING_BATTERY_OFF"
+
+.field public static final SAVING_BATTERY_ON Ljava/lang/String; = "SAVING_BATTERY_ON"
+
+.field public static final SCREEN_GAIN_CONTROL_LUMINANCE_ALPHA Ljava/lang/String; = "SCREEN_GAIN_CONTROL_LUMINANCE_ALPHA"
+
+.field public static final SCREEN_GAIN_CONTROL_LUMINANCE_ONLY Ljava/lang/String; = "SCREEN_GAIN_CONTROL_LUMINANCE_ONLY"
+
+.field public static final SCREEN_GAIN_NO_CONTROL Ljava/lang/String; = "SCREEN_GAIN_NO_CONTROL"
+
 .field public static final SIGNAL_INVALID I = -1
 
 .field public static final SIGNAL_NTSC I = 0
@@ -100,6 +114,18 @@
 .method public getDisplayedVideoRect()Lcom/sony/scalar/hardware/avio/DisplayManager$VideoRect;
 .end method
 
+; added in V3
+.method public getSavingBatteryMode()Ljava/lang/String;
+.end method
+
+; added in V3
+.method public getScreenGainControlType()Ljava/lang/String;
+.end method
+
+; added in V3
+.method public getSupportedScreenGainControlTypes()Ljava/util/List;
+.end method
+
 .method public releaseDisplayStatusListener()V
 .end method
 
@@ -115,7 +141,19 @@
 .method public setLayoutStatusListener(Lcom/sony/scalar/hardware/avio/DisplayManager$VideoLayoutStatusListener;)V
 .end method
 
+; added in V3
+.method public setOSDOutput(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
 .method public setOnScreenDisplayListener(Lcom/sony/scalar/hardware/avio/DisplayManager$OnScreenDisplayListener;)V
+.end method
+
+; added in V3
+.method public setSavingBatteryMode(Ljava/lang/String;)V
+.end method
+
+; added in V3
+.method public setScreenGainControlType(Ljava/lang/String;)V
 .end method
 
 .method public switchDisplayOutputTo(Ljava/lang/String;)V

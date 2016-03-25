@@ -11,5 +11,9 @@
 .method public setPreview(Z)V
 .end method
 
+; added in V3
+.method public setRecordingMode(I)V
+.end method
+
 .method public setTargetMedia(Ljava/lang/String;)V
 .end method

@@ -20,11 +20,14 @@
 .method public static changeFrameBufferPixel(Lcom/sony/scalar/sysutil/didep/Gpelibrary$GS_FRAMEBUFFER_TYPE;)V
 .end method
 
+; removed in V3
 .method public static onActivityStateChanged(II)V
 .end method
 
+; removed in V3
 .method public static onWindowFocusChanged(ZI)V
 .end method
 
+; removed in V3
 .method public static updateEnable(Lcom/sony/scalar/sysutil/didep/Gpelibrary$GS_SWITCH_TYPE;)V
 .end method

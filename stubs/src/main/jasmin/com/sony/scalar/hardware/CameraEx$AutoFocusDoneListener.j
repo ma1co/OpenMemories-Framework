@@ -10,6 +10,8 @@
 
 .field public static final STATUS_LOCK_WARM I = 2
 
+.field public static final STATUS_LOCK_WARN I = 2
+
 .field public static final STATUS_WORKING I = 3
 
 .method public abstract onDone(I[ILcom/sony/scalar/hardware/CameraEx;)V

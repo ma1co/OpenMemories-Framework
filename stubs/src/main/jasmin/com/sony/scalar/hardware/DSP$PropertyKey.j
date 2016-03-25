@@ -22,6 +22,8 @@
 
 .field public static final MEMORY_ADDRESS Ljava/lang/String; = "memory-address"
 
+.field public static final MEMORY_ADDRESS_DSP Ljava/lang/String; = "memory-address-dsp"
+
 .field public static final MEMORY_SIZE Ljava/lang/String; = "memory-size"
 
 .field public static final PROGRAM_DESCRIPTOR Ljava/lang/String; = "program-descriptor"

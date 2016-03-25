@@ -2,6 +2,12 @@
 .super java/lang/Object
 .inner class public static AutoPictureReviewControl inner com/sony/scalar/hardware/CameraEx$AutoPictureReviewControl outer com/sony/scalar/hardware/CameraEx
 
+.field public static final PICTURE_REVIEW_TYPE_10 I = 2
+
+.field public static final PICTURE_REVIEW_TYPE_INVALID I = -1
+
+.field public static final PICTURE_REVIEW_TYPE_SINGLE I
+
 .method public <init>()V
 .end method
 
@@ -12,6 +18,10 @@
 .end method
 
 .method public getPictureReviewTime()I
+.end method
+
+; added in V3
+.method public getReviewType()I
 .end method
 
 .method public handleMessage(Landroid/os/Message;)V

@@ -1,6 +1,11 @@
 .class public com/sony/scalar/hardware/CameraEx
 .super java/lang/Object
+.inner class public static interface abstract FocusDriveListener inner com/sony/scalar/hardware/CameraEx$FocusDriveListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static FocusPosition inner com/sony/scalar/hardware/CameraEx$FocusPosition outer com/sony/scalar/hardware/CameraEx
+.inner class public static GammaTable inner com/sony/scalar/hardware/CameraEx$GammaTable outer com/sony/scalar/hardware/CameraEx
 .inner class public ParametersModifier inner com/sony/scalar/hardware/CameraEx$ParametersModifier outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract ProperExposureLevelCallback inner com/sony/scalar/hardware/CameraEx$ProperExposureLevelCallback outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract AutoCameraGainListener inner com/sony/scalar/hardware/CameraEx$AutoCameraGainListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract AutoApscModeListener inner com/sony/scalar/hardware/CameraEx$AutoApscModeListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract ZoomChangeListener inner com/sony/scalar/hardware/CameraEx$ZoomChangeListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static ZoomInfo inner com/sony/scalar/hardware/CameraEx$ZoomInfo outer com/sony/scalar/hardware/CameraEx
@@ -48,13 +53,22 @@
 .inner class public static interface abstract ShutterListener inner com/sony/scalar/hardware/CameraEx$ShutterListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract DirectShutterStoppedCallback inner com/sony/scalar/hardware/CameraEx$DirectShutterStoppedCallback outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract RecordingMediaChangeCallback inner com/sony/scalar/hardware/CameraEx$RecordingMediaChangeCallback outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract OpenCallback inner com/sony/scalar/hardware/CameraEx$OpenCallback outer com/sony/scalar/hardware/CameraEx
 .inner class public static OpenOptions inner com/sony/scalar/hardware/CameraEx$OpenOptions outer com/sony/scalar/hardware/CameraEx
+
+.field public static final FOCUS_DRIVE_DIRECTION_FAR I = 1
+
+.field public static final FOCUS_DRIVE_DIRECTION_NEAR I = 0
 
 .field public static final PREVIEW_ASPECT_TYPE_16_9 I = 1
 
 .field public static final PREVIEW_ASPECT_TYPE_3_2 I = 0
 
 .field public static final PROGRAM_LINE_RESET I = 0
+
+.field public static final RECORDING_MODE_MOVIE I = 1
+
+.field public static final RECORDING_MODE_STILL I = 0
 
 .field public static final ZOOM_DIRECTION_TELE I = 0
 
@@ -87,6 +101,14 @@
 .method public createEmptyParameters()Landroid/hardware/Camera$Parameters;
 .end method
 
+; added in V3
+.method public createGammaTable()Lcom/sony/scalar/hardware/CameraEx$GammaTable;
+.end method
+
+; added in V3
+.method public createGammmaTable()Lcom/sony/scalar/hardware/CameraEx$GammaTable;
+.end method
+
 .method public createParametersModifier(Landroid/hardware/Camera$Parameters;)Lcom/sony/scalar/hardware/CameraEx$ParametersModifier;
 .end method
 
@@ -103,6 +125,14 @@
 .end method
 
 .method public getChannelColorSelect(I)Lcom/sony/scalar/hardware/CameraEx$SelectedColor;
+.end method
+
+; added in V3
+.method public getExtendedGammaTable()Lcom/sony/scalar/hardware/CameraEx$GammaTable;
+.end method
+
+; added in V3
+.method public getExtendedGammmaTable()Lcom/sony/scalar/hardware/CameraEx$GammaTable;
 .end method
 
 .method public getExternalFlashInfo()Lcom/sony/scalar/hardware/CameraEx$ExternalFlashInfo;
@@ -134,6 +164,18 @@
 .method public getPreviewMagnificationRatio(I)I
 .end method
 
+; added in V3
+.method public getProperExposureLevel()V
+.end method
+
+; added in V3
+.method public getSupportedParameters()Landroid/hardware/Camera$Parameters;
+.end method
+
+; added in V3
+.method public getSupportedParameters(I)Landroid/hardware/Camera$Parameters;
+.end method
+
 .method public hasSupportedParameters()Z
 .end method
 
@@ -144,6 +186,10 @@
 .end method
 
 .method public release()V
+.end method
+
+; added in V3
+.method public reopen(Lcom/sony/scalar/hardware/CameraEx$OpenOptions;Lcom/sony/scalar/hardware/CameraEx$OpenCallback;)V
 .end method
 
 ; added in V1
@@ -161,6 +207,10 @@
 
 ; added in V1
 .method public final setAutoApscModeListener(Lcom/sony/scalar/hardware/CameraEx$AutoApscModeListener;)V
+.end method
+
+; added in V3
+.method public final setAutoCameraGainListener(Lcom/sony/scalar/hardware/CameraEx$AutoCameraGainListener;)V
 .end method
 
 .method public setAutoFocusDoneListener(Lcom/sony/scalar/hardware/CameraEx$AutoFocusDoneListener;)V
@@ -195,6 +245,14 @@
 .method public final setErrorCallback(Lcom/sony/scalar/hardware/CameraEx$ErrorCallback;)V
 .end method
 
+; added in V3
+.method public setExtendedGammaTable(Lcom/sony/scalar/hardware/CameraEx$GammaTable;)V
+.end method
+
+; added in V3
+.method public setExtendedGammmaTable(Lcom/sony/scalar/hardware/CameraEx$GammaTable;)V
+.end method
+
 .method public final setFaceDetectionListener(Lcom/sony/scalar/hardware/CameraEx$FaceDetectionListener;)V
 .end method
 
@@ -211,7 +269,15 @@
 .method public final setFocusAreaListener(Lcom/sony/scalar/hardware/CameraEx$FocusAreaListener;)V
 .end method
 
+; added in V3
+.method public final setFocusDriveListener(Lcom/sony/scalar/hardware/CameraEx$FocusDriveListener;)V
+.end method
+
 .method public setFocusLightStateListener(Lcom/sony/scalar/hardware/CameraEx$FocusLightStateListener;)V
+.end method
+
+; added in V3
+.method public setForceExposureLevel(I)V
 .end method
 
 .method public setJpegListener(Lcom/sony/scalar/hardware/CameraEx$JpegListener;)V
@@ -240,6 +306,10 @@
 .method public setProgramLineRangeOverListener(Lcom/sony/scalar/hardware/CameraEx$ProgramLineRangeOverListener;)V
 .end method
 
+; added in V3
+.method public setProperExposureLevelCallback(Lcom/sony/scalar/hardware/CameraEx$ProperExposureLevelCallback;)V
+.end method
+
 .method public setQuickAutoFocus(Ljava/lang/String;)V
 .end method
 
@@ -265,6 +335,10 @@
 .method public shiftFocusPosition(I)Z
 .end method
 
+; added in V3
+.method public startAutoZoom()V
+.end method
+
 .method public startCustomWhiteBalanceCapture()V
 .end method
 
@@ -274,11 +348,19 @@
 .method public startFaceDetection(I)V
 .end method
 
+; added in V3
+.method public startOneShotFocusDrive(II)V
+.end method
+
 .method public startSelfTimerShutter()V
 .end method
 
 ; added in V1
 .method public startZoom(II)V
+.end method
+
+; added in V3
+.method public stopAutoZoom()V
 .end method
 
 .method public stopCustomWhiteBalanceCapture()V

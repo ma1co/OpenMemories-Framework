@@ -6,6 +6,8 @@
 
 .field public static final ALLOCATION_POLICY_VERSION_1 I = 1
 
+.field public static final ALLOCATION_POLICY_VERSION_2 I = 2
+
 .method public static loadExtraMap(Ljava/lang/String;)V
 .end method
 

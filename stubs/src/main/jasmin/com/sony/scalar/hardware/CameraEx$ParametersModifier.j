@@ -26,6 +26,8 @@
 
 .field public static final AUTO_FOCUS_MODE_AF_S Ljava/lang/String; = "af-s"
 
+.field public static final AUTO_FOCUS_MODE_MOVIE Ljava/lang/String; = "movie"
+
 .field public static final BRACKET_MODE_COLOR Ljava/lang/String; = "color"
 
 .field public static final BRACKET_MODE_DRO Ljava/lang/String; = "dro"
@@ -51,6 +53,26 @@
 .field public static final BURST_DRIVE_SPEED_LOW Ljava/lang/String; = "low"
 
 .field public static final BURST_DRIVE_SPEED_MIDDLE Ljava/lang/String; = "middle"
+
+.field public static final CAMERA_GAIN_AUTO I = -2147483648
+
+.field public static final CINEMA_TONE_1 Ljava/lang/String; = "on-1"
+
+.field public static final CINEMA_TONE_2 Ljava/lang/String; = "on-2"
+
+.field public static final CINEMA_TONE_OFF Ljava/lang/String; = "off"
+
+.field public static final COLOR_DEPTH_TYPE_BLUE Ljava/lang/String; = "blue"
+
+.field public static final COLOR_DEPTH_TYPE_CYAN Ljava/lang/String; = "cyan"
+
+.field public static final COLOR_DEPTH_TYPE_GREEN Ljava/lang/String; = "green"
+
+.field public static final COLOR_DEPTH_TYPE_MAGENTA Ljava/lang/String; = "magenta"
+
+.field public static final COLOR_DEPTH_TYPE_RED Ljava/lang/String; = "red"
+
+.field public static final COLOR_DEPTH_TYPE_YELLOW Ljava/lang/String; = "yellow"
 
 .field public static final COLOR_MODE_CLEAR Ljava/lang/String; = "clear"
 
@@ -85,6 +107,10 @@
 .field public static final COLOR_SELECT_MODE_OFF Ljava/lang/String; = "off"
 
 .field public static final COLOR_SELECT_MODE_REVISION Ljava/lang/String; = "revision"
+
+.field public static final COLOR_SPACE_EXPANDED Ljava/lang/String; = "expanded"
+
+.field public static final COLOR_SPACE_STANDARD Ljava/lang/String; = "standard"
 
 .field public static final DIGITAL_ZOOM_TYPE_PRECISION Ljava/lang/String; = "precision"
 
@@ -127,6 +153,12 @@
 .field public static final FLASH_TYPE_SLOW_SYNC Ljava/lang/String; = "slow-sync"
 
 .field public static final FLASH_TYPE_WIRELESS Ljava/lang/String; = "wireless"
+
+.field public static final FLEXIBLE_SPOT_SIZE_L Ljava/lang/String; = "large"
+
+.field public static final FLEXIBLE_SPOT_SIZE_M Ljava/lang/String; = "midium"
+
+.field public static final FLEXIBLE_SPOT_SIZE_S Ljava/lang/String; = "small"
 
 .field public static final FOCUS_AREA_MODE_CENTER Ljava/lang/String; = "center"
 
@@ -178,6 +210,8 @@
 
 .field public static final IMAGE_SIZE_S Ljava/lang/String; = "small"
 
+.field public static final IMAGE_SIZE_VGA Ljava/lang/String; = "vga"
+
 .field public static final LENS_CORRECTION_CHROMA_BLUE Ljava/lang/String; = "chroma-b"
 
 .field public static final LENS_CORRECTION_CHROMA_RED Ljava/lang/String; = "chroma-r"
@@ -203,6 +237,12 @@
 .field public static final METERING_MODE_CENTER_WEIGHTED_AVERAGE Ljava/lang/String; = "center-weighted-average"
 
 .field public static final METERING_MODE_MULTI Ljava/lang/String; = "multi"
+
+.field public static final MOVIE_ANTI_HAND_BLUR_MODE_ACTIVE Ljava/lang/String; = "active"
+
+.field public static final MOVIE_ANTI_HAND_BLUR_MODE_OFF Ljava/lang/String; = "off"
+
+.field public static final MOVIE_ANTI_HAND_BLUR_MODE_STANDARD Ljava/lang/String; = "standard"
 
 .field public static final PICTURE_EFFECT_HDR_ART Ljava/lang/String; = "hdr-art"
 
@@ -286,6 +326,8 @@
 
 .field public static final QUICK_AF_C_WO_AEL Ljava/lang/String; = "afc_woaf"
 
+.field public static final QUICK_AF_WI_AEL Ljava/lang/String; = "af_wiae"
+
 .field public static final QUICK_AF_WO_AEL Ljava/lang/String; = "af_woaf"
 
 .field public static final RED_EYE_REDUCTION_MODE_AUTO Ljava/lang/String; = "auto"
@@ -356,6 +398,14 @@
 
 .field public static final SHOOTING_PREVIEW_MODE_OFF Ljava/lang/String; = "off"
 
+.field public static final SOFT_SKIN_EFFECT_HIGH Ljava/lang/String; = "high"
+
+.field public static final SOFT_SKIN_EFFECT_LOW Ljava/lang/String; = "low"
+
+.field public static final SOFT_SKIN_EFFECT_MIDDLE Ljava/lang/String; = "middle"
+
+.field public static final SOFT_SKIN_EFFECT_OFF Ljava/lang/String; = "off"
+
 .field public static final WHITE_BALANCE_COLOR_TEMP Ljava/lang/String; = "color-temp"
 
 .field public static final WHITE_BALANCE_CUSTOM Ljava/lang/String; = "custom"
@@ -367,6 +417,8 @@
 .field public static final WHITE_BALANCE_FLUORESCENT_DAYLIGHT Ljava/lang/String; = "fluorescent-daylight"
 
 .field public static final WHITE_BALANCE_FLUORESCENT_DAYWHITE Ljava/lang/String; = "fluorescent-daywhite"
+
+.field public static final WHITE_BALANCE_UNDERWATER_AUTO Ljava/lang/String; = "underwater-auto"
 
 .field public static final WHITE_BALANCE_UNDERWATER_BLUE Ljava/lang/String; = "underwater-blue"
 
@@ -415,13 +467,29 @@
 .method public getBurstDriveSpeed()Ljava/lang/String;
 .end method
 
+; added in V3
+.method public getCameraGain()I
+.end method
+
+; added in V3
+.method public getCinemaTone()Ljava/lang/String;
+.end method
+
 .method public getColorCompensationForWhiteBalance()I
+.end method
+
+; added in V3
+.method public getColorDepth(Ljava/lang/String;)I
 .end method
 
 .method public getColorMode()Ljava/lang/String;
 .end method
 
 .method public getColorSelectMode()Ljava/lang/String;
+.end method
+
+; added in V3
+.method public getColorSpace()Ljava/lang/String;
 .end method
 
 .method public getColorTemperatureForWhiteBalance()I
@@ -464,6 +532,10 @@
 .method public getFlashType()Ljava/lang/String;
 .end method
 
+; added in V3
+.method public getFocusAreaFlexibleSpotSize()Ljava/lang/String;
+.end method
+
 .method public getFocusAreaMode()Ljava/lang/String;
 .end method
 
@@ -489,6 +561,10 @@
 .method public getImageAspectRatio()Ljava/lang/String;
 .end method
 
+; added in V3
+.method public getImagePixelSize(Ljava/lang/String;Ljava/lang/String;)Landroid/hardware/Camera$Size;
+.end method
+
 ; added in V1
 .method public getImageSize()Ljava/lang/String;
 .end method
@@ -502,7 +578,15 @@
 .method public getLightBalanceForWhiteBalance()I
 .end method
 
+; added in V3
+.method public getLongExposureNR()Z
+.end method
+
 .method public getMaxColorCompensationForWhiteBalance()I
+.end method
+
+; added in V3
+.method public getMaxColorDepth(Ljava/lang/String;)I
 .end method
 
 .method public getMaxColorSelectChannels()I
@@ -522,6 +606,10 @@
 .end method
 
 .method public getMaxFlashCompensation()I
+.end method
+
+; added in V3
+.method public getMaxFocusDriveSpeed()I
 .end method
 
 .method public getMaxFocusShift()I
@@ -563,7 +651,19 @@
 .method public getMaxSharpness()I
 .end method
 
+; added in V3
+.method public getMaxSharpnessGain()I
+.end method
+
 .method public getMaxToyCameraTuning()I
+.end method
+
+; added in V3
+.method public getMaxWhiteBalanceShiftCC()I
+.end method
+
+; added in V3
+.method public getMaxWhiteBalanceShiftLB()I
 .end method
 
 ; added in V1
@@ -574,6 +674,10 @@
 .end method
 
 .method public getMinColorCompensationForWhiteBalance()I
+.end method
+
+; added in V3
+.method public getMinColorDepth(Ljava/lang/String;)I
 .end method
 
 .method public getMinColorTemperatureForWhiteBalance()I
@@ -618,7 +722,23 @@
 .method public getMinSharpness()I
 .end method
 
+; added in V3
+.method public getMinSharpnessGain()I
+.end method
+
 .method public getMinToyCameraTuning()I
+.end method
+
+; added in V3
+.method public getMinWhiteBalanceShiftCC()I
+.end method
+
+; added in V3
+.method public getMinWhiteBalanceShiftLB()I
+.end method
+
+; added in V3
+.method public getMovieAntiHandBlurMode()Ljava/lang/String;
 .end method
 
 .method public getMultiShootNRMode()Z
@@ -634,6 +754,10 @@
 .end method
 
 .method public getOVFPreviewMode()Z
+.end method
+
+; added in V3
+.method public getPictureControlExposureShift()I
 .end method
 
 .method public getPictureEffect()Ljava/lang/String;
@@ -660,6 +784,10 @@
 .method public getPictureEffectSoftFocusEffectLevel()I
 .end method
 
+; added in V3
+.method public getPictureEffectSoftHighKeyEffect()Ljava/lang/String;
+.end method
+
 .method public getPictureEffectSoftHightKeyEffect()Ljava/lang/String;
 .end method
 
@@ -680,6 +808,10 @@
 .method public getPreviewMagnificationTimeOnManualFocus()I
 .end method
 
+; added in V3
+.method public getRGBMatrix()[I
+.end method
+
 .method public getRedEyeReductionMode()Ljava/lang/String;
 .end method
 
@@ -695,10 +827,22 @@
 .method public getSharpness()I
 .end method
 
+; added in V3
+.method public getSharpnessGain()I
+.end method
+
+; added in V3
+.method public getSharpnessGainMode()Z
+.end method
+
 .method public getShootingPreviewMode()Ljava/lang/String;
 .end method
 
 .method public getShutterSpeed()Landroid/util/Pair;
+.end method
+
+; added in V3
+.method public getSoftSkinEffect()Ljava/lang/String;
 .end method
 
 .method public getSupportedAntiHandBlurModes()Ljava/util/List;
@@ -725,10 +869,26 @@
 .method public getSupportedBurstDriveSpeeds()Ljava/util/List;
 .end method
 
+; added in V3
+.method public getSupportedCameraGains()Ljava/util/List;
+.end method
+
+; added in V3
+.method public getSupportedCinemaTones()Ljava/util/List;
+.end method
+
+; added in V3
+.method public getSupportedColorDepthTypes()Ljava/util/List;
+.end method
+
 .method public getSupportedColorModes()Ljava/util/List;
 .end method
 
 .method public getSupportedColorSelectModes()Ljava/util/List;
+.end method
+
+; added in V3
+.method public getSupportedColorSpaces()Ljava/util/List;
 .end method
 
 .method public getSupportedDROModes()Ljava/util/List;
@@ -741,6 +901,10 @@
 .method public getSupportedDriveModes()Ljava/util/List;
 .end method
 
+; added in V3
+.method public getSupportedExpandedISOSensitivities()Ljava/util/List;
+.end method
+
 .method public getSupportedExposureBracketModes()Ljava/util/List;
 .end method
 
@@ -751,6 +915,10 @@
 .end method
 
 .method public getSupportedFlashTypes()Ljava/util/List;
+.end method
+
+; added in V3
+.method public getSupportedFocusAreaFlexibleSpotSizes()Ljava/util/List;
 .end method
 
 .method public getSupportedFocusAreaModes()Ljava/util/List;
@@ -773,10 +941,18 @@
 .method public getSupportedImageSizes()Ljava/util/List;
 .end method
 
+; added in V3
+.method public getSupportedJpegQualities()Ljava/util/List;
+.end method
+
 .method public getSupportedLensCorrections()Ljava/util/List;
 .end method
 
 .method public getSupportedMeteringModes()Ljava/util/List;
+.end method
+
+; added in V3
+.method public getSupportedMovieAntiHandBlurModes()Ljava/util/List;
 .end method
 
 .method public getSupportedNumsOfBracketPicture()Ljava/util/List;
@@ -789,6 +965,10 @@
 .end method
 
 .method public getSupportedPictureEffectPosterizationEffects()Ljava/util/List;
+.end method
+
+; added in V3
+.method public getSupportedPictureEffectSoftHighKeyEffects()Ljava/util/List;
 .end method
 
 .method public getSupportedPictureEffectSoftHightKeyEffects()Ljava/util/List;
@@ -819,11 +999,27 @@
 .method public getSupportedShootingPreviewModes()Ljava/util/List;
 .end method
 
+; added in V3
+.method public getSupportedSoftSkinEffects()Ljava/util/List;
+.end method
+
 ; added in V1
 .method public getSupportedZoomDriveTypes()Ljava/util/List;
 .end method
 
 .method public getToyCameraTuning()I
+.end method
+
+; added in V3
+.method public getWhiteBalanceShiftCC()I
+.end method
+
+; added in V3
+.method public getWhiteBalanceShiftLB()I
+.end method
+
+; added in V3
+.method public getWhiteBalanceShiftMode()Z
 .end method
 
 ; added in V1
@@ -840,6 +1036,26 @@
 .method public isDirectShutterSupported()Z
 .end method
 
+; added in V3
+.method public isExtendedGammaTableSupported()Z
+.end method
+
+; added in V3
+.method public isFocusDriveSupported()Z
+.end method
+
+; added in V3
+.method public isPictureControlExposureShiftSupported()Z
+.end method
+
+; added in V3
+.method public isRGBMatrixSupported()Z
+.end method
+
+; added in V3
+.method public isSharpnessGainModeSupported()Z
+.end method
+
 .method public isSupportedAutoShutterSpeedLowLimit()Z
 .end method
 
@@ -849,7 +1065,15 @@
 .method public isSupportedFocusShift()Z
 .end method
 
+; added in V3
+.method public isSupportedForceExposureControlMode()Z
+.end method
+
 .method public isSupportedLensInfo()Z
+.end method
+
+; added in V3
+.method public isSupportedLongExposureNR()Z
 .end method
 
 .method public isSupportedOVFPreviewMode()Z
@@ -862,6 +1086,10 @@
 .end method
 
 .method public isSupportedToggleFocusMode()Z
+.end method
+
+; added in V3
+.method public isWhiteBalanceShiftModeSupported()Z
 .end method
 
 .method public setAntiHandBlurMode(Ljava/lang/String;)V
@@ -898,13 +1126,29 @@
 .method public setBurstDriveSpeed(Ljava/lang/String;)V
 .end method
 
+; added in V3
+.method public setCameraGain(I)V
+.end method
+
+; added in V3
+.method public setCinemaTone(Ljava/lang/String;)V
+.end method
+
 .method public setColorCompensationForWhiteBalance(I)V
+.end method
+
+; added in V3
+.method public setColorDepth(Ljava/lang/String;I)V
 .end method
 
 .method public setColorMode(Ljava/lang/String;)V
 .end method
 
 .method public setColorSelectMode(Ljava/lang/String;[I)V
+.end method
+
+; added in V3
+.method public setColorSpace(Ljava/lang/String;)V
 .end method
 
 .method public setColorTemperatureForWhiteBalance(I)V
@@ -947,6 +1191,10 @@
 .method public setFlashType(Ljava/lang/String;)V
 .end method
 
+; added in V3
+.method public setFocusAreaFlexibleSpotSize(Ljava/lang/String;)V
+.end method
+
 .method public setFocusAreaMode(Ljava/lang/String;)V
 .end method
 
@@ -982,7 +1230,15 @@
 .method public setLightBalanceForWhiteBalance(I)V
 .end method
 
+; added in V3
+.method public setLongExposureNR(Z)V
+.end method
+
 .method public setMeteringMode(Ljava/lang/String;)V
+.end method
+
+; added in V3
+.method public setMovieAntiHandBlurMode(Ljava/lang/String;)V
 .end method
 
 .method public setMultiShootNRMode(Z)V
@@ -995,6 +1251,10 @@
 .end method
 
 .method public setOVFPreviewMode(Z)V
+.end method
+
+; added in V3
+.method public setPictureControlExposureShift(I)V
 .end method
 
 .method public setPictureEffect(Ljava/lang/String;)V
@@ -1021,6 +1281,10 @@
 .method public setPictureEffectSoftFocusEffectLevel(I)V
 .end method
 
+; added in V3
+.method public setPictureEffectSoftHighKeyEffect(Ljava/lang/String;)V
+.end method
+
 .method public setPictureEffectSoftHightKeyEffect(Ljava/lang/String;)V
 .end method
 
@@ -1031,6 +1295,10 @@
 .end method
 
 .method public setPictureStorageFormat(Ljava/lang/String;)V
+.end method
+
+; added in V3
+.method public setRGBMatrix([I)V
 .end method
 
 .method public setRedEyeReductionMode(Ljava/lang/String;)V
@@ -1048,10 +1316,34 @@
 .method public setSharpness(I)V
 .end method
 
+; added in V3
+.method public setSharpnessGain(I)V
+.end method
+
+; added in V3
+.method public setSharpnessGainMode(Z)V
+.end method
+
 .method public setShootingPreviewMode(Ljava/lang/String;)V
 .end method
 
+; added in V3
+.method public setSoftSkinEffect(Ljava/lang/String;)V
+.end method
+
 .method public setToyCameraTuning(I)V
+.end method
+
+; added in V3
+.method public setWhiteBalanceShiftCC(I)V
+.end method
+
+; added in V3
+.method public setWhiteBalanceShiftLB(I)V
+.end method
+
+; added in V3
+.method public setWhiteBalanceShiftMode(Z)V
 .end method
 
 ; added in V1

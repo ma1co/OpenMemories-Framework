@@ -47,6 +47,8 @@
 
 .field public static final LONGITUDE Ljava/lang/String; = "longitude"
 
+.field public static final MP_4_AVC Ljava/lang/String; = "mp_4_avc"
+
 .field public static final REC_ORDER Ljava/lang/String; = "rec_order"
 
 .field public static final TIME_ZONE Ljava/lang/String; = "time_zone"

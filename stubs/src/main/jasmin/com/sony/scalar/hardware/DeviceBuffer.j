@@ -16,6 +16,14 @@
 .method public read([BIII)I
 .end method
 
+; added in V3
+.method public write(Ljava/io/InputStream;)I
+.end method
+
+; added in V3
+.method public write(Ljava/io/InputStream;III)I
+.end method
+
 .method public write(Ljava/nio/ByteBuffer;)I
 .end method
 
