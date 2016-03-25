@@ -1,6 +1,9 @@
 .class public com/sony/scalar/hardware/CameraEx
 .super java/lang/Object
 .inner class public ParametersModifier inner com/sony/scalar/hardware/CameraEx$ParametersModifier outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract AutoApscModeListener inner com/sony/scalar/hardware/CameraEx$AutoApscModeListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract ZoomChangeListener inner com/sony/scalar/hardware/CameraEx$ZoomChangeListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static ZoomInfo inner com/sony/scalar/hardware/CameraEx$ZoomInfo outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract ProgramLineListener inner com/sony/scalar/hardware/CameraEx$ProgramLineListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract FlashEmittingListener inner com/sony/scalar/hardware/CameraEx$FlashEmittingListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract ProgramLineRangeOverListener inner com/sony/scalar/hardware/CameraEx$ProgramLineRangeOverListener outer com/sony/scalar/hardware/CameraEx
@@ -14,6 +17,7 @@
 .inner class public static interface abstract PictureReviewInfoListener inner com/sony/scalar/hardware/CameraEx$PictureReviewInfoListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract PictureReviewStartListener inner com/sony/scalar/hardware/CameraEx$PictureReviewStartListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract AutoFocusDoneListener inner com/sony/scalar/hardware/CameraEx$AutoFocusDoneListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract FocusAreaListener inner com/sony/scalar/hardware/CameraEx$FocusAreaListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static FocusAreaInfos inner com/sony/scalar/hardware/CameraEx$FocusAreaInfos outer com/sony/scalar/hardware/CameraEx
 .inner class public static FocusAreaRectInfo inner com/sony/scalar/hardware/CameraEx$FocusAreaRectInfo outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract AutoFocusStartListener inner com/sony/scalar/hardware/CameraEx$AutoFocusStartListener outer com/sony/scalar/hardware/CameraEx
@@ -29,6 +33,9 @@
 .inner class public static AnalizedData inner com/sony/scalar/hardware/CameraEx$AnalizedData outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract FaceDetectionListener inner com/sony/scalar/hardware/CameraEx$FaceDetectionListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract AutoISOSensitivityListener inner com/sony/scalar/hardware/CameraEx$AutoISOSensitivityListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract PreviewMagnificationListener inner com/sony/scalar/hardware/CameraEx$PreviewMagnificationListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static PrvwMagInfo inner com/sony/scalar/hardware/CameraEx$PrvwMagInfo outer com/sony/scalar/hardware/CameraEx
+.inner class public static PrvwMagChange inner com/sony/scalar/hardware/CameraEx$PrvwMagChange outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract PowerZoomListener inner com/sony/scalar/hardware/CameraEx$PowerZoomListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract EquipmentCallback inner com/sony/scalar/hardware/CameraEx$EquipmentCallback outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract AutoSceneModeListener inner com/sony/scalar/hardware/CameraEx$AutoSceneModeListener outer com/sony/scalar/hardware/CameraEx
@@ -48,6 +55,10 @@
 .field public static final PREVIEW_ASPECT_TYPE_3_2 I = 0
 
 .field public static final PROGRAM_LINE_RESET I = 0
+
+.field public static final ZOOM_DIRECTION_TELE I = 0
+
+.field public static final ZOOM_DIRECTION_WIDE I = 1
 
 .method public static open(ILcom/sony/scalar/hardware/CameraEx$OpenOptions;)Lcom/sony/scalar/hardware/CameraEx;
 .end method
@@ -106,6 +117,10 @@
 .method public getInhibitionInfo()I
 .end method
 
+; added in V1
+.method public getInitialParameters()Landroid/hardware/Camera$Parameters;
+.end method
+
 .method public getLensInfo()Lcom/sony/scalar/hardware/CameraEx$LensInfo;
 .end method
 
@@ -113,6 +128,10 @@
 .end method
 
 .method public getPreviewDisplayColor(II)Lcom/sony/scalar/hardware/CameraEx$SelectedColor;
+.end method
+
+; added in V1
+.method public getPreviewMagnificationRatio(I)I
 .end method
 
 .method public hasSupportedParameters()Z
@@ -127,6 +146,10 @@
 .method public release()V
 .end method
 
+; added in V1
+.method public resetDigitalZoom()V
+.end method
+
 .method public resetQuickAutoFocus(Ljava/lang/String;)V
 .end method
 
@@ -134,6 +157,10 @@
 .end method
 
 .method public final setApertureChangeListener(Lcom/sony/scalar/hardware/CameraEx$ApertureChangeListener;)V
+.end method
+
+; added in V1
+.method public final setAutoApscModeListener(Lcom/sony/scalar/hardware/CameraEx$AutoApscModeListener;)V
 .end method
 
 .method public setAutoFocusDoneListener(Lcom/sony/scalar/hardware/CameraEx$AutoFocusDoneListener;)V
@@ -148,10 +175,18 @@
 .method public setAutoPictureReviewControl(Lcom/sony/scalar/hardware/CameraEx$AutoPictureReviewControl;)V
 .end method
 
+; added in V1
+.method public setAutoPreviewMagnification()V
+.end method
+
 .method public final setAutoSceneModeListener(Lcom/sony/scalar/hardware/CameraEx$AutoSceneModeListener;)V
 .end method
 
 .method public setColorSelectToChannel(ILcom/sony/scalar/hardware/CameraEx$SelectedColor;)V
+.end method
+
+; added in V1
+.method public setDigitalZoom(I)V
 .end method
 
 .method public final setEquipmentCallback(Lcom/sony/scalar/hardware/CameraEx$EquipmentCallback;)V
@@ -172,6 +207,10 @@
 .method public setFocalLengthChangeListener(Lcom/sony/scalar/hardware/CameraEx$FocalLengthChangeListener;)V
 .end method
 
+; added in V1
+.method public final setFocusAreaListener(Lcom/sony/scalar/hardware/CameraEx$FocusAreaListener;)V
+.end method
+
 .method public setFocusLightStateListener(Lcom/sony/scalar/hardware/CameraEx$FocusLightStateListener;)V
 .end method
 
@@ -182,6 +221,14 @@
 .end method
 
 .method public setPreviewAnalizeListener(Lcom/sony/scalar/hardware/CameraEx$PreviewAnalizeListener;)V
+.end method
+
+; added in V1
+.method public setPreviewMagnification(ILandroid/util/Pair;)V
+.end method
+
+; added in V1
+.method public setPreviewMagnificationListener(Lcom/sony/scalar/hardware/CameraEx$PreviewMagnificationListener;)V
 .end method
 
 .method public setPreviewStartListener(Lcom/sony/scalar/hardware/CameraEx$PreviewStartListener;)V
@@ -211,6 +258,10 @@
 .method public setToggleFocusMode(Z)V
 .end method
 
+; added in V1
+.method public final setZoomChangeListener(Lcom/sony/scalar/hardware/CameraEx$ZoomChangeListener;)V
+.end method
+
 .method public shiftFocusPosition(I)Z
 .end method
 
@@ -226,6 +277,10 @@
 .method public startSelfTimerShutter()V
 .end method
 
+; added in V1
+.method public startZoom(II)V
+.end method
+
 .method public stopCustomWhiteBalanceCapture()V
 .end method
 
@@ -233,6 +288,14 @@
 .end method
 
 .method public stopFaceDetection()V
+.end method
+
+; added in V1
+.method public stopPreviewMagnification()V
+.end method
+
+; added in V1
+.method public stopZoom()V
 .end method
 
 .method public withSupportedParameters(Z)V

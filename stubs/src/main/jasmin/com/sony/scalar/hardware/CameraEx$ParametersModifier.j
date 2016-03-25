@@ -14,6 +14,12 @@
 
 .field public static final ANTI_HAND_BLUR_MODE_SHOOT Ljava/lang/String; = "onetime"
 
+.field public static final APSC_MODE_AUTO Ljava/lang/String; = "auto"
+
+.field public static final APSC_MODE_OFF Ljava/lang/String; = "off"
+
+.field public static final APSC_MODE_ON Ljava/lang/String; = "on"
+
 .field public static final AUTO_FOCUS_MODE_AF_A Ljava/lang/String; = "af-a"
 
 .field public static final AUTO_FOCUS_MODE_AF_C Ljava/lang/String; = "af-c"
@@ -79,6 +85,12 @@
 .field public static final COLOR_SELECT_MODE_OFF Ljava/lang/String; = "off"
 
 .field public static final COLOR_SELECT_MODE_REVISION Ljava/lang/String; = "revision"
+
+.field public static final DIGITAL_ZOOM_TYPE_PRECISION Ljava/lang/String; = "precision"
+
+.field public static final DIGITAL_ZOOM_TYPE_SMART Ljava/lang/String; = "smart"
+
+.field public static final DIGITAL_ZOOM_TYPE_SUPER_RESOLUTION Ljava/lang/String; = "super-resolution"
 
 .field public static final DRIVE_MODE_BRACKET Ljava/lang/String; = "bracket"
 
@@ -151,6 +163,20 @@
 .field public static final HDR_MODE_OFF Ljava/lang/String; = "off"
 
 .field public static final HDR_MODE_ON Ljava/lang/String; = "on"
+
+.field public static final IMAGE_ASPECT_RATIO_16_9 Ljava/lang/String; = "16:9"
+
+.field public static final IMAGE_ASPECT_RATIO_1_1 Ljava/lang/String; = "1:1"
+
+.field public static final IMAGE_ASPECT_RATIO_3_2 Ljava/lang/String; = "3:2"
+
+.field public static final IMAGE_ASPECT_RATIO_4_3 Ljava/lang/String; = "4:3"
+
+.field public static final IMAGE_SIZE_L Ljava/lang/String; = "large"
+
+.field public static final IMAGE_SIZE_M Ljava/lang/String; = "midium"
+
+.field public static final IMAGE_SIZE_S Ljava/lang/String; = "small"
 
 .field public static final LENS_CORRECTION_CHROMA_BLUE Ljava/lang/String; = "chroma-b"
 
@@ -254,6 +280,10 @@
 
 .field public static final PICTURE_STORAGE_FMT_RAWJPEG Ljava/lang/String; = "rawjpeg"
 
+.field public static final PREVIEW_MAGNIFICATION_OFF Ljava/lang/String; = "off"
+
+.field public static final PREVIEW_MAGNIFICATION_ON Ljava/lang/String; = "on"
+
 .field public static final QUICK_AF_C_WO_AEL Ljava/lang/String; = "afc_woaf"
 
 .field public static final QUICK_AF_WO_AEL Ljava/lang/String; = "af_woaf"
@@ -342,10 +372,20 @@
 
 .field public static final WHITE_BALANCE_UNDERWATER_GREEN Ljava/lang/String; = "underwater-green"
 
+.field public static final ZOOM_DRIVE_TYPE_AUTO Ljava/lang/String; = "auto"
+
+.field public static final ZOOM_DRIVE_TYPE_DIGITAL Ljava/lang/String; = "digital"
+
+.field public static final ZOOM_DRIVE_TYPE_OPTICAL Ljava/lang/String; = "optical"
+
 .method public getAntiHandBlurMode()Ljava/lang/String;
 .end method
 
 .method public getAperture()I
+.end method
+
+; added in V1
+.method public getApscMode()Ljava/lang/String;
 .end method
 
 .method public getAutoExposureLock()Ljava/lang/String;
@@ -399,6 +439,10 @@
 .method public getDROMode()Ljava/lang/String;
 .end method
 
+; added in V1
+.method public getDigitalZoomMode(Ljava/lang/String;)Z
+.end method
+
 .method public getDriveMode()Ljava/lang/String;
 .end method
 
@@ -441,6 +485,14 @@
 .method public getISOSensitivity()I
 .end method
 
+; added in V1
+.method public getImageAspectRatio()Ljava/lang/String;
+.end method
+
+; added in V1
+.method public getImageSize()Ljava/lang/String;
+.end method
+
 .method public getLensCorrection()Z
 .end method
 
@@ -463,6 +515,10 @@
 .end method
 
 .method public getMaxDROLevel()I
+.end method
+
+; added in V1
+.method public getMaxDigitalZoomMagnification(Ljava/lang/String;)I
 .end method
 
 .method public getMaxFlashCompensation()I
@@ -508,6 +564,10 @@
 .end method
 
 .method public getMaxToyCameraTuning()I
+.end method
+
+; added in V1
+.method public getMaxZoomSpeed()I
 .end method
 
 .method public getMeteringMode()Ljava/lang/String;
@@ -612,6 +672,14 @@
 .method public getPictureStorageFormat()Ljava/lang/String;
 .end method
 
+; added in V1
+.method public getPreviewMagnificationOnManualFocus()Z
+.end method
+
+; added in V1
+.method public getPreviewMagnificationTimeOnManualFocus()I
+.end method
+
 .method public getRedEyeReductionMode()Ljava/lang/String;
 .end method
 
@@ -666,6 +734,10 @@
 .method public getSupportedDROModes()Ljava/util/List;
 .end method
 
+; added in V1
+.method public getSupportedDigitalZoomTypes()Ljava/util/List;
+.end method
+
 .method public getSupportedDriveModes()Ljava/util/List;
 .end method
 
@@ -691,6 +763,14 @@
 .end method
 
 .method public getSupportedISOSensitivitiesForMultiShootNR()Ljava/util/List;
+.end method
+
+; added in V1
+.method public getSupportedImageAspectRatios()Ljava/util/List;
+.end method
+
+; added in V1
+.method public getSupportedImageSizes()Ljava/util/List;
 .end method
 
 .method public getSupportedLensCorrections()Ljava/util/List;
@@ -723,6 +803,10 @@
 .method public getSupportedPictureStorageFormats()Ljava/util/List;
 .end method
 
+; added in V1
+.method public getSupportedPreviewMagnification()Ljava/util/List;
+.end method
+
 .method public getSupportedQuickAutoFocus()Ljava/util/List;
 .end method
 
@@ -735,7 +819,19 @@
 .method public getSupportedShootingPreviewModes()Ljava/util/List;
 .end method
 
+; added in V1
+.method public getSupportedZoomDriveTypes()Ljava/util/List;
+.end method
+
 .method public getToyCameraTuning()I
+.end method
+
+; added in V1
+.method public getZoomDriveType()Ljava/lang/String;
+.end method
+
+; added in V1
+.method public isApscModeSupported()Z
 .end method
 
 .method public isAutoWhiteBalanceLockSupported()Z
@@ -769,6 +865,10 @@
 .end method
 
 .method public setAntiHandBlurMode(Ljava/lang/String;)V
+.end method
+
+; added in V1
+.method public setApscMode(Ljava/lang/String;)V
 .end method
 
 .method public setAutoExposureLock(Ljava/lang/String;)V
@@ -822,6 +922,10 @@
 .method public setDROMode(Ljava/lang/String;)V
 .end method
 
+; added in V1
+.method public setDigitalZoomMode(Ljava/lang/String;Z)V
+.end method
+
 .method public setDriveMode(Ljava/lang/String;)V
 .end method
 
@@ -859,6 +963,14 @@
 .end method
 
 .method public setISOSensitivity(I)V
+.end method
+
+; added in V1
+.method public setImageAspectRatio(Ljava/lang/String;)V
+.end method
+
+; added in V1
+.method public setImageSize(Ljava/lang/String;)V
 .end method
 
 .method public setLensCorrection(Z)V
@@ -940,6 +1052,10 @@
 .end method
 
 .method public setToyCameraTuning(I)V
+.end method
+
+; added in V1
+.method public setZoomDriveType(Ljava/lang/String;)V
 .end method
 
 .method public tryIgnoreInhibit()V

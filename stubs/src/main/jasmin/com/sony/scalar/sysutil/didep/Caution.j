@@ -954,6 +954,8 @@
 
 .field public static final CAUTION_ID_AVCHD_R_ERR I = 75
 
+.field public static final CAUTION_ID_AVCHD_VIEW_CANNOT_LAUNCH I = 2689
+
 .field public static final CAUTION_ID_AVC_HD_ERR_EXTMEDIA I = 108
 
 .field public static final CAUTION_ID_AVC_HD_ERR_HDD I = 99
@@ -4921,6 +4923,8 @@
 .field public static final CAUTION_ID_SEND_TO_PC_INVALID_AIRPLANE_MODE I = 1869
 
 .field public static final CAUTION_ID_SEND_TO_PC_INVALID_PC_APP I = 1870
+
+.field public static final CAUTION_ID_SEND_TO_SMARTPHONE_SENDING_ERROR I = 2690
 
 .field public static final CAUTION_ID_SEND_TO_SMART_PHONE_INVALID_AIRPLANE_MODE I = 1875
 

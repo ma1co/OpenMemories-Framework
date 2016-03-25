@@ -10,6 +10,10 @@
 
 .field public static final INTVAL_CATEGORY_NEX I = 1
 
+.field public static final INTVAL_DEST_INFO_CHINESE I = 2
+
+.field public static final INTVAL_DEST_INFO_COMMON I = 1
+
 .field public static final INTVAL_IMAGER_TYPE_NORMAL I = 0
 
 .field public static final INTVAL_IRREMOTE_CATEGORY_CAM I = 2
@@ -33,6 +37,8 @@
 .field public static final INTVAL_TP_TYPE_NONE I = 0
 
 .field public static final INTVAL_TP_TYPE_RESISTIVE I = 1
+
+.field public static final PROP_DEST_INFO Ljava/lang/String; = "version.api"
 
 .field public static final PROP_DEVICE_EVF_EXTERNAL_SUPPORTED Ljava/lang/String; = "device.evf.external.supported"
 

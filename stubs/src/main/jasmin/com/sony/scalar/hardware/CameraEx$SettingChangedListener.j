@@ -20,6 +20,8 @@
 
 .field public static final TYPE_ISO_SENSITIVITY I = 6
 
+.field public static final TYPE_MAX_DIGITAL_ZOOM_MAGNIFICATION I = 15
+
 .field public static final TYPE_METERING_MODE I = 5
 
 .field public static final TYPE_RED_EYE_REDUCTION_MODE I = 14
