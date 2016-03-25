@@ -8,6 +8,10 @@
 
 .field public static final AE_LOCK_SPOT Ljava/lang/String; = "spot"
 
+.field public static final ANTI_HAND_BLUR_INFO_FROM_LENS Ljava/lang/String; = "from-lens"
+
+.field public static final ANTI_HAND_BLUR_INFO_MANUAL Ljava/lang/String; = "manual"
+
 .field public static final ANTI_HAND_BLUR_MODE_CONTINUOUS Ljava/lang/String; = "keep"
 
 .field public static final ANTI_HAND_BLUR_MODE_OFF Ljava/lang/String; = "off"
@@ -454,6 +458,14 @@
 
 .field public static final ZOOM_DRIVE_TYPE_OPTICAL Ljava/lang/String; = "optical"
 
+; added in V9
+.method public getAntiHandBlurFocalLength()I
+.end method
+
+; added in V9
+.method public getAntiHandBlurInfo()Ljava/lang/String;
+.end method
+
 .method public getAntiHandBlurMode()Ljava/lang/String;
 .end method
 
@@ -769,6 +781,14 @@
 .method public getMotionShotMode()Z
 .end method
 
+; added in V9
+.method public getMovieAntiHandBlurFocalLength()I
+.end method
+
+; added in V9
+.method public getMovieAntiHandBlurInfo()Ljava/lang/String;
+.end method
+
 ; added in V3
 .method public getMovieAntiHandBlurMode()Ljava/lang/String;
 .end method
@@ -885,6 +905,10 @@
 .method public getSoftSkinEffect()Ljava/lang/String;
 .end method
 
+; added in V9
+.method public getSupportedAntiHandBlurInfos()Ljava/util/List;
+.end method
+
 .method public getSupportedAntiHandBlurModes()Ljava/util/List;
 .end method
 
@@ -997,6 +1021,10 @@
 .end method
 
 .method public getSupportedMeteringModes()Ljava/util/List;
+.end method
+
+; added in V9
+.method public getSupportedMovieAntiHandBlurInfos()Ljava/util/List;
 .end method
 
 ; added in V3
@@ -1127,6 +1155,10 @@
 .method public isSupportedAutoShutterSpeedLowLimit()Z
 .end method
 
+; added in V9
+.method public isSupportedExifInfo()Z
+.end method
+
 .method public isSupportedFocalLengthNotify()Z
 .end method
 
@@ -1166,6 +1198,14 @@
 
 ; added in V3
 .method public isWhiteBalanceShiftModeSupported()Z
+.end method
+
+; added in V9
+.method public setAntiHandBlurFocalLength(I)V
+.end method
+
+; added in V9
+.method public setAntiHandBlurInfo(Ljava/lang/String;)V
 .end method
 
 .method public setAntiHandBlurMode(Ljava/lang/String;)V
@@ -1323,6 +1363,14 @@
 
 ; added in V7
 .method public setMotionShotMode(Z)V
+.end method
+
+; added in V9
+.method public setMovieAntiHandBlurFocalLength(I)V
+.end method
+
+; added in V9
+.method public setMovieAntiHandBlurInfo(Ljava/lang/String;)V
 .end method
 
 ; added in V3

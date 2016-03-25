@@ -1,5 +1,6 @@
 .class public com/sony/scalar/hardware/CameraEx
 .super java/lang/Object
+.inner class public static ExifInfo inner com/sony/scalar/hardware/CameraEx$ExifInfo outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract IntervalRecListener inner com/sony/scalar/hardware/CameraEx$IntervalRecListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract MotionShotResultListener inner com/sony/scalar/hardware/CameraEx$MotionShotResultListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract SceneRecognitionJudgeListener inner com/sony/scalar/hardware/CameraEx$SceneRecognitionJudgeListener outer com/sony/scalar/hardware/CameraEx
@@ -277,6 +278,10 @@
 .end method
 
 .method public final setErrorCallback(Lcom/sony/scalar/hardware/CameraEx$ErrorCallback;)V
+.end method
+
+; added in V9
+.method public setExifInfo(Lcom/sony/scalar/hardware/CameraEx$ExifInfo;)V
 .end method
 
 ; added in V6

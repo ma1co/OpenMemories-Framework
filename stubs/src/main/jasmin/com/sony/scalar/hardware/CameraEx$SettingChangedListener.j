@@ -4,6 +4,8 @@
 
 .field public static final TYPE_AE_LOCK I = 4
 
+.field public static final TYPE_ANTI_HAND_BLUR_INFO I = 28
+
 .field public static final TYPE_ANTI_HAND_BLUR_MODE I = 22
 
 .field public static final TYPE_AUTO_FOCUS_MODE I = 8
@@ -39,6 +41,8 @@
 .field public static final TYPE_METERING_MODE I = 5
 
 .field public static final TYPE_MOTION_SHOT_MODE I = 27
+
+.field public static final TYPE_MOVIE_ANTI_HAND_BLUR_INFO I = 29
 
 .field public static final TYPE_MOVIE_ANTI_HAND_BLUR_MODE I = 19
 

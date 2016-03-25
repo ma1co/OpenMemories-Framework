@@ -16,6 +16,10 @@
 .inner class public LayoutWideImage inner com/sony/scalar/sysutil/didep/Settings$LayoutWideImage outer com/sony/scalar/sysutil/didep/Settings
 .inner class public AutoRotate inner com/sony/scalar/sysutil/didep/Settings$AutoRotate outer com/sony/scalar/sysutil/didep/Settings
 
+.field public static final MEDIA_EXTERNAL_1 I = 1
+
+.field public static final MEDIA_INTERNAL_1 I = 0
+
 ; added in V7
 .method public static final native getAutoPowerOffTime()I
 .end method
@@ -71,7 +75,15 @@
 .method public static final native getTouchPanelEnabled()I
 .end method
 
+; added in V9
+.method public static getUsingMedia()I
+.end method
+
 .method public static final native getWideImageLayout()I
+.end method
+
+; added in V9
+.method public static isLiveAndRec()Z
 .end method
 
 ; added in V7

@@ -14,6 +14,10 @@
 
 .field public static final DDSERVER_STOP_NOTIFY Ljava/lang/String; = "com.android.server.WifiSettingService.DDServerStopNotify"
 
+.field public static final DD_SERVER_STATE_ERROR_ACTION Ljava/lang/String; = "com.android.server.WifiSettingService.DdServerStateErrorAction"
+
+.field public static final DD_SERVER_STATE_ERROR_DESCRIPTION_ACTION Ljava/lang/String; = "com.android.server.WifiSettingService.DdServerStateErrorDescriptionAction"
+
 .field public static final DD_SERVER_STATE_ERROR_DEVICE_NAME_ACTION Ljava/lang/String; = "com.android.server.WifiSettingService.DdServerStateErrorDeviceNameAction"
 
 .field public static final DD_SERVER_STATE_ERROR_FROM_SERVICE_ACTION Ljava/lang/String; = "com.android.server.WifiSettingService.DdServerStateErrorFromServiceAction"
