@@ -49,6 +49,10 @@
 .method public setCamera(Lcom/sony/scalar/hardware/CameraEx;)V
 .end method
 
+; added in V10
+.method public setLoopRecMode(Z)V
+.end method
+
 .method public setOnErrorListener(Lcom/sony/scalar/media/MediaRecorder$OnErrorListener;)V
 .end method
 

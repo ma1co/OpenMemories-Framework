@@ -4,6 +4,8 @@
 
 .field public static final TYPE_AE_LOCK I = 4
 
+.field public static final TYPE_ANGLE I = 30
+
 .field public static final TYPE_ANTI_HAND_BLUR_INFO I = 28
 
 .field public static final TYPE_ANTI_HAND_BLUR_MODE I = 22
@@ -49,6 +51,8 @@
 .field public static final TYPE_ND_FILTER I = 23
 
 .field public static final TYPE_PRO_COLOR_MODE I = 25
+
+.field public static final TYPE_RAW_REC_MODE I = 39
 
 .field public static final TYPE_RED_EYE_REDUCTION_MODE I = 14
 

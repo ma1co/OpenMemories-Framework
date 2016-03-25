@@ -8,6 +8,10 @@
 
 .field public static final AE_LOCK_SPOT Ljava/lang/String; = "spot"
 
+.field public static final ANGLE_120 Ljava/lang/String; = "angle_120"
+
+.field public static final ANGLE_170 Ljava/lang/String; = "angle_170"
+
 .field public static final ANTI_HAND_BLUR_INFO_FROM_LENS Ljava/lang/String; = "from-lens"
 
 .field public static final ANTI_HAND_BLUR_INFO_MANUAL Ljava/lang/String; = "manual"
@@ -348,6 +352,10 @@
 
 .field public static final QUICK_AF_WO_AEL Ljava/lang/String; = "af_woaf"
 
+.field public static final RAW_REC_MODE_COMPRESS Ljava/lang/String; = "compress"
+
+.field public static final RAW_REC_MODE_UNCOMPRESS Ljava/lang/String; = "uncompress"
+
 .field public static final RED_EYE_REDUCTION_MODE_AUTO Ljava/lang/String; = "auto"
 
 .field public static final RED_EYE_REDUCTION_MODE_OFF Ljava/lang/String; = "off"
@@ -457,6 +465,10 @@
 .field public static final ZOOM_DRIVE_TYPE_DIGITAL Ljava/lang/String; = "digital"
 
 .field public static final ZOOM_DRIVE_TYPE_OPTICAL Ljava/lang/String; = "optical"
+
+; added in V10
+.method public getAngle()Ljava/lang/String;
+.end method
 
 ; added in V9
 .method public getAntiHandBlurFocalLength()I
@@ -905,6 +917,10 @@
 .method public getSoftSkinEffect()Ljava/lang/String;
 .end method
 
+; added in V10
+.method public getSupportedAngle()Ljava/util/List;
+.end method
+
 ; added in V9
 .method public getSupportedAntiHandBlurInfos()Ljava/util/List;
 .end method
@@ -1198,6 +1214,10 @@
 
 ; added in V3
 .method public isWhiteBalanceShiftModeSupported()Z
+.end method
+
+; added in V10
+.method public setAngle(Ljava/lang/String;)V
 .end method
 
 ; added in V9

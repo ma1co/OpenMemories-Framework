@@ -31,17 +31,25 @@
 
 .field public static final UB_TIME_REC_ON I = 1
 
+.field public static final VIDEO_ASPECT_RATIO_15_9 Ljava/lang/String; = "15_9"
+
 .field public static final VIDEO_ASPECT_RATIO_16_9 Ljava/lang/String; = "16_9"
 
 .field public static final VIDEO_ASPECT_RATIO_4_3 Ljava/lang/String; = "4_3"
 
+.field public static final VIDEO_ENCODING_BIT_RATE_100M Ljava/lang/String; = "100M"
+
 .field public static final VIDEO_ENCODING_BIT_RATE_50M Ljava/lang/String; = "50M"
+
+.field public static final VIDEO_ENCODING_BIT_RATE_60M Ljava/lang/String; = "60M"
 
 .field public static final VIDEO_ENCODING_BIT_RATE_FH Ljava/lang/String; = "FH"
 
 .field public static final VIDEO_ENCODING_BIT_RATE_FS Ljava/lang/String; = "FS"
 
 .field public static final VIDEO_ENCODING_BIT_RATE_FX Ljava/lang/String; = "FX"
+
+.field public static final VIDEO_ENCODING_BIT_RATE_FZ Ljava/lang/String; = "FZ"
 
 .field public static final VIDEO_ENCODING_BIT_RATE_HQ Ljava/lang/String; = "HQ"
 
@@ -63,6 +71,10 @@
 
 .field public static final VIDEO_FRAME_RATE_120P Ljava/lang/String; = "120p"
 
+.field public static final VIDEO_FRAME_RATE_200P Ljava/lang/String; = "200p"
+
+.field public static final VIDEO_FRAME_RATE_240P Ljava/lang/String; = "240p"
+
 .field public static final VIDEO_FRAME_RATE_24P Ljava/lang/String; = "24p"
 
 .field public static final VIDEO_FRAME_RATE_25P Ljava/lang/String; = "25p"
@@ -77,6 +89,8 @@
 
 .field public static final VIDEO_FRAME_RATE_60P Ljava/lang/String; = "60p"
 
+.field public static final VIDEO_SIZE_4K_2160 Ljava/lang/String; = "4K_2160"
+
 .field public static final VIDEO_SIZE_FHD_1080 Ljava/lang/String; = "FHD_1080"
 
 .field public static final VIDEO_SIZE_HD_1080 Ljava/lang/String; = "HD_1080"
@@ -89,6 +103,8 @@
 
 .field public static final VIDEO_SIZE_VGA Ljava/lang/String; = "VGA"
 
+.field public static final VIDEO_SIZE_WVGA Ljava/lang/String; = "WVGA"
+
 .method public <init>()V
 .end method
 
@@ -98,10 +114,18 @@
 .method public get(Ljava/lang/String;)Ljava/lang/String;
 .end method
 
+; added in V10
+.method public getLoopRecTime()I
+.end method
+
 .method public getOutputFormat()Ljava/lang/String;
 .end method
 
 .method public getSupportedCamcoderProfiles()Ljava/util/List;
+.end method
+
+; added in V10
+.method public getSupportedLoopRecTimes()Ljava/util/List;
 .end method
 
 ; added in V6
@@ -169,6 +193,10 @@
 .end method
 
 .method public set(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+; added in V10
+.method public setLoopRecTime(I)V
 .end method
 
 .method public setOutputFormat(Ljava/lang/String;)V

@@ -3,6 +3,8 @@
 .super java/lang/Object
 .inner class public Sub inner com/sony/scalar/hardware/indicator/SubLCD$Sub outer com/sony/scalar/hardware/indicator/SubLCD
 
+.field public static final LID_4K Ljava/lang/String; = "LID_SUBLCD_4K"
+
 .field public static final LID_AIRPLANE Ljava/lang/String; = "LID_SUBLCD_AIRPLANE"
 
 .field public static final LID_BATTERY_STATE Ljava/lang/String; = "LID_SUBLCD_BATTERY_STATE"
@@ -25,7 +27,13 @@
 
 .field public static final LID_INFOMATION Ljava/lang/String; = "LID_SUBLCD_INFOMATION"
 
+.field public static final LID_LIVE_STREAMING Ljava/lang/String; = "LID_SUBLCD_LIVE_STREAMING"
+
+.field public static final LID_LOOP_REC Ljava/lang/String; = "LID_SUBLCD_LOOP_REC"
+
 .field public static final LID_MDEIA_ERR_STATE Ljava/lang/String; = "LID_SUBLCD_MDEIA_ERR_STATE"
+
+.field public static final LID_MIC_OFF Ljava/lang/String; = "LID_SUBLCD_MIC_OFF"
 
 .field public static final LID_PLAY_OPERATION Ljava/lang/String; = "LID_SUBLCD_PLAY_OPERATION"
 
@@ -50,6 +58,10 @@
 .field public static final LID_WIFI_STATE_LIVE_STREAM Ljava/lang/String; = "LID_SUBLCD_WIFI_STATE_LIVE_STREAM"
 
 .field public static final LID_WIFI_STATE_MULTI Ljava/lang/String; = "LID_SUBLCD_WIFI_STATE_MULTI"
+
+.field public static final LID_XAVCS Ljava/lang/String; = "LID_SUBLCD_XAVCS"
+
+.field public static final LKID_4K Ljava/lang/String; = "LKID_SUBLCD_4K"
 
 .field public static final LKID_AIRPLANE Ljava/lang/String; = "LKID_SUBLCD_AIRPLANE"
 
@@ -83,7 +95,13 @@
 
 .field public static final LKID_INTERVAL_REC Ljava/lang/String; = "LKID_SUBLCD_INTERVAL_REC"
 
+.field public static final LKID_LIVE_STREAMING Ljava/lang/String; = "LKID_SUBLCD_LIVE_STREAMING"
+
+.field public static final LKID_LOOP_REC Ljava/lang/String; = "LKID_SUBLCD_LOOP_REC"
+
 .field public static final LKID_MDEIA_ERR_STATE Ljava/lang/String; = "LKID_SUBLCD_MDEIA_ERR_STATE"
+
+.field public static final LKID_MIC_OFF Ljava/lang/String; = "LKID_SUBLCD_MIC_OFF"
 
 .field public static final LKID_PRO Ljava/lang/String; = "LKID_SUBLCD_PRO"
 
@@ -102,6 +120,8 @@
 .field public static final LKID_WIFI_STATE_LIVE_STREAM Ljava/lang/String; = "LKID_SUBLCD_WIFI_STATE_LIVE_STREAM"
 
 .field public static final LKID_WIFI_STATE_MULTI Ljava/lang/String; = "LKID_SUBLCD_WIFI_STATE_MULTI"
+
+.field public static final LKID_XAVCS Ljava/lang/String; = "LKID_SUBLCD_XAVCS"
 
 .method public <init>(Lcom/sony/scalar/hardware/indicator/SubLCD;)V
 .end method

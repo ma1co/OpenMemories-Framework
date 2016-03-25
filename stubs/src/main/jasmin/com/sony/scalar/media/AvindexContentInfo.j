@@ -405,6 +405,8 @@
 
 .field public static final TAG_MK_NOTE_PICT_EFFECT_ERROR Ljava/lang/String; = "MkNotePictEffectError"
 
+.field public static final TAG_MK_NOTE_RAW_COMPRESSION Ljava/lang/String; = "MkNoteRawCompression"
+
 .field public static final TAG_MK_NOTE_SCENE_SELECT_MODE Ljava/lang/String; = "MkNoteSceneSelectMode"
 
 .field public static final TAG_MK_NOTE_WB2_AXIS_TUNING_VAL1 Ljava/lang/String; = "MkNoteWB2AxisTuningVal1"

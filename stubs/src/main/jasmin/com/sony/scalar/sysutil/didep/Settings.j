@@ -72,10 +72,15 @@
 .method public static final getSupportedAutoPowerOffTimes()Ljava/util/List;
 .end method
 
+; added in V10
+.method public static getTargetMediaId()Ljava/lang/String;
+.end method
+
 .method public static final native getTouchPanelEnabled()I
 .end method
 
 ; added in V9
+; removed in V10
 .method public static getUsingMedia()I
 .end method
 

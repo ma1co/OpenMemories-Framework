@@ -26,6 +26,24 @@
 
 .field public static final INTVAL_DEST_INFO_COMMON I = 1
 
+.field public static final INTVAL_CUSTOM_WHITE_BALANCE_SET I = 0
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_CONFIG I = 7
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_DEFAULT I = 0
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_INTERVALREC I = 4
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_LIVE I = 5
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_LOOP I = 1
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_MOVIE I = 2
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_PHOTO I = 3
+
+.field public static final INTVAL_DIADEM_2_SCALAR_TRANSITION_MODE_PLAY I = 6
+
 .field public static final INTVAL_GROUP_PRO_CAMERA I = 2
 
 .field public static final INTVAL_GROUP_REMOTE_CAMERA I = 1
@@ -66,6 +84,8 @@
 
 .field public static final INTVAL_NR_ON I = 1
 
+.field public static final INTVAL_ONE_PUSH_WHITE_BALANCE I = 1
+
 .field public static final INTVAL_PARAM_REMOCON_LIVE I = 3
 
 .field public static final INTVAL_PARAM_REMOCON_MULTI I = 2
@@ -73,6 +93,22 @@
 .field public static final INTVAL_PARAM_REMOCON_OFF I = 0
 
 .field public static final INTVAL_PARAM_REMOCON_SINGLE I = 1
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_CONFIG I = 1
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_FORMAT I = 4
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_PLAY_KEY I = 0
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_PLAY_VIEWSELECT I = 3
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_PW_OFF I = 7
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_SCALAR I = 6
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_USB I = 5
+
+.field public static final INTVAL_SCALAR_2_DIADEM_TRANSITION_MODE_WIFI_KEY I = 2
 
 .field public static final INTVAL_SIGNAL_FREQUENCY_NTSC I = 1
 
@@ -87,6 +123,10 @@
 .field public static final INTVAL_SUPPORTED I = 1
 
 .field public static final INTVAL_SUPPORTED_WIRELESS I = 2
+
+.field public static final INTVAL_SYS_DEST_CHINA I = 2
+
+.field public static final INTVAL_SYS_DEST_COMMON I = 1
 
 .field public static final INTVAL_TP_TYPE_CAPACITIVE I = 2
 
@@ -288,6 +328,8 @@
 
 .field public static final INTVAL_VALID I = 1
 
+.field public static final NET_DEVICE_INFO_WPS_UUID_BSS Ljava/lang/String; = "net.device.info.wps.uuid.bss"
+
 .field public static final NET_SERVICE_DEVICE_NAME Ljava/lang/String; = "net.service.device.name"
 
 .field public static final NET_SERVICE_DEVICE_NAME_VALID Ljava/lang/String; = "net.service.device.name.valid"
@@ -350,6 +392,8 @@
 
 .field public static final PROP_DEVICE_ZOOM_LEVER Ljava/lang/String; = "device.zoom.lever"
 
+.field public static final PROP_DIADEM_2_SCALAR_TRANSITION_MODE Ljava/lang/String; = "diadem.2.scalar.transition.mode"
+
 .field public static final PROP_DSP_ZOOM_NR_SUPPORTED Ljava/lang/String; = "dsp.zoomnr.supported"
 
 .field public static final PROP_DVICE_SUBLCD_TYPE Ljava/lang/String; = "device.sublcd.type"
@@ -382,9 +426,15 @@
 
 .field public static final PROP_MODEL_SERIAL_CODE Ljava/lang/String; = "model.serial.code"
 
+.field public static final PROP_SCALAR_2_DIADEM_TRANSITION_MODE Ljava/lang/String; = "scalar.2.diadem.transition.mode"
+
 .field public static final PROP_SIGNAL_FREQUENCY Ljava/lang/String; = "signal.frequency"
 
+.field public static final PROP_SYS_DEST Ljava/lang/String; = "sys.dest"
+
 .field public static final PROP_UI_BATTERY_THRESHOLD_LIST Ljava/lang/String; = "ui.battery.threshold.list"
+
+.field public static final PROP_UI_CUSTOM_WHITE_BALANCE_TYPE Ljava/lang/String; = "ui.custom.wb.type"
 
 .field public static final PROP_UI_DIGITAL_LEVEL_TYPE Ljava/lang/String; = "ui.digital.level.type"
 
@@ -395,6 +445,8 @@
 .field public static final PROP_UI_FORMAT_FUNC_SUPPORTED Ljava/lang/String; = "ui.format.func.supported"
 
 .field public static final PROP_UI_INTERVALREC_SUPPORTED Ljava/lang/String; = "ui.intervalrec.supported"
+
+.field public static final PROP_UI_LOOPREC_SUPPORTED Ljava/lang/String; = "ui.looprec.supported"
 
 .field public static final PROP_UI_MAIN_FEATURE Ljava/lang/String; = "ui.main.feature"
 

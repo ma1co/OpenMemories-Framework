@@ -125,6 +125,10 @@
 .method public captureCustomWhiteBalance(Lcom/sony/scalar/hardware/CameraEx$CustomWhiteBalanceCallback;)V
 .end method
 
+; added in V10
+.method public captureCustomWhiteBalance(Lcom/sony/scalar/hardware/CameraEx$CustomWhiteBalanceCallback;Z)V
+.end method
+
 .method public createEmptyParameters()Landroid/hardware/Camera$Parameters;
 .end method
 

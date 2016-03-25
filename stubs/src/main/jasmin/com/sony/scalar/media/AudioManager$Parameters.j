@@ -19,6 +19,8 @@
 
 .field public static final OUTPUT_BEEP_SHUTTER Ljava/lang/String; = "shutter"
 
+.field public static final OUTPUT_BEEP_SILENT Ljava/lang/String; = "silent"
+
 .method public <init>()V
 .end method
 

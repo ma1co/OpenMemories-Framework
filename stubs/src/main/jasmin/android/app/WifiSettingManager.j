@@ -32,6 +32,10 @@
 
 .field public static final DID_TEMPLATE Ljava/lang/String; = "DID_TEMPLATE"
 
+.field public static final DID_TEMPLATE_MULTI Ljava/lang/String; = "DID_TEMPLATE_MULTI"
+
+.field public static final DID_TEMPLATE_SINGLE Ljava/lang/String; = "DID_TEMPLATE_SINGLE"
+
 .field public static final DIRECT_STATE_ERROR_ACTION Ljava/lang/String; = "com.android.server.WifiSettingService.directStateErrorAction"
 
 .field public static final DISCONNECTED Ljava/lang/String; = "DISCONNECTED"
@@ -59,6 +63,14 @@
 .field public static final SERVICE_DID_SCPDURL Ljava/lang/String; = "SERVICE_DID_SCPDURL"
 
 .field public static final SETTABLE_WIFI_MODE Ljava/lang/String; = "SETTABLE_WIFI_MODE"
+
+.field public static final SET_PARAM_WIFI_MODE_LIVE Ljava/lang/String; = "SET_PARAM_WIFI_MODE_LIVE"
+
+.field public static final SET_PARAM_WIFI_MODE_MULTI Ljava/lang/String; = "SET_PARAM_WIFI_MODE_MULTI"
+
+.field public static final SET_PARAM_WIFI_MODE_OFF Ljava/lang/String; = "SET_PARAM_WIFI_MODE_OFF"
+
+.field public static final SET_PARAM_WIFI_MODE_SINGLE Ljava/lang/String; = "SET_PARAM_WIFI_MODE_SINGLE"
 
 .field public static final SSID Ljava/lang/String; = "SSID"
 
@@ -90,6 +102,10 @@
 
 .field public static final WIFI_STATE_ERROR_ACTION Ljava/lang/String; = "com.android.server.WifiSettingService.wifiStateErrorAction"
 
+.field public static final WPA_SUPPLICANT_TYPE_MULTI_PMM Ljava/lang/String; = "WPA_SUPPLICANT_TYPE_MULTI_PMM"
+
+.field public static final WPA_SUPPLICANT_TYPE_MULTI_TETHER Ljava/lang/String; = "WPA_SUPPLICANT_TYPE_MULTI_TETHER"
+
 .field public static final WPS_CANCEL_CMP Ljava/lang/String; = "com.android.server.WifiSettingService.wpsCancelCompAction"
 
 .field public static final WPS_FAILURE_ACTION Ljava/lang/String; = "com.android.server.WifiSettingService.wpsFailureAction"
@@ -103,10 +119,22 @@
 .method public <init>(Landroid/content/Context;)V
 .end method
 
+; added in V10
+.method public acceptWps()V
+.end method
+
 .method public cancelWps()V
 .end method
 
+; added in V10
+.method public enforceWifiDisabled(Z)V
+.end method
+
 .method public getValue(Ljava/lang/String;)Ljava/lang/String;
+.end method
+
+; added in V10
+.method public getWpaSupplicant(Ljava/lang/String;)Ljava/lang/String;
 .end method
 
 .method public isActive()Z
@@ -118,7 +146,15 @@
 .method public setSettableWifiMode(Ljava/util/List;)V
 .end method
 
+; added in V10
+.method public setWifiMode(Ljava/lang/String;)V
+.end method
+
 .method public setWifiModeSwitchabled(Z)V
+.end method
+
+; added in V10
+.method public setWpaSupplicant(Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
 .method public startWps()V

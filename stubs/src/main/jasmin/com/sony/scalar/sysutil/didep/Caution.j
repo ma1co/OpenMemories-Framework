@@ -50,6 +50,12 @@
 
 .field public static final CAUTION_GRP_ID_AF_MODE_L I = 33099
 
+.field public static final CAUTION_GRP_ID_AF_SYSTEM_CONTRAST_INVALID_GUIDE I = 34084
+
+.field public static final CAUTION_GRP_ID_AF_SYSTEM_FOCAL_PLANE_PHASE_DETECT_INVALID_GUIDE I = 34083
+
+.field public static final CAUTION_GRP_ID_AF_SYSTEM_INVALID_GUIDE I = 34082
+
 .field public static final CAUTION_GRP_ID_AF_WITH_SHUTTER_INVALID I = 33003
 
 .field public static final CAUTION_GRP_ID_APERTURE_VALUE_EXECUTION_INVALID_GUIDE I = 33905
@@ -141,6 +147,8 @@
 .field public static final CAUTION_GRP_ID_BRACKET_ORDER_INVALID_GUIDE I = 33803
 
 .field public static final CAUTION_GRP_ID_BRACKET_ORDER_MINUS_0_PLUS_INVALID_GUIDE I = 33805
+
+.field public static final CAUTION_GRP_ID_BRIGHT_MONITORING_INVALID_GUIDE I = 34077
 
 .field public static final CAUTION_GRP_ID_BUFFER_OVER_FLOW I = 32949
 
@@ -1157,6 +1165,8 @@
 .field public static final CAUTION_GRP_ID_IRIS_L I = 32959
 
 .field public static final CAUTION_GRP_ID_ISO_AUTO_INVALID I = 33055
+
+.field public static final CAUTION_GRP_ID_ISO_AUTO_MIN_SS_INVALID_GUIDE I = 34078
 
 .field public static final CAUTION_GRP_ID_ISO_INVALID I = 32852
 
@@ -2361,6 +2371,12 @@
 .field public static final CAUTION_GRP_ID_STILL_QUALITY_RAW_INVALID I = 32988
 
 .field public static final CAUTION_GRP_ID_STILL_QUALITY_RAW_JPEG_INVALID I = 32989
+
+.field public static final CAUTION_GRP_ID_STILL_RAW_FILE_TYPE_COMPRESSED_INVALID_GUIDE I = 34080
+
+.field public static final CAUTION_GRP_ID_STILL_RAW_FILE_TYPE_INVALID_GUIDE I = 34079
+
+.field public static final CAUTION_GRP_ID_STILL_RAW_FILE_TYPE_UNCOMPRESSED_INVALID_GUIDE I = 34081
 
 .field public static final CAUTION_GRP_ID_STILL_REC_DISABLE_INTELLIGENT_ACTIVE I = 34004
 
@@ -4804,6 +4820,8 @@
 
 .field public static final CAUTION_ID_EX_REASON_INVALID_FRAMERATE_24P I = 3528
 
+.field public static final CAUTION_ID_EX_REASON_INVALID_MOVIE I = 3534
+
 .field public static final CAUTION_ID_EX_REASON_INVALID_PB I = 3513
 
 .field public static final CAUTION_ID_EX_REASON_INVALID_SHOOTING I = 3514
@@ -6182,6 +6200,12 @@
 
 .field public static final CAUTION_ID_FACTOR_CAM_LENS_AF_SUPPORT_MSG I = 3139
 
+.field public static final CAUTION_ID_FACTOR_CAM_LENS_AF_SYSTEM_CONTRAST_AF_MSG I = 3544
+
+.field public static final CAUTION_ID_FACTOR_CAM_LENS_AF_SYSTEM_OTHER_MSG I = 3545
+
+.field public static final CAUTION_ID_FACTOR_CAM_LENS_AF_SYSTEM_PHASE_DETECTION_AF_MSG I = 3543
+
 .field public static final CAUTION_ID_FACTOR_CAM_LENS_AS_ACTIVE_SUPPORT_MSG I = 3145
 
 .field public static final CAUTION_ID_FACTOR_CAM_LENS_AS_NA_MSG I = 3144
@@ -6710,6 +6734,8 @@
 
 .field public static final CAUTION_ID_FACTOR_IMAGE_SURFACE_PHASE_DIFFERENCE_AF_AUTO_MSG I = 3134
 
+.field public static final CAUTION_ID_FACTOR_LENS_IRIS_RING_MANUAL I = 3539
+
 .field public static final CAUTION_ID_FACTOR_MARKER_DISPLAY_ON_MSG I = 3459
 
 .field public static final CAUTION_ID_FACTOR_MIC_AUDIO_REC_NOT_READY_MSG I = 3236
@@ -6765,6 +6791,8 @@
 .field public static final CAUTION_ID_FACTOR_SPOT_FOCUS_MSG I = 3135
 
 .field public static final CAUTION_ID_FACTOR_STEADYSHOT_ERR_MSG I = 3226
+
+.field public static final CAUTION_ID_FACTOR_STEADYSHOT_INTELLIGENT_ACTIVE_W_4K_MSG I = 3538
 
 .field public static final CAUTION_ID_FACTOR_STILL_CAPTURING_MSG I = 3233
 
@@ -7245,6 +7273,8 @@
 .field public static final CAUTION_ID_INVALID_DPOF_UNABLE I = 1414
 
 .field public static final CAUTION_ID_INVALID_DROPSENSOR I = 36
+
+.field public static final CAUTION_ID_INVALID_DUAL_REC_NOT_POSSIBLE I = 3542
 
 .field public static final CAUTION_ID_INVALID_DUAL_REC_SETTING I = 2211
 
@@ -9032,7 +9062,11 @@
 
 .field public static final CAUTION_ID_RECMODE_24P I = 273
 
+.field public static final CAUTION_ID_RECMODE_24P_FX I = 3536
+
 .field public static final CAUTION_ID_RECMODE_25P I = 274
+
+.field public static final CAUTION_ID_RECMODE_25P_FX I = 3537
 
 .field public static final CAUTION_ID_RECMODE_4K_100MBPS I = 3531
 
@@ -9402,6 +9436,10 @@
 
 .field public static final CAUTION_ID_UNSUPPORTED_II_SHOE_ACCESSORY_CONNECTED I = 2391
 
+.field public static final CAUTION_ID_UNSUPPORTED_MEDIA_XAVC_4K100M_CANNOT_SELECT I = 3540
+
+.field public static final CAUTION_ID_UNSUPPORTED_MEDIA_XAVC_4K100M_REC_INVALID I = 3535
+
 .field public static final CAUTION_ID_UNSUPPORTED_MEDIA_XAVC_REC_INVALID I = 3326
 
 .field public static final CAUTION_ID_UNSUPPORTED_XAVC_REC_INVALID_MCA I = 3498
@@ -9685,6 +9723,8 @@
 .field public static final CAUTION_ID_XAVC_ERR_MS I = 3406
 
 .field public static final CAUTION_ID_XAVC_ERR_MS_2 I = 3394
+
+.field public static final CAUTION_ID_XAVC_ERR_MS_XAVC_CANNOT_SELECT I = 3541
 
 .field public static final CAUTION_ID_XAVC_FULL_SLOT_1 I = 3395
 
@@ -10326,6 +10366,8 @@
 
 .field public static final FACTOR_ID_WATERPROOF_USB I = 30
 
+.field public static final INH_FACTOR_ID_CAM_VALUEID_MOUNT_ADAPTER_FOCUS_INVALID I = 298
+
 .field public static final INH_FACTOR_ID_OTHER_READ I = 222
 
 .field public static final INH_FACTOR_ID_OTHER_READ_BGM I = 226
@@ -10388,6 +10430,8 @@
 
 .field public static final MODE_ID_MAX_3 I = 21
 
+.field public static final MODE_ID_MAX_4 I = 22
+
 .field public static final MODE_ID_MENU I = 14
 
 .field public static final MODE_ID_MOVIE_REC I = 17
@@ -10403,6 +10447,8 @@
 .field public static final MODE_ID_MOVIE_REC_M2PS I = 5
 
 .field public static final MODE_ID_MOVIE_REC_MP4 I = 7
+
+.field public static final MODE_ID_MOVIE_REC_XAVCS I = 21
 
 .field public static final MODE_ID_PB I = 9
 

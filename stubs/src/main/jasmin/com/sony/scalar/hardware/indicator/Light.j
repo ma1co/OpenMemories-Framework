@@ -15,6 +15,8 @@
 
 .field public static final LID_LENS_UPDATE Ljava/lang/String; = "LID_LENS_UPDATE"
 
+.field public static final LID_LIVE Ljava/lang/String; = "LID_LIVE"
+
 .field public static final LID_MEDIA_ACCS_MMC0 Ljava/lang/String; = "LID_MEDIA_ACCS_MMC0"
 
 .field public static final LID_MEDIA_ACCS_MMC1 Ljava/lang/String; = "LID_MEDIA_ACCS_MMC1"
