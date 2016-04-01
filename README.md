@@ -27,3 +27,11 @@ This is a wrapper framework around Sony specific classes. For every Sony feature
 This framework is still under development. Most wrappers aren't available yet.
 
 See the [Javadoc](https://jitpack.io/com/github/ma1co/OpenMemories-Framework/framework/-SNAPSHOT/javadoc/) for more information.
+
+### DeviceInfo ###
+Access information about your device (model name, serial number, firmware version, etc).
+
+```java
+import com.github.ma1co.openmemories.framework.DeviceInfo;
+String serialNumber = DeviceInfo.getInstance().getSerialNumber();
+```

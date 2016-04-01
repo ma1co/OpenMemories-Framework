@@ -1,5 +1,9 @@
 apply plugin: 'java'
 
+repositories {
+    jcenter()
+}
+
 configurations {
     provided
 }
@@ -12,6 +16,7 @@ sourceSets {
 
 dependencies {
     provided project(':stubs')
+    provided 'com.google.android:android:4.1.1.4'
 }
 
 sourceCompatibility = 1.6
