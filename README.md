@@ -35,3 +35,11 @@ Access information about your device (model name, serial number, firmware versio
 import com.github.ma1co.openmemories.framework.DeviceInfo;
 String serialNumber = DeviceInfo.getInstance().getSerialNumber();
 ```
+
+### DateTime ###
+Get the current date and time.
+
+```java
+import com.github.ma1co.openmemories.framework.DateTime;
+java.util.Calendar currentTime = DateTime.getInstance().getCurrentTime();
+```
