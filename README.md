@@ -18,7 +18,9 @@ Build Android apps for your favorite Sony camera.
     ```
 
 2. Build your app (see [PMCADemo](https://github.com/ma1co/PMCADemo) for an example)
+
 3. Test it in the emulator
+
 4. Install it on your camera using [PMCA-RE](https://github.com/ma1co/Sony-PMCA-RE)
 
 ## Features ##
@@ -42,4 +44,14 @@ Get the current date and time.
 ```java
 import com.github.ma1co.openmemories.framework.DateTime;
 java.util.Calendar currentTime = DateTime.getInstance().getCurrentTime();
+```
+
+### DisplayManager ###
+Access information about the device's displays.
+
+```java
+import com.github.ma1co.openmemories.framework.DisplayManager;
+DisplayManager displayManager = DisplayManager.create(getApplicationContext());
+int displayWidth = displayManager.getActiveDisplayInfo().width;
+displayManager.release();
 ```
