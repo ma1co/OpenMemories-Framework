@@ -1,6 +1,7 @@
 package com.github.ma1co.openmemories.framework;
 
 import android.os.Build;
+import com.github.ma1co.openmemories.util.BiMap;
 import com.sony.scalar.sysutil.ScalarProperties;
 
 /**
@@ -15,7 +16,14 @@ public class DeviceInfo {
      * Instantiate using {@link DeviceInfo#getInstance()}.
      */
     public static class CameraDeviceInfo extends DeviceInfo {
+        private final BiMap<Integer, Category> categoryMap;
+
         private CameraDeviceInfo() {
+            categoryMap = new BiMap<Integer, Category>();
+            categoryMap.put(ScalarProperties.INTVAL_CATEGORY_ILDC_A, Category.A_MOUNT_CAMERA);
+            categoryMap.put(ScalarProperties.INTVAL_CATEGORY_ILDC_E, Category.E_MOUNT_CAMERA);
+            categoryMap.put(ScalarProperties.INTVAL_CATEGORY_DSC, Category.STILL_CAMERA);
+            categoryMap.put(ScalarProperties.INTVAL_CATEGORY_CAM, Category.ACTION_CAMERA);
         }
 
         private int getInt(String key) {
@@ -33,21 +41,6 @@ public class DeviceInfo {
             return platform;
         }
 
-        private Category convertCategory(int category) {
-            switch (category) {
-                case ScalarProperties.INTVAL_CATEGORY_ILDC_A:
-                    return Category.A_MOUNT_CAMERA;
-                case ScalarProperties.INTVAL_CATEGORY_ILDC_E:
-                    return Category.E_MOUNT_CAMERA;
-                case ScalarProperties.INTVAL_CATEGORY_DSC:
-                    return Category.STILL_CAMERA;
-                case ScalarProperties.INTVAL_CATEGORY_CAM:
-                    return Category.ACTION_CAMERA;
-                default:
-                    return Category.OTHER;
-            }
-        }
-
         @Override
         public String getModel() {
             return getString(ScalarProperties.PROP_MODEL_NAME);
@@ -55,7 +48,7 @@ public class DeviceInfo {
 
         @Override
         public Category getCategory() {
-            return convertCategory(getInt(ScalarProperties.PROP_MODEL_CATEGORY));
+            return categoryMap.getForward(getInt(ScalarProperties.PROP_MODEL_CATEGORY), Category.OTHER);
         }
 
         @Override
