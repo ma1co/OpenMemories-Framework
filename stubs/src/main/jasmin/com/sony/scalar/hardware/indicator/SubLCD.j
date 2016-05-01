@@ -31,11 +31,11 @@
 .method public static getStringLength(Ljava/lang/String;)I
 .end method
 
-; added in V14
+; added in V12
 .method public static native initialize()V
 .end method
 
-; added in V14
+; added in V12
 .method public static native release()V
 .end method
 
@@ -48,7 +48,7 @@
 .method public static setState(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
 .end method
 
-; added in V14
+; added in V12
 .method public static setState(Ljava/util/List;)V
 .end method
 

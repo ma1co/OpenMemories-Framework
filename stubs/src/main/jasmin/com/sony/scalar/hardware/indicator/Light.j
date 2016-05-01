@@ -99,11 +99,11 @@
 
 .field public static final PTN_SLOW Ljava/lang/String; = "PTN_SLOW"
 
-; added in V14
+; added in V12
 .method public static native initialize()V
 .end method
 
-; added in V14
+; added in V12
 .method public static native release()V
 .end method
 

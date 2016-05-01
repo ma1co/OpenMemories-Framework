@@ -249,7 +249,7 @@
 .method public final setApertureChangeListener(Lcom/sony/scalar/hardware/CameraEx$ApertureChangeListener;)V
 .end method
 
-; added in V14
+; added in V12
 .method public final setApertureStfFNumberListener(Lcom/sony/scalar/hardware/CameraEx$ApertureStfFNumberListener;)V
 .end method
 

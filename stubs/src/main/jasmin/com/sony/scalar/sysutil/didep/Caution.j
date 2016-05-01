@@ -10546,6 +10546,8 @@
 
 .field public static final FACTOR_ID_LOCKED_MEMCARD2 I = 70
 
+.field public static final FACTOR_ID_LOOP_REC I = 309
+
 .field public static final FACTOR_ID_LOW_SPEED_MEDIA I = 170
 
 .field public static final FACTOR_ID_LOW_SPEED_MEDIA_BGM I = 174

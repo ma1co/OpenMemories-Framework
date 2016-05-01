@@ -1,4 +1,4 @@
-; added in V14
+; added in V12
 .class public com/sony/scalar/hardware/indicator/Parameter
 .super java/lang/Object
 

@@ -1,4 +1,4 @@
-; added in V14
+; added in V12
 .class public com/sony/scalar/hardware/indicator/SubLCD$TextParameter
 .super com/sony/scalar/hardware/indicator/Parameter
 .inner class public static TextParameter inner com/sony/scalar/hardware/indicator/SubLCD$TextParameter outer com/sony/scalar/hardware/indicator/SubLCD

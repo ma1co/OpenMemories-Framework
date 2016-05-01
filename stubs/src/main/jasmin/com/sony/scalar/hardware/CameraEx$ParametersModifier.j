@@ -518,11 +518,11 @@
 .method public getAperture()I
 .end method
 
-; added in V14
+; added in V12
 .method public getApertureStfLevel()Ljava/lang/String;
 .end method
 
-; added in V14
+; added in V12
 .method public getApertureStfMode()Ljava/lang/String;
 .end method
 
@@ -644,11 +644,11 @@
 .method public getHDRMode()Ljava/lang/String;
 .end method
 
-; added in V14
+; added in V12
 .method public getISOAutoMax()I
 .end method
 
-; added in V14
+; added in V12
 .method public getISOAutoMin()I
 .end method
 
@@ -671,11 +671,11 @@
 .method public getIntervalRecTime()I
 .end method
 
-; added in V14
+; added in V12
 .method public getIsoAutoMinShutterSpeedMode()Ljava/lang/String;
 .end method
 
-; added in V14
+; added in V12
 .method public getIsoAutoMinShutterSpeedValue()Landroid/util/Pair;
 .end method
 
@@ -971,7 +971,7 @@
 .method public getShutterSpeed()Landroid/util/Pair;
 .end method
 
-; added in V14
+; added in V12
 .method public getSlowShutterLiveviewMode()Ljava/lang/String;
 .end method
 
@@ -990,11 +990,11 @@
 .method public getSupportedAntiHandBlurModes()Ljava/util/List;
 .end method
 
-; added in V14
+; added in V12
 .method public getSupportedApertureStfLevel()Ljava/util/List;
 .end method
 
-; added in V14
+; added in V12
 .method public getSupportedApertureStfMode()Ljava/util/List;
 .end method
 
@@ -1081,7 +1081,7 @@
 .method public getSupportedHDRModes()Ljava/util/List;
 .end method
 
-; added in V14
+; added in V12
 .method public getSupportedISOAutoMaxMin()Ljava/util/List;
 .end method
 
@@ -1103,11 +1103,11 @@
 .method public getSupportedIntervalRecTime()Ljava/util/List;
 .end method
 
-; added in V14
+; added in V12
 .method public getSupportedIsoAutoMinShutterSpeedModes()Ljava/util/List;
 .end method
 
-; added in V14
+; added in V12
 .method public getSupportedIsoAutoMinShutterSpeedValues()Ljava/util/List;
 .end method
 
@@ -1223,7 +1223,7 @@
 .method public isAutoWhiteBalanceLockSupported()Z
 .end method
 
-; added in V14
+; added in V12
 .method public isCustomWhiteBalanceInRange()Z
 .end method
 
@@ -1303,7 +1303,7 @@
 .method public isSupportedSilentShutterMode()Z
 .end method
 
-; added in V14
+; added in V12
 .method public isSupportedSlowShutterLiveviewMode()Z
 .end method
 
@@ -1329,11 +1329,11 @@
 .method public setAntiHandBlurMode(Ljava/lang/String;)V
 .end method
 
-; added in V14
+; added in V12
 .method public setApertureStfLevel(Ljava/lang/String;)V
 .end method
 
-; added in V14
+; added in V12
 .method public setApertureStfMode(Ljava/lang/String;)V
 .end method
 
@@ -1456,11 +1456,11 @@
 .method public setHDRMode(Ljava/lang/String;)V
 .end method
 
-; added in V14
+; added in V12
 .method public setISOAutoMax(I)V
 .end method
 
-; added in V14
+; added in V12
 .method public setISOAutoMin(I)V
 .end method
 
@@ -1479,11 +1479,11 @@
 .method public setIntervalRecTime(I)V
 .end method
 
-; added in V14
+; added in V12
 .method public setIsoAutoMinShutterSpeedMode(Ljava/lang/String;)V
 .end method
 
-; added in V14
+; added in V12
 .method public setIsoAutoMinShutterSpeedValue(Landroid/util/Pair;)V
 .end method
 
@@ -1617,7 +1617,7 @@
 .method public setSilentShutterMode(Z)V
 .end method
 
-; added in V14
+; added in V12
 .method public setSlowShutterLiveviewMode(Ljava/lang/String;)V
 .end method
 
