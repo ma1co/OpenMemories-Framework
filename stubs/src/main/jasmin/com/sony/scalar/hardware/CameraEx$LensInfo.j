@@ -26,6 +26,9 @@
 
 .field public LensType Ljava/lang/String;
 
+; added in V15
+.field public LensVersion I
+
 .field public MaxFValue Lcom/sony/scalar/hardware/CameraEx$WideTele;
 
 .field public MinFValue Lcom/sony/scalar/hardware/CameraEx$WideTele;

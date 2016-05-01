@@ -11,6 +11,7 @@
 .inner class public static interface abstract SplitShutterSequenceCallback inner com/sony/scalar/hardware/CameraSequence$SplitShutterSequenceCallback outer com/sony/scalar/hardware/CameraSequence
 .inner class public static interface abstract ShutterSequenceCallback inner com/sony/scalar/hardware/CameraSequence$ShutterSequenceCallback outer com/sony/scalar/hardware/CameraSequence
 .inner class public SplitExposureProgressInfo inner com/sony/scalar/hardware/CameraSequence$SplitExposureProgressInfo outer com/sony/scalar/hardware/CameraSequence
+.inner class public static YcDataInfo inner com/sony/scalar/hardware/CameraSequence$YcDataInfo outer com/sony/scalar/hardware/CameraSequence
 .inner class public static RawDataInfo inner com/sony/scalar/hardware/CameraSequence$RawDataInfo outer com/sony/scalar/hardware/CameraSequence
 .inner class public static RawData inner com/sony/scalar/hardware/CameraSequence$RawData outer com/sony/scalar/hardware/CameraSequence
 .inner class public static final Options inner com/sony/scalar/hardware/CameraSequence$Options outer com/sony/scalar/hardware/CameraSequence
@@ -36,6 +37,10 @@
 .end method
 
 .method public final getPreviewSequenceFrames(I)[Lcom/sony/scalar/hardware/DeviceMemory;
+.end method
+
+; added in V15
+.method public final getYcDataInfo(Lcom/sony/scalar/graphics/OptimizedImage;)Lcom/sony/scalar/hardware/CameraSequence$YcDataInfo;
 .end method
 
 ; added in V6

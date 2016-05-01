@@ -372,6 +372,10 @@
 
 .field public static final MODIFICATION_PATCH_BIT3 I = 4
 
+.field public static final INTVAL_WIFI_POWER_MODE_HIGH I = 1
+
+.field public static final INTVAL_WIFI_POWER_MODE_STANDARD I = 0
+
 .field public static final NET_DEVICE_INFO_WPS_UUID_BSS Ljava/lang/String; = "net.device.info.wps.uuid.bss"
 
 .field public static final NET_SERVICE_DEVICE_NAME Ljava/lang/String; = "net.service.device.name"
@@ -381,6 +385,8 @@
 .field public static final NET_SERVICE_FIXED_WPS_PIN Ljava/lang/String; = "net.service.fixed.wps.pin"
 
 .field public static final PROP_AUDIO_INOUT_CONCURRENCY_CONTROL Ljava/lang/String; = "audio.inout.concurrency.control"
+
+.field public static final PROP_DEVICE_BLUETOOTH_SUPPORTED Ljava/lang/String; = "device.bluetooth.supported"
 
 .field public static final PROP_DEVICE_DIGITAL_LEVEL Ljava/lang/String; = "device.digital.level"
 
@@ -433,6 +439,8 @@
 .field public static final PROP_DEVICE_PANEL_RES_W Ljava/lang/String; = "device.panel.res.w"
 
 .field public static final PROP_DEVICE_RTC_SUPPORTED Ljava/lang/String; = "device.rtc.supported"
+
+.field public static final PROP_DEVICE_WIFI_POWER_MODE Ljava/lang/String; = "wifi.power.mode"
 
 .field public static final PROP_DEVICE_WIFI_SUPPORTED Ljava/lang/String; = "device.wifi.supported"
 

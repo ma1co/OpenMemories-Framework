@@ -34,6 +34,10 @@ The following Sony cameras are known to run android:
 | [2015-06-10](http://blog.sony.com/press/sonys-rx100-iv-and-rx10-ii-cameras-bring-professional-imaging-experience-to-acclaimed-cyber-shot-rx-series/) | RX100M4 | 2.14 | [update](https://esupport.sony.com/p/model-home.pl?mdl=DSCRX100M4#/downloadTab) |
 | [2015-09-11](http://blog.sony.com/press/sony-expands-range-of-full-frame-%CE%B1-cameras-with-the-launch-of-ultra-sensitive-%CE%B17s-ii/) | A7SM2 | 2.14 | [update](https://esupport.sony.com/p/model-home.pl?mdl=ILCE7SM2#/downloadTab) |
 | [2015-10-14](http://blog.sony.com/2015/10/sony-introduces-new-palm-sized-rx1r-ii-camera-with-42-4-mp-full-frame-image-sensor/) | RX1RM2 | | |
+| [2016-01-05](http://blog.sony.com/press/sony-announces-new-flagship-4k-camcorder-with-enhanced-image-and-sound-quality/) | CX450 / CX455 / CX485 | | |
+| [2016-01-05](http://blog.sony.com/press/sony-announces-new-flagship-4k-camcorder-with-enhanced-image-and-sound-quality/) | CX625 / CX675 / PJ675 | | |
+| 2016-01-05 | AX40 / AX55 / AXP55 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAX40#/downloadTab) |
+| [2016-01-05](http://blog.sony.com/press/sony-announces-new-flagship-4k-camcorder-with-enhanced-image-and-sound-quality/) | AX53 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAX53#/downloadTab) |
 | [2016-01-05](http://blog.sony.com/press/sony-introduces-latest-action-cam-with-enhanced-functionality-and-design/) | AS50 | | |
 | [2016-02-03](http://blog.sony.com/press/sony-introduces-new-%CE%B16300-camera-with-worlds-fastest-autofocus/) | A6300 | | |
 | [2016-03-07](http://blog.sony.com/press/sony-announces-new-hx80-compact-camera-with-30x-zoom-and-electronic-viewfinder/) | HX80 | | |
