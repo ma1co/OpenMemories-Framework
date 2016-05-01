@@ -4,7 +4,7 @@
 .implements com/sony/scalar/provider/AvindexStore$Files$FileColumns
 .inner class public static Media inner com/sony/scalar/provider/AvindexStore$Files$Media outer com/sony/scalar/provider/AvindexStore$Files
 
-; added in V14
+; added in V11
 .method public static getContentFocusPoint(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;)Landroid/database/Cursor;
 .end method
 
