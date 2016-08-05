@@ -428,6 +428,8 @@
 
 .field public static final PROP_DEVICE_NFC_SUPPORTED Ljava/lang/String; = "device.nfc.supported"
 
+.field public static final PROP_DEVICE_OLED_DISPLAY Ljava/lang/String; = "device.oled.display"
+
 .field public static final PROP_DEVICE_PANEL_ASPECT Ljava/lang/String; = "device.panel.aspect"
 
 .field public static final PROP_DEVICE_PANEL_RES_AS_SQUARE_H Ljava/lang/String; = "device.panel.res.as.square.h"

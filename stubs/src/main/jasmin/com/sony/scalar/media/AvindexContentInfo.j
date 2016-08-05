@@ -389,6 +389,8 @@
 
 .field public static final TAG_MK_NOTE_AUTO_HDR Ljava/lang/String; = "MkNoteAutoHDR"
 
+.field public static final TAG_MK_NOTE_AWB_COLOR_PRIORITY Ljava/lang/String; = "MkNoteWBAutoColorPriority"
+
 .field public static final TAG_MK_NOTE_CLOLOR_TEMP Ljava/lang/String; = "MkNoteClolorTemp"
 
 .field public static final TAG_MK_NOTE_CREATIVE_STYLE Ljava/lang/String; = "MkNoteCreativeStyle"
@@ -408,6 +410,8 @@
 .field public static final TAG_MK_NOTE_RAW_COMPRESSION Ljava/lang/String; = "MkNoteRawCompression"
 
 .field public static final TAG_MK_NOTE_SCENE_SELECT_MODE Ljava/lang/String; = "MkNoteSceneSelectMode"
+
+.field public static final TAG_MK_NOTE_SETTING_OF_METERING_MODE Ljava/lang/String; = "MkNoteSettingOfMeteringMode"
 
 .field public static final TAG_MK_NOTE_WB2_AXIS_TUNING_VAL1 Ljava/lang/String; = "MkNoteWB2AxisTuningVal1"
 

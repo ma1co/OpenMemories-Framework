@@ -16,6 +16,10 @@
 
 .field public static final TYPE_AUTO_FOCUS_MODE I = 8
 
+.field public static final TYPE_BOL_BURST_DRIVE_SPEED I = 40
+
+.field public static final TYPE_BURST_DRIVE_SPEED I = 41
+
 .field public static final TYPE_CAMERA_GAIN I = 18
 
 .field public static final TYPE_CINEMA_TONE I = 20

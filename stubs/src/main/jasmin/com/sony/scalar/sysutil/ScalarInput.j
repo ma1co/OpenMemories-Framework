@@ -130,6 +130,8 @@
 
 .field public static final ISV_KEY_FOCUS I = 636
 
+.field public static final ISV_KEY_FOCUS_HOLD I = 603
+
 .field public static final ISV_KEY_FV_LOCK I = 612
 
 .field public static final ISV_KEY_HOTSHOE_ALPHA_STROBE I = 642

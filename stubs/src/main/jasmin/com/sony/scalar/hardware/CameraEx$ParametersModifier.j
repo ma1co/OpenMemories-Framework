@@ -54,6 +54,12 @@
 
 .field public static final AUTO_FOCUS_MODE_MOVIE Ljava/lang/String; = "movie"
 
+.field public static final BOL_BURST_DRIVE_SPEED_HIGH Ljava/lang/String; = "high"
+
+.field public static final BOL_BURST_DRIVE_SPEED_LOW Ljava/lang/String; = "low"
+
+.field public static final BOL_BURST_DRIVE_SPEED_MIDDLE Ljava/lang/String; = "middle"
+
 .field public static final BRACKET_MODE_COLOR Ljava/lang/String; = "color"
 
 .field public static final BRACKET_MODE_DRO Ljava/lang/String; = "dro"
@@ -143,6 +149,8 @@
 .field public static final DIGITAL_ZOOM_TYPE_SMART Ljava/lang/String; = "smart"
 
 .field public static final DIGITAL_ZOOM_TYPE_SUPER_RESOLUTION Ljava/lang/String; = "super-resolution"
+
+.field public static final DRIVE_MODE_BOL_BURST Ljava/lang/String; = "bol_burst"
 
 .field public static final DRIVE_MODE_BRACKET Ljava/lang/String; = "bracket"
 

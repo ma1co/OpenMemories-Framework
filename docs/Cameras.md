@@ -39,6 +39,6 @@ The following Sony cameras are known to run android:
 | 2016-01-05 | AX40 / AX55 / AXP55 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAX40#/downloadTab) |
 | [2016-01-05](http://blog.sony.com/press/sony-announces-new-flagship-4k-camcorder-with-enhanced-image-and-sound-quality/) | AX53 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAX53#/downloadTab) |
 | [2016-01-05](http://blog.sony.com/press/sony-introduces-latest-action-cam-with-enhanced-functionality-and-design/) | AS50 | | |
-| [2016-02-03](http://blog.sony.com/press/sony-introduces-new-%CE%B16300-camera-with-worlds-fastest-autofocus/) | A6300 | | |
+| [2016-02-03](http://blog.sony.com/press/sony-introduces-new-%CE%B16300-camera-with-worlds-fastest-autofocus/) | A6300 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=ILCE6300#/downloadTab) |
 | [2016-03-07](http://blog.sony.com/press/sony-announces-new-hx80-compact-camera-with-30x-zoom-and-electronic-viewfinder/) | HX80 | | |
 | [2016-03-29](http://blog.sony.com/press/sonys-new-cyber-shot-rx10-iii-camera-brings-extended-zoom-capability-to-acclaimed-rx-line/) | RX10M3 | | |
