@@ -44,6 +44,8 @@
 
 .field public static final AUTO_FRAMING I = 39
 
+.field public static final BODY_FOCUS_HOLD I = 127
+
 .field public static final BRACKET_SELFTIMER I = 112
 
 .field public static final CINEMATONE I = 83

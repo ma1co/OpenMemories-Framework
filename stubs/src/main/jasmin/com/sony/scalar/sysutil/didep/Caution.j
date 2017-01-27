@@ -3256,6 +3256,8 @@
 
 .field public static final CAUTION_ID_CANNOT_COPY_XAVCS_TO_MEMCARD I = 3510
 
+.field public static final CAUTION_ID_CANNOT_PBZOOM_BY_STILL_WRITING I = 3956
+
 .field public static final CAUTION_ID_CANNOT_PRINT I = 325
 
 .field public static final CAUTION_ID_CANNOT_SCROLL I = 413
@@ -7058,6 +7060,8 @@
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_SHUTTER_TYPE_ELEC_MSG I = 3597
 
+.field public static final CAUTION_ID_FACTOR_CAM_SET_SHUTTER_TYPE_MECHA_BURST_H_BOL_MSG I = 3957
+
 .field public static final CAUTION_ID_FACTOR_CAM_SET_SILENT_SHUTTER_ON_AND_CONT_SHOOTING_MSG I = 3759
 
 .field public static final CAUTION_ID_FACTOR_CAM_SET_SILENT_SHUTTER_ON_FOCAL_PLANE_PHASE_AF_MSG I = 3676
@@ -7239,6 +7243,18 @@
 .field public static final CAUTION_ID_FACTOR_HDMI_AUDIO_OUTPUT_ON_PIROSHIKI_MSG I = 3674
 
 .field public static final CAUTION_ID_FACTOR_HDMI_OUTPUTTING_MSG I = 3258
+
+.field public static final CAUTION_ID_FACTOR_HFR_WITH_RECTRICTED_IMAGER_100P_100M_XAVCS_MOVIE_MODE_MSG I = 3960
+
+.field public static final CAUTION_ID_FACTOR_HFR_WITH_RECTRICTED_IMAGER_100P_50M_XAVCS_MOVIE_MODE_MSG I = 3964
+
+.field public static final CAUTION_ID_FACTOR_HFR_WITH_RECTRICTED_IMAGER_100P_60M_XAVCS_MOVIE_MODE_MSG I = 3962
+
+.field public static final CAUTION_ID_FACTOR_HFR_WITH_RECTRICTED_IMAGER_120P_100M_XAVCS_MOVIE_MODE_MSG I = 3959
+
+.field public static final CAUTION_ID_FACTOR_HFR_WITH_RECTRICTED_IMAGER_120P_50M_XAVCS_MOVIE_MODE_MSG I = 3963
+
+.field public static final CAUTION_ID_FACTOR_HFR_WITH_RECTRICTED_IMAGER_120P_60M_XAVCS_MOVIE_MODE_MSG I = 3961
 
 .field public static final CAUTION_ID_FACTOR_HFR_WITH_VATR_100P_100M_XAVCS_MOVIE_MODE_MSG I = 3577
 
@@ -9102,6 +9118,8 @@
 
 .field public static final CAUTION_ID_MEDIA_FULL_MS_TRIGGER I = 771
 
+.field public static final CAUTION_ID_MEDIA_FULL_MS_TRIGGER_BEAUTY_EFFECT I = 3958
+
 .field public static final CAUTION_ID_MEDIA_FULL_MS_TRIGGER_FACTOR_MEDIA_SLOT1 I = 2697
 
 .field public static final CAUTION_ID_MEDIA_FULL_MS_TRIGGER_FACTOR_MEDIA_SLOT2 I = 2698
@@ -9465,6 +9483,8 @@
 .field public static final CAUTION_ID_MOVREC_INVALID_HOUSING I = 799
 
 .field public static final CAUTION_ID_MOVREC_INVALID_REASON_MSG I = 458
+
+.field public static final CAUTION_ID_MOVREC_INVALID_TEMP_HIGHER I = 3955
 
 .field public static final CAUTION_ID_MOVREC_STOP_TEMP_HIGHER I = 388
 
@@ -10924,6 +10944,8 @@
 
 .field public static final FACTOR_ID_DISABLE_RELEASE_NO_MEM_CARD_1 I = 308
 
+.field public static final FACTOR_ID_DOUBLE_SLOT_MODEL I = 353
+
 .field public static final FACTOR_ID_DROP_SENSOR_DETECTED I = 239
 
 .field public static final FACTOR_ID_DUMMY I = 134
@@ -11262,6 +11284,16 @@
 
 .field public static final FACTOR_ID_PB_TARGET_MEDIA_RESERVED_07 I = 129
 
+.field public static final FACTOR_ID_PC_REMOTE_FILE_TYPE_JPEG_ONLY I = 351
+
+.field public static final FACTOR_ID_PC_REMOTE_FILE_TYPE_RAW_JPEG I = 349
+
+.field public static final FACTOR_ID_PC_REMOTE_FILE_TYPE_RAW_ONLY I = 350
+
+.field public static final FACTOR_ID_PC_REMOTE_SAVE_TO_PC_AND_CAMERA I = 348
+
+.field public static final FACTOR_ID_PC_REMOTE_SAVE_TO_PC_ONLY I = 347
+
 .field public static final FACTOR_ID_PLAY_CONTENT_PROTECTED I = 152
 
 .field public static final FACTOR_ID_PLAY_CONTSHOTS_REPRESENTATIVE I = 155
@@ -11301,6 +11333,16 @@
 .field public static final FACTOR_ID_RECORD_SETTING_50P_50M_XAVCS I = 284
 
 .field public static final FACTOR_ID_RECORD_SETTING_60P_50M_XAVCS I = 283
+
+.field public static final FACTOR_ID_RECORDING_MODE_SIMUL_MOVIE I = 345
+
+.field public static final FACTOR_ID_RECORDING_MODE_SIMUL_STILL I = 344
+
+.field public static final FACTOR_ID_RECORDING_MODE_SIMUL_STILL_AND_MOVIE I = 346
+
+.field public static final FACTOR_ID_RECORDING_MODE_SORT_STILL_MOVIE I = 343
+
+.field public static final FACTOR_ID_RECORDING_MODE_STANDARD I = 342
 
 .field public static final FACTOR_ID_RECORD_SETTING_100P_100M_XAVCS I = 305
 
@@ -11413,6 +11455,8 @@
 .field public static final FACTOR_ID_SIMUL_MOV_REC_SET_RESERVED_06 I = 212
 
 .field public static final FACTOR_ID_SIMUL_MOV_REC_SET_RESERVED_07 I = 213
+
+.field public static final FACTOR_ID_SINGLE_SLOT_MODEL I = 352
 
 .field public static final FACTOR_ID_SLOW_AND_QUICK_FRAMERATE_SETTING_100P I = 332
 

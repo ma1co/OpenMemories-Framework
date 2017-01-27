@@ -5,6 +5,9 @@
 
 .field public power I
 
+; added in V16
+.field public signalLevel I
+
 .field public state I
 
 .method public <init>()V

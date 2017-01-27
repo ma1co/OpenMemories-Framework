@@ -8,9 +8,15 @@
 
 .field public static final GPS_POWER_ON I = 1
 
+.field public static final GPS_STATE_FIX I = 4
+
+.field public static final GPS_STATE_HOLD I = 6
+
 .field public static final GPS_STATE_INH I = 2
 
 .field public static final GPS_STATE_NG I = 0
+
+.field public static final GPS_STATE_NOFIX I = 5
 
 .field public static final GPS_STATE_OFF I = 1
 

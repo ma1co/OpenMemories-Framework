@@ -186,6 +186,8 @@
 
 .field public static final ISV_KEY_ISO I = 603
 
+.field public static final ISV_KEY_ISO_2 I = 681
+
 .field public static final ISV_KEY_LANC_CONNECT_PHOTOREC I = 672
 
 .field public static final ISV_KEY_LANC_CONNECT_SS I = 671

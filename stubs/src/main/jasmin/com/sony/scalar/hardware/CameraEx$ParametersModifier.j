@@ -286,7 +286,21 @@
 
 .field public static final METERING_MODE_CENTER_WEIGHTED_AVERAGE Ljava/lang/String; = "center-weighted-average"
 
+.field public static final METERING_MODE_ENTIRE_SCREEN_AVERAGE Ljava/lang/String; = "entire-screen-average"
+
+.field public static final METERING_MODE_HIGHLIGHT_WEIGHTED Ljava/lang/String; = "highlight-weighted"
+
 .field public static final METERING_MODE_MULTI Ljava/lang/String; = "multi"
+
+.field public static final METERING_MODE_POINT_CENTER Ljava/lang/String; = "center"
+
+.field public static final METERING_MODE_POINT_FOCUS_POSITION_LINK Ljava/lang/String; = "focus-position-link"
+
+.field public static final METERING_MODE_SPOT_SIZE_3X Ljava/lang/String; = "3x"
+
+.field public static final METERING_MODE_SPOT_SIZE_NONE Ljava/lang/String; = "none"
+
+.field public static final METERING_MODE_SPOT_SIZE_STD Ljava/lang/String; = "std"
 
 .field public static final MOVIE_ANTI_HAND_BLUR_MODE_ACTIVE Ljava/lang/String; = "active"
 
@@ -483,6 +497,18 @@
 .field public static final TRACKING_FOCUS_OFF Ljava/lang/String; = "off"
 
 .field public static final TRACKING_FOCUS_ON Ljava/lang/String; = "on"
+
+.field public static final TRIGGER_AFL Ljava/lang/String; = "trigger_afl"
+
+.field public static final TRIGGER_AF_MF_CHANGE Ljava/lang/String; = "trigger_af_mf_change"
+
+.field public static final TRIGGER_AF_ON Ljava/lang/String; = "trigger_af_on"
+
+.field public static final TRIGGER_ENTER Ljava/lang/String; = "trigger_enter"
+
+.field public static final TRIGGER_EYE_PRIORITY_AF Ljava/lang/String; = "trigger_eye_priority_af"
+
+.field public static final TRIGGER_EYE_START Ljava/lang/String; = "trigger_eye_start"
 
 .field public static final WHITE_BALANCE_COLOR_TEMP Ljava/lang/String; = "color-temp"
 
@@ -791,6 +817,14 @@
 .method public getMeteringMode()Ljava/lang/String;
 .end method
 
+; added in V16
+.method public getMeteringModePoint()Ljava/lang/String;
+.end method
+
+; added in V16
+.method public getMeteringModeSpotSize()Ljava/lang/String;
+.end method
+
 .method public getMinColorCompensationForWhiteBalance()I
 .end method
 
@@ -950,6 +984,10 @@
 .method public getRGBMatrix()[I
 .end method
 
+; added in V16
+.method public getRawRecMode()Ljava/lang/String;
+.end method
+
 .method public getRedEyeReductionMode()Ljava/lang/String;
 .end method
 
@@ -1010,6 +1048,10 @@
 .end method
 
 .method public getSupportedAutoFocusModes()Ljava/util/List;
+.end method
+
+; added in V16
+.method public getSupportedAutoFocusStartTriggers()Ljava/util/List;
 .end method
 
 .method public getSupportedBracketModes()Ljava/util/List;
@@ -1126,6 +1168,14 @@
 .method public getSupportedLensCorrections()Ljava/util/List;
 .end method
 
+; added in V16
+.method public getSupportedMeteringModePoints()Ljava/util/List;
+.end method
+
+; added in V16
+.method public getSupportedMeteringModeSpotSizes()Ljava/util/List;
+.end method
+
 .method public getSupportedMeteringModes()Ljava/util/List;
 .end method
 
@@ -1178,6 +1228,10 @@
 .end method
 
 .method public getSupportedQuickAutoFocus()Ljava/util/List;
+.end method
+
+; added in V16
+.method public getSupportedRawRecModes()Ljava/util/List;
 .end method
 
 .method public getSupportedRedEyeReductionModes()Ljava/util/List;
@@ -1511,6 +1565,14 @@
 .method public setMeteringMode(Ljava/lang/String;)V
 .end method
 
+; added in V16
+.method public setMeteringModePoint(Ljava/lang/String;)V
+.end method
+
+; added in V16
+.method public setMeteringModeSpotSize(Ljava/lang/String;)V
+.end method
+
 ; added in V7
 .method public setMotionShotMode(Z)V
 .end method
@@ -1593,6 +1655,10 @@
 
 ; added in V3
 .method public setRGBMatrix([I)V
+.end method
+
+; added in V16
+.method public setRawRecMode(Ljava/lang/String;)V
 .end method
 
 .method public setRedEyeReductionMode(Ljava/lang/String;)V

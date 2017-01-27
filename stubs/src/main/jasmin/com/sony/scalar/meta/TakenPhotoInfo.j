@@ -65,6 +65,9 @@
 
 .field public bMkNoteSceneSelectMode Z
 
+; added in V16
+.field public bMkNoteSettingOfMeteringModeValid Z
+
 .field public bMkNoteWBTuning Z
 
 .field public bMkNoteWhiteBalance Z
@@ -148,6 +151,9 @@
 .field public mkNotePictureEffect J
 
 .field public mkNoteSceneSelectMode J
+
+; added in V16
+.field public mkNoteSettingOfMeteringMode J
 
 .field public mkNoteWB2AxisTuningVal1 J
 

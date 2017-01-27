@@ -58,6 +58,10 @@
 
 .field public static final TYPE_METERING_MODE I = 5
 
+.field public static final TYPE_METERING_MODE_POINT I = 41
+
+.field public static final TYPE_METERING_MODE_SPOT_SIZE I = 40
+
 .field public static final TYPE_MOTION_SHOT_MODE I = 27
 
 .field public static final TYPE_MOVIE_ANTI_HAND_BLUR_INFO I = 29

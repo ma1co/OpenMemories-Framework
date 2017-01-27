@@ -54,6 +54,8 @@
 
 .field public static final OFF_FACTOR_SYSTEM_ERR I = 18
 
+.field public static final OFF_FACTOR_THERMAL_TIME_OUT I = 32
+
 .field public static final OFF_FACTOR_UM I = 30
 
 .field public static final OFF_FACTOR_UPDATE I = 13

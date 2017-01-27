@@ -1,6 +1,8 @@
 .class public com/sony/scalar/hardware/CameraEx
 .super java/lang/Object
 .inner class public static ExifInfo inner com/sony/scalar/hardware/CameraEx$ExifInfo outer com/sony/scalar/hardware/CameraEx
+.inner class public static interface abstract MeteringModeInfoListener inner com/sony/scalar/hardware/CameraEx$MeteringModeInfoListener outer com/sony/scalar/hardware/CameraEx
+.inner class public static MeteringModeInfo inner com/sony/scalar/hardware/CameraEx$MeteringModeInfo outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract ApertureStfFNumberListener inner com/sony/scalar/hardware/CameraEx$ApertureStfFNumberListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract IntervalRecListener inner com/sony/scalar/hardware/CameraEx$IntervalRecListener outer com/sony/scalar/hardware/CameraEx
 .inner class public static interface abstract MotionShotResultListener inner com/sony/scalar/hardware/CameraEx$MotionShotResultListener outer com/sony/scalar/hardware/CameraEx
@@ -162,6 +164,10 @@
 .end method
 
 .method public enableSettingChangedTypes([I)V
+.end method
+
+; added in V16
+.method public executeAutoFocusStartTrigger(ZLjava/lang/String;)V
 .end method
 
 .method public getChannelColorSelect(I)Lcom/sony/scalar/hardware/CameraEx$SelectedColor;
@@ -349,6 +355,10 @@
 .end method
 
 .method public setJpegListener(Lcom/sony/scalar/hardware/CameraEx$JpegListener;)V
+.end method
+
+; added in V16
+.method public final setMeteringModeInfoListener(Lcom/sony/scalar/hardware/CameraEx$MeteringModeInfoListener;)V
 .end method
 
 ; added in V6
