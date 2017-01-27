@@ -45,5 +45,5 @@ The following Sony cameras are known to run android:
 | [2016-09-09](http://blog.sony.com/press/sony-announces-new-flagship-4k-and-hd-action-cams-with-superior-image-stabilization/) | AS300 | | |
 | [2016-09-09](http://blog.sony.com/press/sony-announces-new-flagship-4k-and-hd-action-cams-with-superior-image-stabilization/) | X3000 | | |
 | [2016-09-19](http://blog.sony.com/press/sony-announces-new-full-frame-α99-ii-a-mount-camera/) | A99M2 | | |
-| [2016-10-06](http://blog.sony.com/press/sony-introduces-new-α6500-camera-with-exceptional-all-around-performance/) | A6500 | | |
 | [2016-10-06](http://blog.sony.com/press/sony-announces-new-addition-to-acclaimed-line-of-cyber-shot-rx-cameras/) | RX100M5 | 2.16 | [update](https://esupport.sony.com/p/model-home.pl?mdl=DSCRX100M5#/downloadTab) |
+| [2016-10-06](http://blog.sony.com/press/sony-introduces-new-α6500-camera-with-exceptional-all-around-performance/) | A6500 | 2.17 | [update](https://esupport.sony.com/p/model-home.pl?mdl=ILCE6500#/downloadTab) |
