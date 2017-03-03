@@ -22,12 +22,17 @@ dependencies {
 sourceCompatibility = 1.6
 targetCompatibility = 1.6
 
+task generateJavadoc(type: Javadoc) {
+    classpath += configurations.provided
+    source = sourceSets.main.allJava
+}
+
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
     from sourceSets.main.allSource
 }
 
-task javadocJar(type: Jar, dependsOn: javadoc) {
+task javadocJar(type: Jar, dependsOn: generateJavadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
