@@ -55,3 +55,18 @@ DisplayManager displayManager = DisplayManager.create(getApplicationContext());
 int displayWidth = displayManager.getActiveDisplayInfo().width;
 displayManager.release();
 ```
+
+### MediaManager ###
+Query the images on the memory card.
+
+```java
+import com.github.ma1co.openmemories.framework.ImageInfo;
+import com.github.ma1co.openmemories.framework.MediaManager;
+MediaManager mediaManager = MediaManager.create(getApplicationContext());
+Cursor cursor = mediaManager.queryNewestImages();
+while (cursor.moveToNext()) {
+    ImageInfo info = mediaManager.getImageInfo(cursor);
+    String filename = info.getFilename();
+}
+cursor.close();
+```
