@@ -184,9 +184,9 @@
 
 .field public static final ISV_KEY_IR_ZOOM_WIDE I = 580
 
-.field public static final ISV_KEY_ISO I = 603
+.field public static final ISV_KEY_ISO I = 681
 
-.field public static final ISV_KEY_ISO_2 I = 681
+.field public static final ISV_KEY_ISO_2 I = 603
 
 .field public static final ISV_KEY_LANC_CONNECT_PHOTOREC I = 672
 
