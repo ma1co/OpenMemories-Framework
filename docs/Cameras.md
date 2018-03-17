@@ -27,7 +27,7 @@ The following Sony cameras are known to run android:
 | [2015-01-05](http://blog.sony.com/press/sonys-newest-handycam-delivers-4k-clarity-and-detail-in-a-compact-package/) | AX33 / AXP33 | 2.11 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAX33#/downloadTab) |
 | [2015-01-05](http://blog.sony.com/press/sony-introduces-new-4k-and-full-hd-action-cams-at-ces-2015/) | AS200V | | |
 | [2015-01-05](http://blog.sony.com/press/sony-introduces-new-4k-and-full-hd-action-cams-at-ces-2015/) | X1000V | 2.12 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRX1000V#/downloadTab) |
-| [2015-04-13](http://blog.sony.com/press/sony-introduces-duo-of-worlds-smallest-30x-zoom-cameras/) | HX90 / HX90V | | |
+| [2015-04-13](http://blog.sony.com/press/sony-introduces-duo-of-worlds-smallest-30x-zoom-cameras/) | HX90 / HX90V | 2.13 | dump |
 | [2015-04-13](http://blog.sony.com/press/sony-introduces-duo-of-worlds-smallest-30x-zoom-cameras/) | WX500 | | |
 | [2015-06-10](http://blog.sony.com/press/sonys-new-%CE%B17r-ii-camera-delivers-innovative-imaging-experience-with-worlds-first-back-illuminated-35mm-full-frame-sensor1/) | A7RM2 | 2.14 | [update](https://esupport.sony.com/p/model-home.pl?mdl=ILCE7RM2#/downloadTab) |
 | [2015-06-10](http://blog.sony.com/press/sonys-rx100-iv-and-rx10-ii-cameras-bring-professional-imaging-experience-to-acclaimed-cyber-shot-rx-series/) | RX10M2 | 2.14 | [update](https://esupport.sony.com/p/model-home.pl?mdl=DSCRX10M2#/downloadTab) |

@@ -152,14 +152,14 @@
 .method public decrementShutterSpeed()V
 .end method
 
-; added in V14
+; added in V13
 .method public disableIrisRing()V
 .end method
 
 .method public disableSettingChangedTypes([I)V
 .end method
 
-; added in V14
+; added in V13
 .method public enableIrisRing()V
 .end method
 
