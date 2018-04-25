@@ -21,11 +21,11 @@ The following Sony cameras are known to run android:
 | [2014-09-03](http://blog.sony.com/press/sony-expands-innovative-lens-style-camera-line-with-new-interchangeable-lens-model-and-30x-zoom-model/) | QX30 | | |
 | [2014-09-03](http://blog.sony.com/press/new-sony-action-cam-mini-pov-camera-is-ready-for-adventure/) | AZ1 | 2.9 | [update](https://esupport.sony.com/p/model-home.pl?mdl=HDRAZ1#/downloadTab) |
 | [2014-11-26](http://blog.sony.com/press/sony-introduces-the-%CE%B17ii-the-worlds-first-full-frame-camera-with-5-axis-image-stabilization/) | A7M2 | 2.10 | [update](https://esupport.sony.com/p/model-home.pl?mdl=ILCE7M2#/downloadTab) |
-| [2015-01-05](http://blog.sony.com/press/sonys-newest-handycam-delivers-4k-clarity-and-detail-in-a-compact-package/) | CX440 / CX480 / PJ410 / PJ440 | | |
+| [2015-01-05](http://blog.sony.com/press/sonys-newest-handycam-delivers-4k-clarity-and-detail-in-a-compact-package/) | CX440 / CX480 / PJ410 / PJ440 | 2.11 | dump |
 | [2015-01-05](http://blog.sony.com/press/sonys-newest-handycam-delivers-4k-clarity-and-detail-in-a-compact-package/) | CX620 / CX670 / PJ620 / PJ670 | | |
 | 2015-01-05 | AX30 / AXP35 | 2.11 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAXP35#/downloadTab) |
 | [2015-01-05](http://blog.sony.com/press/sonys-newest-handycam-delivers-4k-clarity-and-detail-in-a-compact-package/) | AX33 / AXP33 | 2.11 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAX33#/downloadTab) |
-| [2015-01-05](http://blog.sony.com/press/sony-introduces-new-4k-and-full-hd-action-cams-at-ces-2015/) | AS200V | | |
+| [2015-01-05](http://blog.sony.com/press/sony-introduces-new-4k-and-full-hd-action-cams-at-ces-2015/) | AS200V | 2.12 | dump |
 | [2015-01-05](http://blog.sony.com/press/sony-introduces-new-4k-and-full-hd-action-cams-at-ces-2015/) | X1000V | 2.12 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRX1000V#/downloadTab) |
 | [2015-04-13](http://blog.sony.com/press/sony-introduces-duo-of-worlds-smallest-30x-zoom-cameras/) | HX90 / HX90V | 2.13 | dump |
 | [2015-04-13](http://blog.sony.com/press/sony-introduces-duo-of-worlds-smallest-30x-zoom-cameras/) | WX500 | | |
