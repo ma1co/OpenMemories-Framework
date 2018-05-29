@@ -35,15 +35,14 @@ The following Sony cameras are known to run android:
 | [2015-09-11](http://blog.sony.com/press/sony-expands-range-of-full-frame-%CE%B1-cameras-with-the-launch-of-ultra-sensitive-%CE%B17s-ii/) | A7SM2 | 2.14 | [update](https://esupport.sony.com/p/model-home.pl?mdl=ILCE7SM2#/downloadTab) |
 | [2015-10-14](http://blog.sony.com/2015/10/sony-introduces-new-palm-sized-rx1r-ii-camera-with-42-4-mp-full-frame-image-sensor/) | RX1RM2 | 2.14 | dump |
 | [2016-01-05](http://blog.sony.com/press/sony-announces-new-flagship-4k-camcorder-with-enhanced-image-and-sound-quality/) | CX450 / CX455 / CX485 | | |
-| [2016-01-05](http://blog.sony.com/press/sony-announces-new-flagship-4k-camcorder-with-enhanced-image-and-sound-quality/) | CX625 / CX675 / PJ675 | | |
+| [2016-01-05](http://blog.sony.com/press/sony-announces-new-flagship-4k-camcorder-with-enhanced-image-and-sound-quality/) | CX625 / CX675 / CX680 / PJ675 / PJ680 | 2.15 | dump |
 | 2016-01-05 | AX40 / AX55 / AXP55 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAX40#/downloadTab) |
 | [2016-01-05](http://blog.sony.com/press/sony-announces-new-flagship-4k-camcorder-with-enhanced-image-and-sound-quality/) | AX53 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRAX53#/downloadTab) |
-| [2016-01-05](http://blog.sony.com/press/sony-introduces-latest-action-cam-with-enhanced-functionality-and-design/) | AS50 | | |
+| [2016-01-05](http://blog.sony.com/press/sony-introduces-latest-action-cam-with-enhanced-functionality-and-design/) | AS50 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=HDRAS50R#/downloadTab) |
 | [2016-02-03](http://blog.sony.com/press/sony-introduces-new-%CE%B16300-camera-with-worlds-fastest-autofocus/) | A6300 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=ILCE6300#/downloadTab) |
 | [2016-03-07](http://blog.sony.com/press/sony-announces-new-hx80-compact-camera-with-30x-zoom-and-electronic-viewfinder/) | HX80 | | |
 | [2016-03-29](http://blog.sony.com/press/sonys-new-cyber-shot-rx10-iii-camera-brings-extended-zoom-capability-to-acclaimed-rx-line/) | RX10M3 | 2.15 | dump |
-| [2016-09-09](http://blog.sony.com/press/sony-announces-new-flagship-4k-and-hd-action-cams-with-superior-image-stabilization/) | AS300 | 2.15 | dump |
-| [2016-09-09](http://blog.sony.com/press/sony-announces-new-flagship-4k-and-hd-action-cams-with-superior-image-stabilization/) | X3000 | 2.15 | dump |
+| [2016-09-09](http://blog.sony.com/press/sony-announces-new-flagship-4k-and-hd-action-cams-with-superior-image-stabilization/) | AS300 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=HDRAS300R#/downloadTab) |
+| [2016-09-09](http://blog.sony.com/press/sony-announces-new-flagship-4k-and-hd-action-cams-with-superior-image-stabilization/) | X3000 | 2.15 | [update](https://esupport.sony.com/p/model-home.pl?mdl=FDRX3000R#/downloadTab) |
 | [2016-10-06](http://blog.sony.com/press/sony-announces-new-addition-to-acclaimed-line-of-cyber-shot-rx-cameras/) | RX100M5 | 2.16 | [update](https://esupport.sony.com/p/model-home.pl?mdl=DSCRX100M5#/downloadTab) |
 | [2016-10-06](http://blog.sony.com/press/sony-introduces-new-α6500-camera-with-exceptional-all-around-performance/) | A6500 | 2.17 | [update](https://esupport.sony.com/p/model-home.pl?mdl=ILCE6500#/downloadTab) |
-| [2017-01-10](https://www.sony.jp/CorporateCruise/Press/201701/17-0110/) | CX680 / PJ680 | 2.15 | dump |
