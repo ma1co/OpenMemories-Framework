@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<verification-metadata xmlns="https://schema.gradle.org/dependency-verification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://schema.gradle.org/dependency-verification https://schema.gradle.org/dependency-verification/dependency-verification-1.3.xsd">
+   <configuration>
+      <verify-metadata>true</verify-metadata>
+      <verify-signatures>false</verify-signatures>
+      <trusted-artifacts>
+         <!-- Only the jasmin download is pinned, all other dependencies come from Maven Central -->
+         <trust group="^(?!jasmin$).*$" regex="true"/>
+      </trusted-artifacts>
+   </configuration>
+   <components>
+      <component group="jasmin" name="jasmin" version="2.4">
+         <artifact name="jasmin-2.4.zip">
+            <sha256 value="eaa10c68cec68206fd102e9ec7113739eccd790108a1b95a6e8c3e93f20e449d" origin="Downloaded over HTTPS from downloads.sourceforge.net"/>
+         </artifact>
+      </component>
+   </components>
+</verification-metadata>

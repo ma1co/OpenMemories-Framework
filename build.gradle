@@ -1,0 +1,9 @@
+// JitPack sets GROUP (e.g. com.github.ma1co), ARTIFACT (the repository name) and VERSION (tag or commit).
+// Modules of a multi-module project are published as com.github.User.Repo:module:version.
+def jitpackGroup = System.getenv('GROUP')
+def jitpackArtifact = System.getenv('ARTIFACT')
+
+allprojects {
+    group = jitpackGroup && jitpackArtifact ? "${jitpackGroup}.${jitpackArtifact}" : 'com.github.ma1co.OpenMemories-Framework'
+    version = System.getenv('VERSION') ?: '-SNAPSHOT'
+}

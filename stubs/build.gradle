@@ -1,46 +1,76 @@
-apply plugin: 'java'
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
 
 repositories {
+    // Jasmin 2.4 is only available from SourceForge. It is downloaded over HTTPS and pinned by its
+    // SHA-256 checksum in gradle/verification-metadata.xml.
     ivy {
-        url 'http://jaist.dl.sourceforge.net'
-        layout 'pattern', {
+        url = 'https://downloads.sourceforge.net'
+        patternLayout {
             artifact '/project/[organisation]/[module]/[module]-[revision]/[module]-[revision].[ext]'
+        }
+        metadataSources {
+            artifact()
+        }
+        content {
+            includeGroup 'jasmin'
         }
     }
 }
 
 configurations {
-    tool
+    jasmin
 }
 
 dependencies {
-    // download the jasmin assembler from sourceforge
-    tool 'jasmin:jasmin:2.4@zip'
+    jasmin 'jasmin:jasmin:2.4@zip'
 }
 
-task unpackAssembler(type: Copy) {
+def jasminSourceDir = file('src/main/jasmin')
+def jasminClassesDir = layout.buildDirectory.dir('classes/jasmin/main')
+
+def unpackAssembler = tasks.register('unpackAssembler', Copy) {
     // unpack the jasmin assembler
-    from zipTree(configurations.tool.find {it.name.startsWith('jasmin')})
-    into "${buildDir}/jasmin"
-    includeEmptyDirs = false
+    from { zipTree(configurations.jasmin.singleFile) }
+    into layout.buildDirectory.dir('jasmin')
     include '**/jasmin.jar'
+    includeEmptyDirs = false
+    eachFile { path = name }
 }
 
-task assembleJasmin(type: JavaExec) {
+def assembleJasmin = tasks.register('assembleJasmin', JavaExec) {
     // assemble the jasmin files
-    def classesDir = sourceSets.main.output.classesDir
-    def sourceDir = "$projectDir/src/main/jasmin"
-    def sourceSet = fileTree(dir: sourceDir, include: '**/*.j')
-    def sources = sourceSet.getFiles().collect {new File(sourceDir).toPath().relativize(it.toPath())}
+    dependsOn unpackAssembler
+    def sources = fileTree(dir: jasminSourceDir, include: '**/*.j')
 
-    main = 'jasmin.Main'
-    args = ['-d', classesDir] + sources
-    classpath fileTree(dir: "${buildDir}/jasmin", include: '**/*.jar')
-    workingDir sourceDir
+    inputs.files sources
+    outputs.dir jasminClassesDir
+    outputs.cacheIf { true }
 
-    outputs.dir classesDir
-    inputs.files sourceSet
+    classpath = files(layout.buildDirectory.file('jasmin/jasmin.jar'))
+    mainClass = 'jasmin.Main'
+    workingDir = jasminSourceDir
+    doFirst {
+        args = ['-d', jasminClassesDir.get().asFile.absolutePath] +
+            sources.files.collect { jasminSourceDir.toPath().relativize(it.toPath()).toString() }.sort()
+    }
 }
 
-assembleJasmin.dependsOn unpackAssembler
-classes.dependsOn assembleJasmin
+// Register the assembled classes as a classes directory, so they are part of the jar and visible to other
+// projects in this build (e.g. :framework) at compile time
+sourceSets.main.output.classesDirs.from(assembleJasmin)
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}

@@ -1,43 +1,32 @@
-apply plugin: 'java'
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
 
 repositories {
-    jcenter()
-}
-
-configurations {
-    provided
-}
-
-sourceSets {
-    main {
-        compileClasspath += configurations.provided
-    }
+    mavenCentral()
 }
 
 dependencies {
-    provided project(':stubs')
-    provided 'com.google.android:android:4.1.1.4'
+    compileOnly project(':stubs')
+    // Android 4.1 (API 16) as found on newer cameras (e.g. ILCE-7M2, ILCE-7RM2). Cameras running Android 2.3
+    // (API 10) only provide a subset; check DeviceInfo.getAndroidSdkVersion() before using newer APIs.
+    compileOnly 'com.google.android:android:4.1.1.4'
 }
 
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
-
-task generateJavadoc(type: Javadoc) {
-    classpath += configurations.provided
-    source = sourceSets.main.allJava
+java {
+    // Java 8 is the lowest target supported by current JDKs. The Android build tools (d8) convert it for the
+    // Dalvik VM of the cameras.
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    withSourcesJar()
+    withJavadocJar()
 }
 
-task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
-    from sourceSets.main.allSource
-}
-
-task javadocJar(type: Jar, dependsOn: generateJavadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-artifacts {
-    archives sourcesJar
-    archives javadocJar
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
 }
