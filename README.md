@@ -6,14 +6,14 @@ Build Android apps for your favorite Sony camera.
 
     ```gradle
     repositories {
-        jcenter()
+        mavenCentral()
         maven { url "https://jitpack.io" }
     }
     dependencies {
-        compile 'com.github.ma1co.OpenMemories-Framework:framework:-SNAPSHOT'
+        implementation 'com.github.ma1co.OpenMemories-Framework:framework:-SNAPSHOT'
 
         // If you need direct access to the Sony APIs, you can add this line, too:
-        provided 'com.github.ma1co.OpenMemories-Framework:stubs:-SNAPSHOT'
+        compileOnly 'com.github.ma1co.OpenMemories-Framework:stubs:-SNAPSHOT'
     }
     ```
 
