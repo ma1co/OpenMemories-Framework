@@ -23,6 +23,14 @@ Build Android apps for your favorite Sony camera.
 
 4. Install it on your camera using [PMCA-RE](https://github.com/ma1co/Sony-PMCA-RE)
 
+## Important: use a PNG launcher icon ##
+The camera's launcher (`ScalarALauncher`) casts every app icon to `BitmapDrawable`. If your launcher icon is an XML drawable (shape, vector, layer-list, adaptive icon), the launcher crashes on **every boot**, the watchdog resets the camera, and it ends up in a boot loop without USB access.
+
+* Ship a bitmap: `res/drawable*/ic_launcher.png` (no XML drawable with the same name, no `mipmap`; the camera runs API level 10)
+* Set `android:icon` and `android:label` on both `<application>` and the launcher `<activity>`
+
+Details and recovery of an affected camera: [Sony-PMCA-RE#760](https://github.com/ma1co/Sony-PMCA-RE/issues/760)
+
 ## Features ##
 This is a wrapper framework around Sony specific classes. For every Sony feature, an additional dummy implementation is provided. This allows you to test your app on any Android device / emulator.
 
